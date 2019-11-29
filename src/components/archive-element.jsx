@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const ArchiveElementStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 15px;
+  grid-gap: 1.2222222222222223rem;
   border-top: solid var(--dark-color) 1px;
   height: 3.111111111111111rem;
   align-items: center;
