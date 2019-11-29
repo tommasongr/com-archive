@@ -1,6 +1,8 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
+import ArchiveControls from '../components/archive-controls'
 import ArchiveElement from '../components/archive-element'
 
 const ArchiveStyled = styled.div`
@@ -20,28 +22,49 @@ const GridStyle = styled.div`
   }
 `
 
-const Archive = () => (
-  <ArchiveStyled>
-    {/* <GridStyle>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </GridStyle> */}
-    <ArchiveLabels />
-    <ArchiveElement />
-    <ArchiveElement />
-    <ArchiveElement />
-  </ArchiveStyled>
-)
+const Archive = () => {
+  const data = useStaticQuery(graphql`
+    query Archive {
+      __typename
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              name
+              date(formatString: "YYYY")
+              job
+              based
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <ArchiveStyled>
+      {/* <GridStyle>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </GridStyle> */}
+      <ArchiveControls />
+      <ArchiveLabels />
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <ArchiveElement designer={node} />
+      ))}
+    </ArchiveStyled>
+  )
+}
 
 const ArchiveLabelsStyle = styled.div`
   display: grid;

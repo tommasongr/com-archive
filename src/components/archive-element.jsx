@@ -5,7 +5,7 @@ const ArchiveElementStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 1.2222222222222223rem;
-  border-top: solid var(--dark-color) 1px;
+  border-top: solid 1px var(--dark-color);
   height: 3.111111111111111rem;
   align-items: center;
   cursor: pointer;
@@ -41,12 +41,12 @@ const ArchiveElementStyle = styled.div`
   }
 `
 
-const ArchiveElement = () => (
+const ArchiveElement = ({ designer }) => (
   <ArchiveElementStyle>
-    <span className="archive-element-year">2019</span>
-    <span className="archive-element-name">Benedetta Signaroldi</span>
-    <span className="archive-element-job">The Visual Agency</span>
-    <span className="archive-element-based">Milano</span>
+    <span className="archive-element-year">{designer.frontmatter.date}</span>
+    <span className="archive-element-name">{designer.frontmatter.name}</span>
+    <span className="archive-element-job">{designer.frontmatter.job}</span>
+    <span className="archive-element-based">{designer.frontmatter.based}</span>
   </ArchiveElementStyle>
 )
 
