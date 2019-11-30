@@ -26,49 +26,71 @@ const ArchiveControlsStyle = styled.div`
 
     #archive-random {
         grid-column: 4/5;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        border: none;
-        background: none;
         font-family: 'Suisse Intl', serif;
         font-style: italic;
         color: var(--accent-color);
         border-bottom: solid 1px var(--accent-color);
         height: 100%;
-        padding: 0;
-        text-align: inherit;
-        cursor: pointer;
     }
 
-    select {
-        border: none;
-        border-radius: 0;
+    .archive-wrapper {
+        display: flex;
         border-bottom: solid 1px var(--text-color);
-        background: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        text-indent: 0;
-        text-overflow: '';
-        padding: 0;
         height: 100%;
-        font-weight: 400;
-        font-style: italic;
-        color: var(--text-color);
-        cursor: pointer;
+        align-items: baseline;
+        justify-content: space-between;
 
-        option {
+        select {
+            border: none;
+            border-radius: 0;
+            background: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            text-indent: 0;
+            text-overflow: '';
             padding: 0;
-        }
-    }
+            height: 100%;
+            font-weight: 400;
+            font-style: italic;
+            color: var(--text-color);
+            cursor: pointer;
+            position: relative;
+            width: 100%;
 
-    #archive-job {
-        grid-column: 7/9;
+            option {
+                padding: 0;
+            }
+
+            :focus {
+                outline: none;
+            }
+
+            :-moz-focusring {
+                color: transparent;
+                text-shadow: 0 0 0 var(--text-color);
+            }
+        }
+
+        .archive-arrow {
+            width: 0;
+            height: 0;
+            border-left: 5.5px solid transparent;
+            border-right: 5.5px solid transparent;
+            border-top: 11px solid var(--text-color);
+        }
+
+        :focus-within {
+            outline: dashed 1px var(--accent-color);
+        }
     }
 
     #archive-fields {
         grid-column: 9/11;
+    }
+
+    #archive-job {
+        grid-column: 7/9;
     }
 
     .archive-checkbox-label {
@@ -109,32 +131,8 @@ const ArchiveControlsStyle = styled.div`
 
     //   States
 
-    button:focus {
-        outline: dashed 1px var(--accent-color);
-    }
-
-    button:active {
-        outline: dashed 1px var(--accent-color);
-    }
-
-    button::-moz-focus-inner {
-        border: none;
-    }
-
     input[type='search']:focus {
         outline: dashed 1px var(--accent-color);
-    }
-
-    select:focus {
-        outline: dashed 1px var(--accent-color);
-    }
-
-    select:-moz-focusring {
-        color: transparent;
-        text-shadow: 0 0 0 var(--text-color);
-    }
-    select {
-        background: transparent;
     }
 
     label:focus-within {
@@ -157,25 +155,31 @@ const ArchiveControls = () => (
         />
         <button id="archive-random">Random ??</button>
         {/* Select for job status */}
-        <select id="archive-job">
-            <option value="" disabled selected>
-                Stato lavorativo
-            </option>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-        </select>
+        <div className="archive-wrapper" id="archive-job">
+            <select>
+                <option value="" disabled selected>
+                    Stato lavorativo
+                </option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <div className="archive-arrow"></div>
+        </div>
         {/* Select for job field */}
-        <select id="archive-fields">
-            <option value="" disabled selected>
-                Ambito
-            </option>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-        </select>
+        <div className="archive-wrapper" id="archive-fields">
+            <select>
+                <option value="" disabled selected>
+                    Ambito
+                </option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <div className="archive-arrow"></div>
+        </div>
         {/* Checkbox for abroad */}
         <label
             htmlFor="archive-abroad"

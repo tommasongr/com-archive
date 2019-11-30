@@ -31,6 +31,22 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+    font-weight: 500;
+    font-size: 2.111111111111111rem;
+    line-height: 2.7777777777777777rem;
+    margin: 0;
+    margin-bottom: 1.6666666666666667rem;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.3333333333333333rem;
+    line-height: 2rem;
+    margin: 0;
+    margin-bottom: 2.2222222222222223rem;
+}
+
 a {
     color: inherit;
 }
@@ -41,4 +57,29 @@ a:hover {
 
 a:focus {
     outline: dashed 1px var(--accent-color);
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    text-align: inherit;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: dashed 1px var(--accent-color);
+}
+
+button:active {
+    outline: dashed 1px var(--accent-color);
+}
+
+button::-moz-focus-inner {
+    border: none;
 }

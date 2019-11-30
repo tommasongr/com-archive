@@ -47,6 +47,10 @@ const HeaderStyle = styled.header`
             font-family: 'Suisse Intl', sans-serif;
             font-size: 1.1111111111111112rem;
             line-height: 1.7777777777777777rem;
+
+            :hover {
+                text-decoration: line-through;
+            }
         }
     }
 `
@@ -59,10 +63,10 @@ const Header = () => (
             </Link>
             <ul className="header-items">
                 <li className="header-item">
-                    <Link to="/page-2">Archivio</Link>
+                    <Link to="/">Archivio</Link>
                 </li>
                 <li className="header-item">
-                    <Link to="/">About</Link>
+                    <Link to="/page-2">About</Link>
                 </li>
                 <li className="header-item">
                     <Link to="/">Contatti</Link>
