@@ -1,14 +1,26 @@
 :root {
-  --light-color: #f0f9ff;
-  --dark-color: #444444;
+  --bg-color: #f0f9ff;
+  --text-color: #444444;
   --accent-color: #ee0202;
+
+  --bg-color-rgb: 240, 240, 255;
+  --text-color-rgb: 68, 68, 68;
+  --accent-color-rgb: 238, 2, 2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #141414;
+    --text-color: #f0f9ff;
+    --accent-color: #ff4848;
+  }
 }
 
 html {
   font-family: 'Suisse Works', serif;
   font-size: 18px;
-  color: var(--dark-color);
-  background-color: var(--light-color);
+  color: var(--text-color);
+  background-color: var(--bg-color);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }

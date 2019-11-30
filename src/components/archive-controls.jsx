@@ -17,14 +17,34 @@ const ArchiveControlsStyle = styled.div`
     -moz-appearance: none;
     appearance: none;
     border: 0;
-    border-bottom: solid 1px var(--dark-color);
+    font-style: italic;
+    border-bottom: solid 1px var(--text-color);
     background: none;
     height: 100%;
+    color: var(--text-color);
+  }
+
+  #archive-random {
+    grid-column: 4/5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    font-family: 'Suisse Intl', serif;
+    font-style: italic;
+    color: var(--accent-color);
+    border-bottom: solid 1px var(--accent-color);
+    height: 100%;
+    padding: 0;
+    text-align: inherit;
+    cursor: pointer;
   }
 
   select {
     border: none;
-    border-bottom: solid 1px var(--dark-color);
+    border-radius: 0;
+    border-bottom: solid 1px var(--text-color);
     background: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -35,7 +55,12 @@ const ArchiveControlsStyle = styled.div`
     height: 100%;
     font-weight: 400;
     font-style: italic;
-    color: var(--dark-color);
+    color: var(--text-color);
+    cursor: pointer;
+
+    option {
+      padding: 0;
+    }
   }
 
   #archive-job {
@@ -51,20 +76,20 @@ const ArchiveControlsStyle = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    border-bottom: solid 1px var(--dark-color);
+    border-bottom: solid 1px var(--text-color);
     cursor: pointer;
 
     .archive-checkbox-input {
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      border: solid 1px var(--dark-color);
+      border: solid 1px var(--text-color);
       height: 11px;
       width: 11px;
       background: none;
 
-      :hover {
-        border-color: var(--accent-color);
+      :focus {
+        outline: none;
       }
 
       :checked {
@@ -81,6 +106,40 @@ const ArchiveControlsStyle = styled.div`
   #archive-awards-container {
     grid-column: 12/13;
   }
+
+  //   States
+
+  button:focus {
+    outline: dashed 1px var(--accent-color);
+  }
+
+  button:active {
+    outline: dashed 1px var(--accent-color);
+  }
+
+  button::-moz-focus-inner {
+    border: none;
+  }
+
+  input[type='search']:focus {
+    outline: dashed 1px var(--accent-color);
+  }
+
+  select:focus {
+    outline: dashed 1px var(--accent-color);
+  }
+
+  label:focus-within {
+    outline-style: dashed;
+    outline-color: var(--accent-color);
+    outline-width: 1px;
+  }
+
+  label:active {
+    outline-style: dashed;
+    outline-color: var(--accent-color);
+    outline-width: 1px;
+  }
 `
 
 const ArchiveControls = () => (
@@ -92,6 +151,7 @@ const ArchiveControls = () => (
       name=""
       id="archive-search"
     />
+    <button id="archive-random">Random ??</button>
     {/* Select for job status */}
     <select id="archive-job">
       <option value="" disabled selected>

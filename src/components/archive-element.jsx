@@ -5,7 +5,7 @@ const ArchiveElementStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 1.2222222222222223rem;
-  border-top: solid 1px var(--dark-color);
+  border-top: solid 1px var(--text-color);
   height: 3.111111111111111rem;
   align-items: center;
   cursor: pointer;
