@@ -1,0 +1,85 @@
+/* FONTS FOR COM ARCHIVE */
+
+/* Suisse Works */
+
+@font-face {
+  font-family: 'Suisse Works';
+  src: url('SuisseWorks-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Suisse Works';
+  src: url('SuisseWorks-RegularItalic.otf');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Suisse Works';
+  src: url('SuisseWorks-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Suisse Works';
+  src: url('SuisseWorks-MediumItalic.otf');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Suisse Works';
+  src: url('SuisseWorks-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Suisse Works';
+  src: url('SuisseWorks-BoldItalic.otf');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Suisse Intl' */
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('SuisseIntl-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('SuisseIntl-RegularItalic.otf');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('SuisseIntl-SemiBold.otf');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('SuisseIntl-SemiBoldItalic.otf');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
