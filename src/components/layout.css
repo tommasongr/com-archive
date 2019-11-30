@@ -1,36 +1,44 @@
 :root {
-  --bg-color: #f0f9ff;
-  --text-color: #444444;
-  --accent-color: #ee0202;
+    --bg-color: #f0f9ff;
+    --text-color: #444444;
+    --accent-color: #ee0202;
 
-  --bg-color-rgb: 240, 240, 255;
-  --text-color-rgb: 68, 68, 68;
-  --accent-color-rgb: 238, 2, 2;
+    --bg-color-rgb: 240, 240, 255;
+    --text-color-rgb: 68, 68, 68;
+    --accent-color-rgb: 238, 2, 2;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #141414;
-    --text-color: #f0f9ff;
-    --accent-color: #ff4848;
-  }
-}
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #141414;
+        --text-color: #f0f9ff;
+        --accent-color: #ff4848;
+    }
+} */
 
 html {
-  font-family: 'Suisse Works', serif;
-  font-size: 18px;
-  color: var(--text-color);
-  background-color: var(--bg-color);
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+    font-family: 'Suisse Works', serif;
+    font-size: 18px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  font-family: 'Suisse Intl', serif;
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+a:focus {
+    outline: dashed 1px var(--accent-color);
 }
