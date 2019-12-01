@@ -1,5 +1,6 @@
 :root {
-    --bg-color: #f0f9ff;
+    /* --bg-color: #f0f9ff; */
+    --bg-color: #f9f9fa;
     --text-color: #444444;
     --accent-color: #ee0202;
 
@@ -47,6 +48,12 @@ h2 {
     margin-bottom: 2.2222222222222223rem;
 }
 
+p {
+    font-size: 1rem;
+    line-height: 1.6666666666666667rem;
+    margin: 0;
+}
+
 a {
     color: inherit;
 }
@@ -58,6 +65,10 @@ a:hover {
 a:focus {
     outline: dashed 1px var(--accent-color);
 }
+
+/* a:active {
+    outline: none;
+} */
 
 button {
     -webkit-appearance: none;

@@ -25,8 +25,9 @@ const GridStyle = styled.div`
 const Archive = () => {
     const data = useStaticQuery(graphql`
         query Archive {
-            __typename
-            allMarkdownRemark {
+            allMarkdownRemark(
+                sort: { fields: frontmatter___date, order: DESC }
+            ) {
                 edges {
                     node {
                         frontmatter {
@@ -34,7 +35,20 @@ const Archive = () => {
                             date(formatString: "YYYY")
                             job
                             based
+                            img {
+                                childImageSharp {
+                                    fluid(
+                                        maxWidth: 800
+                                        quality: 100
+                                        grayscale: true
+                                    ) {
+                                        ...GatsbyImageSharpFluid
+                                        presentationWidth
+                                    }
+                                }
+                            }
                         }
+                        html
                     }
                 }
             }
@@ -42,21 +56,21 @@ const Archive = () => {
     `)
 
     return (
-        <ArchiveStyled>
+        <ArchiveStyled id="archivio">
             {/* <GridStyle>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </GridStyle> */}
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </GridStyle> */}
             <ArchiveControls />
             <ArchiveLabels />
             {data.allMarkdownRemark.edges.map(({ node }) => (

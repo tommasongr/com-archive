@@ -12,7 +12,7 @@ const HeroStyle = styled.div`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, min-content) 1fr;
-    // grid-gap: 1.2222222222222223rem;
+    grid-column-gap: 1.2222222222222223rem;
     height: calc(100vh - 7.222222222222222rem);
     grid-auto-rows: min-content;
     position: relative;

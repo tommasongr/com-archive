@@ -11,8 +11,17 @@ const ArchiveControlsStyle = styled.div`
     font-weight: 400;
     font-style: italic;
 
-    #archive-search {
+    #archive-search-container {
         grid-column: 1/4;
+        height: 100%;
+        max-height: 3.111111111111111rem;
+
+        :focus-within {
+            outline: dashed 1px var(--accent-color);
+        }
+    }
+
+    #archive-search {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
@@ -21,7 +30,10 @@ const ArchiveControlsStyle = styled.div`
         border-bottom: solid 1px var(--text-color);
         background: none;
         height: 100%;
+        width: 100%;
         color: var(--text-color);
+        max-height: 3.111111111111111rem;
+        padding: 0;
     }
 
     #archive-random {
@@ -31,6 +43,7 @@ const ArchiveControlsStyle = styled.div`
         color: var(--accent-color);
         border-bottom: solid 1px var(--accent-color);
         height: 100%;
+        max-height: 3.111111111111111rem;
     }
 
     .archive-wrapper {
@@ -39,6 +52,7 @@ const ArchiveControlsStyle = styled.div`
         height: 100%;
         align-items: baseline;
         justify-content: space-between;
+        max-height: 3.111111111111111rem;
 
         select {
             border: none;
@@ -100,6 +114,7 @@ const ArchiveControlsStyle = styled.div`
         height: 100%;
         border-bottom: solid 1px var(--text-color);
         cursor: pointer;
+        max-height: 3.111111111111111rem;
 
         .archive-checkbox-input {
             -webkit-appearance: none;
@@ -132,7 +147,7 @@ const ArchiveControlsStyle = styled.div`
     //   States
 
     input[type='search']:focus {
-        outline: dashed 1px var(--accent-color);
+        outline: none;
     }
 
     label:focus-within {
@@ -147,12 +162,14 @@ const ArchiveControlsStyle = styled.div`
 const ArchiveControls = () => (
     <ArchiveControlsStyle>
         {/* Search box */}
-        <input
-            type="search"
-            placeholder="Cerca nell'archivio..."
-            name=""
-            id="archive-search"
-        />
+        <div id="archive-search-container">
+            <input
+                type="search"
+                placeholder="Cerca nell'archivio..."
+                name=""
+                id="archive-search"
+            />
+        </div>
         <button id="archive-random">Random ??</button>
         {/* Select for job status */}
         <div className="archive-wrapper" id="archive-job">
@@ -160,10 +177,9 @@ const ArchiveControls = () => (
                 <option value="" disabled selected>
                     Stato lavorativo
                 </option>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
+                <option value="volvo">Agenzia o studio</option>
+                <option value="saab">Freelancer</option>
+                <option value="mercedes">Azienda</option>
             </select>
             <div className="archive-arrow"></div>
         </div>
