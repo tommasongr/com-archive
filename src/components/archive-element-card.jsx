@@ -2,12 +2,17 @@ import React from 'react'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 
+import NonStretchedImage from './non-stretched-image'
+import CloseCard from './close-card'
+
+import ArchiveElementCardProjects from './archive-element-card-projects'
+import ArchiveElementCardExtras from './archive-element-card-extras'
+
 const ArchiveElementCardStyle = styled.div`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 1.2222222222222223rem;
     margin-top: 1.1111111111111112rem;
-    margin-bottom: 3.111111111111111rem;
 
     .archive-element-card-content {
         grid-column: 1/7;
@@ -30,7 +35,7 @@ const ArchiveElementCardStyle = styled.div`
     }
 `
 
-const ArchiveElementCard = ({ designer }) => (
+const ArchiveElementCard = ({ designer, toggleCard }) => (
     <ArchiveElementCardStyle>
         <div
             className="archive-element-card-content"
@@ -42,30 +47,17 @@ const ArchiveElementCard = ({ designer }) => (
             style={{
                 gridColumn: '10/13',
                 gridRow: '1/3',
-                justifySelf: 'end',
-                width: '100%',
             }}
         />
+        {console.log(designer.frontmatter.projects)}
+        {designer.frontmatter.projects.length != 0 && (
+            <ArchiveElementCardProjects designer={designer.frontmatter.name} />
+        )}
+        {designer.frontmatter.extras.length != 0 && (
+            <ArchiveElementCardExtras designer={designer.frontmatter.name} />
+        )}
+        <CloseCard column="2/13" toggleCard={toggleCard} />
     </ArchiveElementCardStyle>
 )
-
-const NonStretchedImage = props => {
-    let normalizedProps = props
-    if (
-        props.fluid &&
-        props.fluid.presentationWidth &&
-        props.fluid.presentationHeight
-    ) {
-        normalizedProps = {
-            ...props,
-            style: {
-                ...(props.style || {}),
-                maxWidth: props.fluid.presentationWidth,
-            },
-        }
-    }
-
-    return <Img {...normalizedProps} />
-}
 
 export default ArchiveElementCard

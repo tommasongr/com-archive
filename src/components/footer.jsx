@@ -44,13 +44,9 @@ const FooterStyle = styled.footer`
             margin: 0;
             font-weight: 700;
             font-style: italic;
-            font-size: 2.111111111111111rem;
+            font-size: 4.444444444444445rem;
             line-height: 2.7777777777777777rem;
             text-align: end;
-
-            span {
-                color: var(--text-color);
-            }
         }
     }
 `
@@ -140,7 +136,7 @@ const Footer = () => (
                 </p>
             </div>
             <Link to="/" id="footer-logo">
-                <span>archivio</span> com.
+                c.
             </Link>
         </section>
     </FooterStyle>

@@ -5,7 +5,6 @@ import ArchiveElementCard from './archive-element-card'
 
 const ArchiveElementStyle = styled.div`
     width: 100%;
-    // height: 100%;
     border-top: solid 1px var(--text-color);
 
     :last-of-type {
@@ -18,49 +17,54 @@ const ArchiveElementStyle = styled.div`
         align-items: center;
         cursor: pointer;
 
-        span {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-gap: 1.2222222222222223rem;
-        }
-
         :hover {
-            color: var(--accent-color);
+            span {
+                color: var(--accent-color);
+            }
         }
 
         :focus {
-            color: var(--accent-color);
+            span {
+                color: var(--accent-color);
+            }
         }
 
         :active {
             outline: none;
         }
-    }
 
-    span {
-        font-size: 1.1111111111111112rem;
-        line-height: 1.7777777777777777rem;
-        font-weight: 400;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
+        span {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 1.2222222222222223rem;
+            color: var(--text-color);
 
-    .archive-element-year {
-        grid-column: 1/2;
-    }
+            span {
+                font-size: 1.1111111111111112rem;
+                line-height: 1.7777777777777777rem;
+                font-weight: 400;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
 
-    .archive-element-name {
-        grid-column: 2/7;
-        font-weight: 600;
-    }
+            .archive-element-year {
+                grid-column: 1/2;
+            }
 
-    .archive-element-job {
-        grid-column: 7/11;
-    }
+            .archive-element-name {
+                grid-column: 2/7;
+                font-weight: 600;
+            }
 
-    .archive-element-based {
-        grid-column: 11/13;
+            .archive-element-job {
+                grid-column: 7/11;
+            }
+
+            .archive-element-based {
+                grid-column: 11/13;
+            }
+        }
     }
 `
 
@@ -88,21 +92,54 @@ class ArchiveElement extends React.Component {
                     onClick={this.toggleElementCard}
                 >
                     <span>
-                        <span className="archive-element-year">
+                        <span
+                            className="archive-element-year"
+                            style={
+                                this.state.open
+                                    ? { color: 'var(--accent-color)' }
+                                    : { color: '' }
+                            }
+                        >
                             {designer.frontmatter.date}
                         </span>
-                        <span className="archive-element-name">
+                        <span
+                            className="archive-element-name"
+                            style={
+                                this.state.open
+                                    ? { color: 'var(--accent-color)' }
+                                    : { color: '' }
+                            }
+                        >
                             {designer.frontmatter.name}
                         </span>
-                        <span className="archive-element-job">
+                        <span
+                            className="archive-element-job"
+                            style={
+                                this.state.open
+                                    ? { color: 'var(--accent-color)' }
+                                    : { color: '' }
+                            }
+                        >
                             {designer.frontmatter.job}
                         </span>
-                        <span className="archive-element-based">
+                        <span
+                            className="archive-element-based"
+                            style={
+                                this.state.open
+                                    ? { color: 'var(--accent-color)' }
+                                    : { color: '' }
+                            }
+                        >
                             {designer.frontmatter.based}
                         </span>
                     </span>
                 </button>
-                {this.state.open && <ArchiveElementCard designer={designer} />}
+                {this.state.open && (
+                    <ArchiveElementCard
+                        designer={designer}
+                        toggleCard={this.toggleElementCard}
+                    />
+                )}
             </ArchiveElementStyle>
         )
     }

@@ -26,6 +26,7 @@ const Archive = () => {
     const data = useStaticQuery(graphql`
         query Archive {
             allMarkdownRemark(
+                filter: { fileAbsolutePath: { regex: "/designers/" } }
                 sort: { fields: frontmatter___date, order: DESC }
             ) {
                 edges {
@@ -35,6 +36,12 @@ const Archive = () => {
                             date(formatString: "YYYY")
                             job
                             based
+                            projects {
+                                name
+                            }
+                            extras {
+                                name
+                            }
                             img {
                                 childImageSharp {
                                     fluid(

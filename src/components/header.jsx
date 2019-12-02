@@ -66,7 +66,7 @@ const Header = () => (
                     <Link to="/#archivio">Archivio</Link>
                 </li>
                 <li className="header-item">
-                    <Link to="/page-2">About</Link>
+                    <Link to="/page-2">Chi siamo</Link>
                 </li>
                 <li className="header-item">
                     <Link to="/">Contatti</Link>

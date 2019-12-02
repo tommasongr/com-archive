@@ -17,8 +17,29 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                name: `icons`,
+                path: `${__dirname}/src/icons`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
                 name: `designers`,
                 path: `${__dirname}/src/contents/designers`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `projects`,
+                path: `${__dirname}/src/contents/projects`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `extras`,
+                path: `${__dirname}/src/contents/extras`,
             },
         },
         `gatsby-transformer-remark`,

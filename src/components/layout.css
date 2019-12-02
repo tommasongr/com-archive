@@ -9,11 +9,15 @@
     --accent-color-rgb: 238, 2, 2;
 }
 
+/* --bg-color: #141414;
+--text-color: #f0f9ff;
+--accent-color: #ff4848; */
+
 /* @media (prefers-color-scheme: dark) {
     :root {
-        --bg-color: #141414;
-        --text-color: #f0f9ff;
-        --accent-color: #ff4848;
+        --bg-color: #111111;
+        --text-color: #f9f9fa;
+        --accent-color: #18ffff;
     }
 } */
 
@@ -66,9 +70,9 @@ a:focus {
     outline: dashed 1px var(--accent-color);
 }
 
-/* a:active {
+a:active {
     outline: none;
-} */
+}
 
 button {
     -webkit-appearance: none;
@@ -87,9 +91,9 @@ button:focus {
     outline: dashed 1px var(--accent-color);
 }
 
-button:active {
+/* button:active {
     outline: dashed 1px var(--accent-color);
-}
+} */
 
 button::-moz-focus-inner {
     border: none;
