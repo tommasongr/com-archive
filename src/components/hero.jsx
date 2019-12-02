@@ -3,6 +3,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 
+import SocialIcon from './social-icon'
+
 import TwitterIcon from '../icons/twitter.svg'
 import InstagramIcon from '../icons/instagram.svg'
 import GithubIcon from '../icons/github.svg'
@@ -12,7 +14,7 @@ const HeroStyle = styled.div`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, min-content) 1fr;
-    // grid-gap: 1.2222222222222223rem;
+    grid-column-gap: 1.2222222222222223rem;
     height: calc(100vh - 7.222222222222222rem);
     grid-auto-rows: min-content;
     position: relative;
@@ -86,7 +88,7 @@ const HeroStyle = styled.div`
 const Hero = () => {
     const data = useStaticQuery(graphql`
         query HeroImage {
-            placeholderImage: file(relativePath: { eq: "beatrice.png" }) {
+            file(relativePath: { eq: "beatrice.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 1000) {
                         ...GatsbyImageSharpFluid
@@ -109,6 +111,7 @@ const Hero = () => {
                 in un unico luogo.
             </h2>
             <div id="hero-social">
+                {/* <SocialIcon /> */}
                 <img src={TwitterIcon} alt="" />
                 <img src={InstagramIcon} alt="" />
                 <img src={GithubIcon} alt="" />
@@ -129,7 +132,7 @@ const Hero = () => {
             </div>
             <div id="hero-arrows"></div>
             <Img
-                fluid={data.placeholderImage.childImageSharp.fluid}
+                fluid={data.file.childImageSharp.fluid}
                 style={{
                     position: 'absolute',
                     bottom: 0,

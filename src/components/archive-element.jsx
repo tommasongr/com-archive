@@ -1,63 +1,152 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import ArchiveElementCard from './archive-element-card'
+
 const ArchiveElementStyle = styled.div`
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 1.2222222222222223rem;
+    width: 100%;
     border-top: solid 1px var(--text-color);
-    height: 3.111111111111111rem;
-    align-items: center;
-    cursor: pointer;
 
     :last-of-type {
         border-bottom: solid 1px var(--text-color);
     }
 
-    :hover {
-        color: var(--accent-color);
-    }
+    .archive-element-button {
+        width: 100%;
+        height: 3.111111111111111rem;
+        align-items: center;
+        cursor: pointer;
 
-    span {
-        font-size: 1.1111111111111112rem;
-        line-height: 1.7777777777777777rem;
-        font-weight: 400;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
+        :hover {
+            span {
+                color: var(--accent-color);
+            }
+        }
 
-    .archive-element-year {
-        grid-column: 1/2;
-    }
+        :focus {
+            span {
+                color: var(--accent-color);
+            }
+        }
 
-    .archive-element-name {
-        grid-column: 2/7;
-        font-weight: 600;
-    }
+        :active {
+            outline: none;
+        }
 
-    .archive-element-job {
-        grid-column: 7/11;
-    }
+        span {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 1.2222222222222223rem;
+            color: var(--text-color);
 
-    .archive-element-based {
-        grid-column: 11/13;
+            span {
+                font-size: 1.1111111111111112rem;
+                line-height: 1.7777777777777777rem;
+                font-weight: 400;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .archive-element-year {
+                grid-column: 1/2;
+            }
+
+            .archive-element-name {
+                grid-column: 2/7;
+                font-weight: 600;
+            }
+
+            .archive-element-job {
+                grid-column: 7/11;
+            }
+
+            .archive-element-based {
+                grid-column: 11/13;
+            }
+        }
     }
 `
 
-const ArchiveElement = ({ designer }) => (
-    <ArchiveElementStyle>
-        <span className="archive-element-year">
-            {designer.frontmatter.date}
-        </span>
-        <span className="archive-element-name">
-            {designer.frontmatter.name}
-        </span>
-        <span className="archive-element-job">{designer.frontmatter.job}</span>
-        <span className="archive-element-based">
-            {designer.frontmatter.based}
-        </span>
-    </ArchiveElementStyle>
-)
+class ArchiveElement extends React.Component {
+    constructor(props) {
+        super(props)
+        this.toggleElementCard = this.toggleElementCard.bind(this)
+        this.state = {
+            open: false,
+        }
+    }
+
+    toggleElementCard() {
+        this.setState(prevState => ({
+            open: !prevState.open,
+        }))
+    }
+
+    render() {
+        const { designer } = this.props
+        return (
+            <ArchiveElementStyle>
+                <button
+                    className="archive-element-button"
+                    onClick={this.toggleElementCard}
+                >
+                    <span>
+                        <span
+                            className="archive-element-year"
+                            style={
+                                this.state.open
+                                    ? { color: 'var(--accent-color)' }
+                                    : { color: '' }
+                            }
+                        >
+                            {designer.frontmatter.date}
+                        </span>
+                        <span
+                            className="archive-element-name"
+                            style={
+                                this.state.open
+                                    ? { color: 'var(--accent-color)' }
+                                    : { color: '' }
+                            }
+                        >
+                            {designer.frontmatter.name}
+                        </span>
+                        <span
+                            className="archive-element-job"
+                            style={
+                                this.state.open
+                                    ? { color: 'var(--accent-color)' }
+                                    : { color: '' }
+                            }
+                        >
+                            {designer.frontmatter.job}
+                        </span>
+                        <span
+                            className="archive-element-based"
+                            style={
+                                this.state.open
+                                    ? { color: 'var(--accent-color)' }
+                                    : { color: '' }
+                            }
+                        >
+                            {designer.frontmatter.based}
+                        </span>
+                    </span>
+                </button>
+                {this.state.open && (
+                    <ArchiveElementCard
+                        designer={designer}
+                        toggleCard={this.toggleElementCard}
+                    />
+                )}
+            </ArchiveElementStyle>
+        )
+    }
+}
+
+// const ArchiveElement = ({ designer }) => (
+
+// )
 
 export default ArchiveElement

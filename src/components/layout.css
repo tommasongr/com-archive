@@ -1,5 +1,6 @@
 :root {
-    --bg-color: #f0f9ff;
+    /* --bg-color: #f0f9ff; */
+    --bg-color: #f9f9fa;
     --text-color: #444444;
     --accent-color: #ee0202;
 
@@ -8,11 +9,15 @@
     --accent-color-rgb: 238, 2, 2;
 }
 
+/* --bg-color: #141414;
+--text-color: #f0f9ff;
+--accent-color: #ff4848; */
+
 /* @media (prefers-color-scheme: dark) {
     :root {
-        --bg-color: #141414;
-        --text-color: #f0f9ff;
-        --accent-color: #ff4848;
+        --bg-color: #111111;
+        --text-color: #f9f9fa;
+        --accent-color: #18ffff;
     }
 } */
 
@@ -47,6 +52,12 @@ h2 {
     margin-bottom: 2.2222222222222223rem;
 }
 
+p {
+    font-size: 1rem;
+    line-height: 1.6666666666666667rem;
+    margin: 0;
+}
+
 a {
     color: inherit;
 }
@@ -57,6 +68,10 @@ a:hover {
 
 a:focus {
     outline: dashed 1px var(--accent-color);
+}
+
+a:active {
+    outline: none;
 }
 
 button {
@@ -76,9 +91,9 @@ button:focus {
     outline: dashed 1px var(--accent-color);
 }
 
-button:active {
+/* button:active {
     outline: dashed 1px var(--accent-color);
-}
+} */
 
 button::-moz-focus-inner {
     border: none;
