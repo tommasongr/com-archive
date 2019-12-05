@@ -17,9 +17,17 @@
     :root {
         --bg-color: #111111;
         --text-color: #f9f9fa;
-        --accent-color: #18ffff;
+        --accent-color: #ff4747;
     }
 } */
+
+/* filter: sepia(0.1) saturate(100) brightness(100) hue-rotate(355deg);
+
+filter: sepia(0.1) saturate(100) brightness(100);
+
+filter: sepia(0.1) saturate(100);
+
+filter: sepia(0.1); */
 
 html {
     font-family: 'Suisse Works', serif;

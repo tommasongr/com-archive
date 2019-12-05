@@ -4,8 +4,6 @@ job: The Visual Agency
 based: Milano
 date: 2019-11-29
 img: '../../images/beatrice.jpeg'
-projects: []
-extras: []
 ---
 
 Sono una grafica e type designer, principalmente mi occupo quindi di

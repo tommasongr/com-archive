@@ -37,6 +37,7 @@ const ArchiveElementCardExtras = ({ designer }) => {
                             date(formatString: "YYYY")
                         }
                         timeToRead
+                        html
                     }
                 }
             }

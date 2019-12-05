@@ -4,8 +4,6 @@ job: LeftLoft
 based: Milano
 date: 2019-11-20
 img: '../../images/beatrice.jpeg'
-projects: [../projects/nuovo-devoto-oli.md, ../projects/test-2.md]
-extras: [../extras/il-type-design-in-italia.md]
 ---
 
 Sono una grafica e type designer, principalmente mi occupo quindi di

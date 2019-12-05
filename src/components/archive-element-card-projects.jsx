@@ -35,7 +35,7 @@ const ArchiveElementCardProjects = ({ designer }) => {
                             client
                             year
                             designer
-                            thumbnail {
+                            preview {
                                 childImageSharp {
                                     fluid(maxWidth: 500, quality: 100) {
                                         ...GatsbyImageSharpFluid
@@ -43,7 +43,16 @@ const ArchiveElementCardProjects = ({ designer }) => {
                                     }
                                 }
                             }
+                            images {
+                                childImageSharp {
+                                    fluid(quality: 100) {
+                                        ...GatsbyImageSharpFluid
+                                        presentationWidth
+                                    }
+                                }
+                            }
                         }
+                        html
                     }
                 }
             }
