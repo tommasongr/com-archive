@@ -4,8 +4,6 @@ job: Freelancer
 based: New York
 date: 2019-11-25
 img: '../../images/beatrice.jpeg'
-projects: []
-extras: []
 ---
 
 Sono una grafica e type designer, principalmente mi occupo quindi di

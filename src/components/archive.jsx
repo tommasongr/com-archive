@@ -5,22 +5,7 @@ import styled from 'styled-components'
 import ArchiveControls from '../components/archive-controls'
 import ArchiveElement from '../components/archive-element'
 
-const ArchiveStyled = styled.div`
-    display: grid;
-    grid-auto-rows: auto;
-`
-
-const GridStyle = styled.div`
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 1.2222222222222223rem;
-
-    div {
-        background-color: pink;
-        width: 100%;
-        height: 20px;
-    }
-`
+const ArchiveStyle = styled.div``
 
 const Archive = () => {
     const data = useStaticQuery(graphql`
@@ -36,12 +21,6 @@ const Archive = () => {
                             date(formatString: "YYYY")
                             job
                             based
-                            projects {
-                                name
-                            }
-                            extras {
-                                name
-                            }
                             img {
                                 childImageSharp {
                                     fluid(
@@ -62,29 +41,57 @@ const Archive = () => {
         }
     `)
 
-    return (
-        <ArchiveStyled id="archivio">
-            {/* <GridStyle>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </GridStyle> */}
-            <ArchiveControls />
-            <ArchiveLabels />
-            {data.allMarkdownRemark.edges.map(({ node }) => (
-                <ArchiveElement designer={node} />
-            ))}
-        </ArchiveStyled>
-    )
+    return <ArchiveState data={data}></ArchiveState>
+}
+
+class ArchiveState extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            archiveSearch: '',
+        }
+    }
+
+    searchArchive(query) {
+        this.setState({
+            archiveSearch: query.target.value,
+        })
+    }
+
+    render() {
+        const { data } = this.props
+        const { archiveSearch } = this.state
+        return (
+            <ArchiveStyle id="archivio">
+                <ArchiveControls
+                    archiveSearch={this.state.archiveSearch}
+                    searchArchive={this.searchArchive.bind(this)}
+                />
+                <ArchiveLabels />
+                {archiveSearch == ''
+                    ? data.allMarkdownRemark.edges.map(({ node }) => (
+                          <ArchiveElement designer={node} />
+                      ))
+                    : data.allMarkdownRemark.edges
+                          .filter(
+                              ({ node }) =>
+                                  node.frontmatter.name
+                                      .toLowerCase()
+                                      .includes(
+                                          this.state.archiveSearch.toLowerCase()
+                                      ) ||
+                                  node.frontmatter.job
+                                      .toLowerCase()
+                                      .includes(
+                                          this.state.archiveSearch.toLowerCase()
+                                      )
+                          )
+                          .map(({ node }) => (
+                              <ArchiveElement designer={node} />
+                          ))}
+            </ArchiveStyle>
+        )
+    }
 }
 
 const ArchiveLabelsStyle = styled.div`

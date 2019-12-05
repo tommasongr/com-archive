@@ -1,5 +1,4 @@
 import React from 'react'
-import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 import NonStretchedImage from './non-stretched-image'
@@ -49,13 +48,14 @@ const ArchiveElementCard = ({ designer, toggleCard }) => (
                 gridRow: '1/3',
             }}
         />
-        {console.log(designer.frontmatter.projects)}
-        {designer.frontmatter.projects.length != 0 && (
-            <ArchiveElementCardProjects designer={designer.frontmatter.name} />
-        )}
-        {designer.frontmatter.extras.length != 0 && (
-            <ArchiveElementCardExtras designer={designer.frontmatter.name} />
-        )}
+        <ArchiveElementCardProjects designer={designer.frontmatter.name} />
+        <ArchiveElementCardExtras designer={designer.frontmatter.name} />
+        {/* {designer.frontmatter.projects.length != 0 && (
+            
+        )} */}
+        {/* {designer.frontmatter.extras.length != 0 && (
+        
+        )} */}
         <CloseCard column="2/13" toggleCard={toggleCard} />
     </ArchiveElementCardStyle>
 )

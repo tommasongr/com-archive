@@ -42,9 +42,21 @@ module.exports = {
                 path: `${__dirname}/src/contents/extras`,
             },
         },
-        `gatsby-transformer-remark`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
+        {
+            resolve: 'gatsby-transformer-remark',
+            options: {
+                gatsbyRemarkPlugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 1200,
+                        },
+                    },
+                ],
+            },
+        },
         {
             resolve: 'gatsby-plugin-web-font-loader',
             options: {

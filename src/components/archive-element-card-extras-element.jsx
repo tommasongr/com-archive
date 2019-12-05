@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
 
-import NonStretchedImage from './non-stretched-image'
+import ArchiveElementCardExtrasElementCard from './archive-element-card-extras-element-card'
 
 const ArchiveElementCardExtrasElementStyle = styled.div`
     grid-column: 1/12;
@@ -34,7 +33,7 @@ const ArchiveElementCardExtrasElementStyle = styled.div`
             outline: none;
         }
 
-        span {
+        .archive-element-card-extras-element-button-content {
             display: grid;
             grid-template-columns: repeat(11, 1fr);
             grid-gap: 1.2222222222222223rem;
@@ -72,14 +71,29 @@ const ArchiveElementCardExtrasElementStyle = styled.div`
 class ArchiveElementCardExtrasElement extends React.Component {
     constructor(props) {
         super(props)
+        this.toggleElementCardExtrasElementCard = this.toggleElementCardExtrasElementCard.bind(
+            this
+        )
+        this.state = {
+            elementCardExtrasElementCardOpend: false,
+        }
+    }
+
+    toggleElementCardExtrasElementCard() {
+        this.setState(prevState => ({
+            elementCardExtrasElementCardOpend: !prevState.elementCardExtrasElementCardOpend,
+        }))
     }
 
     render() {
         const { extras } = this.props
         return (
             <ArchiveElementCardExtrasElementStyle>
-                <button className="archive-element-card-projects-element-button">
-                    <span>
+                <button
+                    className="archive-element-card-projects-element-button"
+                    onClick={this.toggleElementCardExtrasElementCard}
+                >
+                    <span className="archive-element-card-extras-element-button-content">
                         <span className="archive-element-card-proextrasjects-element-year">
                             {extras.frontmatter.date}
                         </span>
@@ -92,21 +106,14 @@ class ArchiveElementCardExtrasElement extends React.Component {
                         <span className="archive-element-card-extras-element-timing">
                             {extras.timeToRead} min
                         </span>
-                        {/* <NonStretchedImage
-                            fluid={
-                                project.frontmatter.thumbnail.childImageSharp
-                                    .fluid
-                            }
-                            imgStyle={{
-                                objectFit: 'contain',
-                                objectPosition: '100% 0',
-                            }}
-                            style={{
-                                gridColumn: '10/12',
-                            }}
-                        /> */}
                     </span>
                 </button>
+                {this.state.elementCardExtrasElementCardOpend && (
+                    <ArchiveElementCardExtrasElementCard
+                        extras={extras}
+                        toggleCard={this.toggleElementCardExtrasElementCard}
+                    />
+                )}
             </ArchiveElementCardExtrasElementStyle>
         )
     }

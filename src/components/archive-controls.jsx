@@ -15,10 +15,6 @@ const ArchiveControlsStyle = styled.div`
         grid-column: 1/4;
         height: 100%;
         max-height: 3.111111111111111rem;
-
-        :focus-within {
-            outline: dashed 1px var(--accent-color);
-        }
     }
 
     #archive-search {
@@ -34,6 +30,10 @@ const ArchiveControlsStyle = styled.div`
         color: var(--text-color);
         max-height: 3.111111111111111rem;
         padding: 0;
+
+        :focus {
+            border-bottom-color: var(--accent-color);
+        }
     }
 
     #archive-random {
@@ -159,7 +159,7 @@ const ArchiveControlsStyle = styled.div`
     }
 `
 
-const ArchiveControls = () => (
+const ArchiveControls = ({ archiveSearch, searchArchive }) => (
     <ArchiveControlsStyle>
         {/* Search box */}
         <div id="archive-search-container">
@@ -168,6 +168,8 @@ const ArchiveControls = () => (
                 placeholder="Cerca nell'archivio..."
                 name=""
                 id="archive-search"
+                value={archiveSearch}
+                onChange={query => searchArchive(query)}
             />
         </div>
         <button id="archive-random">Random ??</button>

@@ -1,15 +1,22 @@
 ---
 name: Nuovo Devoto Oli
 client: Mondadori Education
-year: 2016
+year: 2017
 designer: [Beatrice D'Agostino]
-thumbnail: ../../images/devoto-oli-01.jpg
+preview: ../../images/devoto-oli-01.jpg
+images:
+    [
+        ../../images/devoto-oli-01.jpg,
+        ../../images/devoto-oli-02.jpg,
+        ../../images/devoto-oli-03.jpg,
+    ]
 date: 2019-12-02
 ---
 
-Sono una grafica e type designer, principalmente mi occupo quindi di
-progettazione di caratteri. Lavoro per lo studio LeftLoft e in
-particolare curo l’aspetto tipografico dei progetti, quando ad
-esempio in un progetto di branding si deve realizzare un alfabeto ad
-hoc o un logotipo chiamano me; aiuto anche in generale nella scelta
-dei font per i vari progetti.
+Il progetto realizzato dallo studio LeftLoft per la riedizione del dizionario Devoto Oli al quale ho collaborato, è stato molto bello da realizzare, anche perché abbiamo progettato a stretto contatto con l’editore. I dizionari in generale sono molto rigorosi, di conseguenza difficili da modificare, ma le nuove soluzioni grafiche sono piaciute così tanto al cliente che hanno provveduto a creare nuovi contenuti appositamente.
+
+Riconoscimento: **Certificate of Typographic Excellence** TCD64  
+Riconoscimento: Bronzo al **Laus Awards**<br><br>
+Realizzato in LeftLoft per Mondadori Education  
+Milano, **2016 - 2017**<br><br>
+[Scopri di più](http://beatricedagostino.com/nuovo-devoto-oli.html)
