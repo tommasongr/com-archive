@@ -99,7 +99,7 @@ const ArchiveControlsStyle = styled.div`
         }
     }
 
-    #archive-fields {
+    #archive-job-fields {
         grid-column: 9/11;
     }
 
@@ -159,7 +159,14 @@ const ArchiveControlsStyle = styled.div`
     }
 `
 
-const ArchiveControls = ({ archiveSearch, searchArchive }) => (
+const ArchiveControls = ({
+    archiveSearch,
+    searchArchive,
+    filterArchiveJob,
+    filterArchiveJobFields,
+    filterArchiveAbroad,
+    filterArchiveAwards,
+}) => (
     <ArchiveControlsStyle>
         {/* Search box */}
         <div id="archive-search-container">
@@ -175,26 +182,35 @@ const ArchiveControls = ({ archiveSearch, searchArchive }) => (
         <button id="archive-random">Random ??</button>
         {/* Select for job status */}
         <div className="archive-wrapper" id="archive-job">
-            <select>
-                <option value="" disabled selected>
-                    Stato lavorativo
-                </option>
-                <option value="volvo">Agenzia o studio</option>
-                <option value="saab">Freelancer</option>
-                <option value="mercedes">Azienda</option>
+            <select defaultValue="" onChange={value => filterArchiveJob(value)}>
+                <option value="">Stato lavorativo (tutti)</option>
+                <option value="Agenzia o studio">Agenzia o studio</option>
+                <option value="Freelancer">Freelancer</option>
+                <option value="Azienda (interno)">Azienda (interno)</option>
             </select>
             <div className="archive-arrow"></div>
         </div>
         {/* Select for job field */}
-        <div className="archive-wrapper" id="archive-fields">
-            <select>
-                <option value="" disabled selected>
-                    Ambito
+        <div className="archive-wrapper" id="archive-job-fields">
+            <select
+                defaultValue=""
+                onChange={value => filterArchiveJobFields(value)}
+            >
+                <option value="">Ambito (tutti)</option>
+                <option value="Graphic design">Graphic design</option>
+                <option value="Brand design">Brand design</option>
+                <option value="Editorial design">Editorial design</option>
+                <option value="Illustration">Illustration</option>
+                <option value="Information design">Information design</option>
+                <option value="Motion design">Motion design</option>
+                <option value="Type design">Type design</option>
+                <option value="Advertising">Advertising</option>
+                <option value="3D artist">3D artist</option>
+                <option value="UI/UX design">UI/UX design</option>
+                <option value="Digital product design">
+                    Digital product design
                 </option>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
+                <option value="Web design">Web design</option>
             </select>
             <div className="archive-arrow"></div>
         </div>
@@ -210,6 +226,7 @@ const ArchiveControls = ({ archiveSearch, searchArchive }) => (
                 name="Estero"
                 className="archive-checkbox-input"
                 id="archive-abroad"
+                onChange={filterArchiveAbroad}
             />
         </label>
         {/* Checkbox for awards */}
@@ -224,6 +241,7 @@ const ArchiveControls = ({ archiveSearch, searchArchive }) => (
                 name="Premi"
                 className="archive-checkbox-input"
                 id="archive-awards"
+                onChange={filterArchiveAwards}
             />
         </label>
     </ArchiveControlsStyle>

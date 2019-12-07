@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import NonStretchedImage from './non-stretched-image'
+// import NonStretchedImage from './non-stretched-image'
 import CloseCard from './close-card'
 
 const ArchiveElementCardExtrasElementCardStyle = styled.div`

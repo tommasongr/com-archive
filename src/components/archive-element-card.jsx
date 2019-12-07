@@ -50,12 +50,6 @@ const ArchiveElementCard = ({ designer, toggleCard }) => (
         />
         <ArchiveElementCardProjects designer={designer.frontmatter.name} />
         <ArchiveElementCardExtras designer={designer.frontmatter.name} />
-        {/* {designer.frontmatter.projects.length != 0 && (
-            
-        )} */}
-        {/* {designer.frontmatter.extras.length != 0 && (
-        
-        )} */}
         <CloseCard column="2/13" toggleCard={toggleCard} />
     </ArchiveElementCardStyle>
 )

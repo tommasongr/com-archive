@@ -30,6 +30,7 @@ const ArchiveElementCardProjects = ({ designer }) => {
             ) {
                 edges {
                     node {
+                        id
                         frontmatter {
                             name
                             client
@@ -44,6 +45,7 @@ const ArchiveElementCardProjects = ({ designer }) => {
                                 }
                             }
                             images {
+                                id
                                 childImageSharp {
                                     fluid(quality: 100) {
                                         ...GatsbyImageSharpFluid
@@ -66,7 +68,10 @@ const ArchiveElementCardProjects = ({ designer }) => {
             {data.allMarkdownRemark.edges.map(
                 ({ node }) =>
                     node.frontmatter.designer.includes(designer) && (
-                        <ArchiveElementCardProjectsElement project={node} />
+                        <ArchiveElementCardProjectsElement
+                            key={node.id}
+                            project={node}
+                        />
                     )
             )}
         </ArchiveElementCardProjectsStyle>

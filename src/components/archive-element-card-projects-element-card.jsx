@@ -1,5 +1,4 @@
 import React from 'react'
-import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 import NonStretchedImage from './non-stretched-image'
@@ -47,13 +46,13 @@ const ArchiveElementCardProjectsElementCard = ({ project, toggleCard }) => (
             className="archive-element-card-projects-element-card-content"
             dangerouslySetInnerHTML={{ __html: project.html }}
         />
-        {console.log(project.frontmatter.images)}
         <div className="archive-element-card-projects-element-card-images">
             {project.frontmatter.images.map(image => (
                 <NonStretchedImage
                     fluid={image.childImageSharp.fluid}
                     imgStyle={{ objectFit: 'cover', objectPosition: '0 0' }}
                     style={{ gridColumn: '1/2' }}
+                    key={image.id}
                 />
             ))}
         </div>

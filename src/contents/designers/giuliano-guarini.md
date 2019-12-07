@@ -1,7 +1,9 @@
 ---
 name: Giuliano Guarini
-job: Freelancer
-based: Milano
+job: { 'type': 'Freelancer', 'company': '-' }
+jobFields: ['Brand design']
+based: { 'country': 'Italia', 'city': 'Milano' }
+awards: false
 date: 2019-11-28
 img: '../../images/giuliano.jpg'
 ---

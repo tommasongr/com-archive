@@ -1,7 +1,9 @@
 ---
 name: Beatrice D'Agostino
-job: LeftLoft
-based: Milano
+job: { 'type': 'Agenzia o studio', 'company': 'LeftLoft' }
+jobFields: ['Brand design']
+based: { 'country': 'Italia', 'city': 'Milano' }
+awards: false
 date: 2019-11-20
 img: '../../images/beatrice.jpeg'
 ---

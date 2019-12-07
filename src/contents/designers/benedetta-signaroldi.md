@@ -1,7 +1,9 @@
 ---
 name: Benedetta Signaroldi
-job: The Visual Agency
-based: Milano
+job: { 'type': 'Agenzia o studio', 'company': 'The Visual Agency' }
+jobFields: ['Brand design']
+based: { 'country': 'Italia', 'city': 'Milano' }
+awards: false
 date: 2019-11-29
 img: '../../images/beatrice.jpeg'
 ---

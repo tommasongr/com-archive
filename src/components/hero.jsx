@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 
-import SocialIcon from './social-icon'
+// import SocialIcon from './social-icon'
 
 import TwitterIcon from '../icons/twitter.svg'
 import InstagramIcon from '../icons/instagram.svg'

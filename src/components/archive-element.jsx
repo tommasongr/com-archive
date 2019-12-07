@@ -120,7 +120,9 @@ class ArchiveElement extends React.Component {
                                     : { color: '' }
                             }
                         >
-                            {designer.frontmatter.job}
+                            {designer.frontmatter.job.company === '-'
+                                ? 'Freelancer'
+                                : designer.frontmatter.job.company}
                         </span>
                         <span
                             className="archive-element-based"
@@ -130,7 +132,7 @@ class ArchiveElement extends React.Component {
                                     : { color: '' }
                             }
                         >
-                            {designer.frontmatter.based}
+                            {designer.frontmatter.based.city}
                         </span>
                     </span>
                 </button>
