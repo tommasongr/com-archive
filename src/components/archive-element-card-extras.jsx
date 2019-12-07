@@ -30,6 +30,7 @@ const ArchiveElementCardExtras = ({ designer }) => {
             ) {
                 edges {
                     node {
+                        id
                         frontmatter {
                             name
                             content_type
@@ -51,7 +52,10 @@ const ArchiveElementCardExtras = ({ designer }) => {
             {data.allMarkdownRemark.edges.map(
                 ({ node }) =>
                     node.frontmatter.designer.includes(designer) && (
-                        <ArchiveElementCardExtrasElement extras={node} />
+                        <ArchiveElementCardExtrasElement
+                            key={node.id}
+                            extras={node}
+                        />
                     )
             )}
         </ArchiveElementCardExtrasStyle>

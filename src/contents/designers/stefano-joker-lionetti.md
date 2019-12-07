@@ -1,7 +1,9 @@
 ---
 name: Stefano Joker Lionetti
-job: Zetalab
-based: Milano
+job: { 'type': 'Agenzia o studio', 'company': 'Zetalab' }
+jobFields: ['Brand design', 'Editorial design']
+based: { 'country': 'Italia', 'city': 'Milano' }
+awards: true
 date: 2019-11-28
 img: '../../images/stefano-joker-lionetti.jpg'
 ---

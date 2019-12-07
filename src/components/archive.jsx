@@ -16,11 +16,20 @@ const Archive = () => {
             ) {
                 edges {
                     node {
+                        id
                         frontmatter {
                             name
+                            job {
+                                type
+                                company
+                            }
+                            jobFields
+                            based {
+                                country
+                                city
+                            }
+                            awards
                             date(formatString: "YYYY")
-                            job
-                            based
                             img {
                                 childImageSharp {
                                     fluid(
@@ -49,6 +58,10 @@ class ArchiveState extends React.Component {
         super(props)
         this.state = {
             archiveSearch: '',
+            archiveJob: '',
+            archiveJobFields: '',
+            archiveAbroad: false,
+            archiveAwards: false,
         }
     }
 
@@ -58,37 +71,90 @@ class ArchiveState extends React.Component {
         })
     }
 
+    filterArchiveJob(value) {
+        this.setState({
+            archiveJob: value.target.value,
+        })
+    }
+
+    filterArchiveJobFields(query) {
+        this.setState({
+            archiveJobFields: query.target.value,
+        })
+    }
+
+    filterArchiveAbroad() {
+        this.setState(prevState => ({
+            archiveAbroad: !prevState.archiveAbroad,
+        }))
+    }
+
+    filterArchiveAwards() {
+        this.setState(prevState => ({
+            archiveAwards: !prevState.archiveAwards,
+        }))
+    }
+
     render() {
         const { data } = this.props
-        const { archiveSearch } = this.state
         return (
             <ArchiveStyle id="archivio">
                 <ArchiveControls
                     archiveSearch={this.state.archiveSearch}
                     searchArchive={this.searchArchive.bind(this)}
+                    filterArchiveJob={this.filterArchiveJob.bind(this)}
+                    filterArchiveJobFields={this.filterArchiveJobFields.bind(
+                        this
+                    )}
+                    filterArchiveAbroad={this.filterArchiveAbroad.bind(this)}
+                    filterArchiveAwards={this.filterArchiveAwards.bind(this)}
                 />
                 <ArchiveLabels />
-                {archiveSearch == ''
-                    ? data.allMarkdownRemark.edges.map(({ node }) => (
-                          <ArchiveElement designer={node} />
-                      ))
-                    : data.allMarkdownRemark.edges
-                          .filter(
-                              ({ node }) =>
-                                  node.frontmatter.name
-                                      .toLowerCase()
-                                      .includes(
-                                          this.state.archiveSearch.toLowerCase()
-                                      ) ||
-                                  node.frontmatter.job
-                                      .toLowerCase()
-                                      .includes(
-                                          this.state.archiveSearch.toLowerCase()
-                                      )
-                          )
-                          .map(({ node }) => (
-                              <ArchiveElement designer={node} />
-                          ))}
+                {data.allMarkdownRemark.edges
+                    .filter(({ node }) =>
+                        this.state.archiveSearch !== ''
+                            ? node.frontmatter.name
+                                  .toLowerCase()
+                                  .includes(
+                                      this.state.archiveSearch.toLowerCase()
+                                  ) ||
+                              node.frontmatter.job.company
+                                  .toLowerCase()
+                                  .includes(
+                                      this.state.archiveSearch.toLowerCase()
+                                  )
+                            : node
+                    )
+                    .filter(({ node }) =>
+                        this.state.archiveJob !== ''
+                            ? this.state.archiveJob ===
+                              node.frontmatter.job.type
+                            : node
+                    )
+                    .filter(({ node }) =>
+                        this.state.archiveJobFields !== ''
+                            ? node.frontmatter.jobFields.includes(
+                                  this.state.archiveJobFields
+                              )
+                            : node
+                    )
+                    .filter(({ node }) =>
+                        this.state.archiveAbroad === true
+                            ? node.frontmatter.based.country !== 'Italia'
+                            : node
+                    )
+                    .filter(({ node }) =>
+                        this.state.archiveAwards === true
+                            ? node.frontmatter.awards === true
+                            : node
+                    )
+                    .map(({ node }) => (
+                        <ArchiveElement
+                            designer={node}
+                            key={node.id}
+                            id={node.frontmatter.name.toLowerCase()}
+                        />
+                    ))}
             </ArchiveStyle>
         )
     }
