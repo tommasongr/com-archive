@@ -1,8 +1,9 @@
 ---
 name: Il type design in Italia
 content_type: Conversazione
-designer: [Beatrice D'Agostino]
-date: 2019-11-28
+designer:
+  - Beatrice D'Agostino
+date: 2019-11-28T00:00:00.000Z
 ---
 
 ### Ciao Beatrice, chi sei e di cosa ti occupi?
