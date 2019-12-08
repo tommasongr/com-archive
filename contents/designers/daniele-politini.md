@@ -1,10 +1,15 @@
 ---
 name: Daniele Politini
-job: { 'type': 'Freelancer', 'company': '-' }
-jobFields: ['Brand design']
-based: { 'country': 'USA', 'city': 'New York' }
+job:
+  company: '-'
+  type: Freelancer
+jobFields:
+  - Brand design
+based:
+  city: New York
+  country: USA
 awards: true
-date: 2019-11-25
+date: 2019-11-25T00:00:00.000Z
 img: ../../static/assets/beatrice.jpeg
 ---
 
