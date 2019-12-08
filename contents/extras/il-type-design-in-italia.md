@@ -2,7 +2,7 @@
 name: Il type design in Italia
 content_type: Conversazione
 designer:
-  - Beatrice D'Agostino
+    - Beatrice D'Agostino
 date: 2019-11-28T00:00:00.000Z
 ---
 
@@ -17,7 +17,7 @@ Mi occupo anche dell’insegnamento della materia e a breve uscirà un carattere
 Durante l'esperienza universitaria non mi sono mai interessata molto a questa materia, ho frequentato durante la triennale la facoltà di moda e mi sono occupata più della parte grafica. Quando poi ho intrapreso il percorso in Design della Comunicazione la tipografia mi ha subito affascinata ma la ritenevo molto difficile, infatti l’amore per il type design è nato in un secondo momento durante il tirocinio a Berlino in uno studio tedesco.  
 Mi è piaciuta da subito l’idea di lavorare su qualcosa in cui i dettagli sono molto importanti ma al tempo stesso quasi impercettibili, infatti quando osservi un alfabeto o un paragrafo realizzato con un determinato carattere, non vedi i dettagli delle singole lettere ma ciò che sono in grado di restituirti nel loro insieme, questa è la magia del type design.
 
-<!-- ![Hopper The Rabbit](../../images/il-type-design-in-italia-01.png) -->
+![Hopper The Rabbit](../../static/assets/il-type-design-in-italia-01.png)
 
 ### Come hai vissuto il passaggio da moda a comunicazione?
 
@@ -28,6 +28,8 @@ Ho deciso poi che sarei passata a Comunicazione perché mi piaceva l’idea di f
 ### Come giudicheresti la situazione del type design in Italia?
 
 In Italia ci sono stati tempi d’oro per la tipografia risalenti ad esempio a Manuzio, però poi dopo Novarese questo ambito si è un pò spento e siamo in pochi ora rispetto a prima. Quando sono rientrata da Berlino infatti è piaciuta subito la preparazione che racchiudeva conoscenze di type design e ho trovato il mio spazio qui a Milano.
+
+![Hopper The Rabbit](../../static/assets/il-type-design-in-italia-02.png)
 
 ### Cosa dovremmo fare per rimanere al passo?
 

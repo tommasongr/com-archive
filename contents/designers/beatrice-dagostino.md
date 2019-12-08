@@ -1,16 +1,16 @@
 ---
 name: Beatrice D'Agostino
 job:
-  company: LeftLoft
-  type: Agenzia o studio
+    company: LeftLoft
+    type: Agenzia o studio
 jobFields:
-  - Brand design
+    - Brand design
 based:
-  city: Milano
-  country: Italia
+    city: Milano
+    country: Italia
 awards: false
 date: 2019-11-20T00:00:00.000Z
-img: ../../static/assets/beatrice.png
+img: ../../static/assets/beatrice.jpeg
 ---
 
 Sono una grafica e type designer, principalmente mi occupo quindi di

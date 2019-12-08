@@ -92,7 +92,12 @@ module.exports = {
                 icon: `src/images/archiviocom-icon.png`, // This path is relative to the root of the site.
             },
         },
-        `gatsby-plugin-netlify-cms`,
+        {
+            resolve: `gatsby-plugin-netlify-cms`,
+            options: {
+                modulePath: `${__dirname}/src/cms/cms.js`,
+            },
+        },
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,
