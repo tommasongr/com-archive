@@ -10,7 +10,7 @@ based:
   country: Italia
 awards: false
 date: 2019-11-20T00:00:00.000Z
-img: ../../static/assets/beatrice.jpeg
+img: ../../static/assets/beatrice.png
 ---
 
 Sono una grafica e type designer, principalmente mi occupo quindi di
