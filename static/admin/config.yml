@@ -57,7 +57,7 @@ collections:
       folder: contents/projects
       create: true
       fields:
-          - { label: 'Nome', name: 'name', widget: 'string' }
+          - { label: 'Titolo', name: 'name', widget: 'string' }
           - { label: 'Committente', name: 'client', widget: 'string' }
           - {
                 label: 'Anno di consegna del progetto',
@@ -80,6 +80,30 @@ collections:
             name: 'images'
             widget: 'list'
             field: { label: Image, name: image, widget: image }
+          - label: 'Data di aggiunta'
+            name: 'date'
+            widget: 'date'
+            default: ''
+            format: 'YYYY-MM-DD'
+          - { label: 'Corpo', name: 'body', widget: 'markdown' }
+    - name: extras
+      label: Extras
+      folder: contents/extras
+      create: true
+      fields:
+          - { label: 'Titolo', name: 'name', widget: 'string' }
+          - {
+                label: 'Tipo di contenuto',
+                name: 'content_type',
+                widget: 'string',
+            }
+          - label: 'Designer'
+            name: 'designer'
+            widget: 'relation'
+            collection: 'designers'
+            searchFields: ['name']
+            valueField: 'name'
+            multiple: true
           - label: 'Data di aggiunta'
             name: 'date'
             widget: 'date'
