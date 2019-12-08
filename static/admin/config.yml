@@ -4,10 +4,12 @@ backend:
 
 media_folder: static/assets
 public_folder: assets
-
 media_folder_relative: true
 
 publish_mode: editorial_workflow
+
+logo_url: https://archiviocom.netlify.com/icons/icon-512x512.png
+display_url: https://archiviocom.netlify.com
 
 collections:
     - name: designers
@@ -15,58 +17,93 @@ collections:
       folder: contents/designers
       create: true
       fields:
-          - { label: 'Nome', name: 'name', widget: 'string' }
+          - label: 'Nome'
+            name: 'name'
+            widget: 'string'
+
           - label: 'Lavoro'
             name: 'job'
             widget: 'object'
             fields:
-                - { label: 'Tipologia', name: 'type', widget: 'string' }
-                - {
-                      label: 'Azienda',
-                      name: 'company',
-                      widget: 'string',
-                      default: '-',
-                  }
+                - label: 'Tipologia'
+                  name: 'type'
+                  widget: 'select'
+                  options:
+                      ['Agenzia o studio', 'Freelancer', 'Azienda (interno)']
+                - label: 'Azienda'
+                  name: 'company'
+                  widget: 'string'
+                  default: '-'
+                  hint: 'Lasciare (-) se Freelancer'
+
           - label: 'Ambito'
             name: 'jobFields'
             widget: 'select'
             multiple: true
-            options: ['Brand design', 'Editorial design']
+            options:
+                [
+                    '3D art',
+                    'Advertising',
+                    'Brand design',
+                    'Digital product design',
+                    'Editorial design',
+                    'Graphic design',
+                    'Illustration',
+                    'Information design',
+                    'Motion design',
+                    'Type design',
+                    'UI/UX design',
+                    'Web design',
+                ]
+
           - label: 'Basato a'
             name: 'based'
             widget: 'object'
             fields:
-                - { label: 'Nazione', name: 'country', widget: 'string' }
-                - { label: 'Città', name: 'city', widget: 'string' }
-          - {
-                label: 'Premi',
-                name: 'awards',
-                widget: 'boolean',
-                default: false,
-            }
+                - label: 'Nazione'
+                  name: 'country'
+                  widget: 'string'
+                - label: 'Città'
+                  name: 'city'
+                  widget: 'string'
+
+          - label: 'Premi'
+            name: 'awards'
+            widget: 'boolean'
+            default: false
+
           - label: 'Data di aggiunta'
             name: 'date'
             widget: 'date'
             default: ''
             format: 'YYYY-MM-DD'
+
           - label: 'Immagine'
             name: 'img'
             widget: 'image'
-          - { label: 'Corpo', name: 'body', widget: 'markdown' }
+
+          - label: 'Corpo'
+            name: 'body'
+            widget: 'markdown'
 
     - name: projects
       label: Progetti
       folder: contents/projects
       create: true
       fields:
-          - { label: 'Titolo', name: 'name', widget: 'string' }
-          - { label: 'Committente', name: 'client', widget: 'string' }
-          - {
-                label: 'Anno di consegna del progetto',
-                name: 'year',
-                widget: 'number',
-                valueType: 'int',
-            }
+          - label: 'Titolo'
+            name: 'name'
+            widget: 'string'
+
+          - label: 'Committente'
+            name: 'client'
+            widget: 'string'
+
+          - label: 'Anno di consegna del progetto'
+            name: 'year'
+            widget: 'number'
+            valueType: 'int'
+
           - label: 'Designer'
             name: 'designer'
             widget: 'relation'
@@ -74,31 +111,41 @@ collections:
             searchFields: ['name']
             valueField: 'name'
             multiple: true
+
           - label: 'Anteprima'
             name: preview
             widget: 'image'
             allow_multiple: false
+
           - label: 'Immagini'
             name: 'images'
             widget: 'list'
             field: { label: Image, name: image, widget: image }
+
           - label: 'Data di aggiunta'
             name: 'date'
             widget: 'date'
             default: ''
             format: 'YYYY-MM-DD'
-          - { label: 'Corpo', name: 'body', widget: 'markdown' }
+
+          - label: 'Corpo'
+            name: 'body'
+            widget: 'markdown'
+
     - name: extras
       label: Extras
       folder: contents/extras
       create: true
       fields:
-          - { label: 'Titolo', name: 'name', widget: 'string' }
-          - {
-                label: 'Tipo di contenuto',
-                name: 'content_type',
-                widget: 'string',
-            }
+          - label: 'Titolo'
+            name: 'name'
+            widget: 'string'
+
+          - label: 'Tipo di contenuto'
+            name: 'content_type'
+            widget: 'select'
+            options: ['Conversazione', 'Consigli del designer']
+
           - label: 'Designer'
             name: 'designer'
             widget: 'relation'
@@ -106,9 +153,13 @@ collections:
             searchFields: ['name']
             valueField: 'name'
             multiple: true
+
           - label: 'Data di aggiunta'
             name: 'date'
             widget: 'date'
             default: ''
             format: 'YYYY-MM-DD'
-          - { label: 'Corpo', name: 'body', widget: 'markdown' }
+
+          - label: 'Corpo'
+            name: 'body'
+            widget: 'markdown'

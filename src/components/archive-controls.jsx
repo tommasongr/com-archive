@@ -197,19 +197,19 @@ const ArchiveControls = ({
                 onChange={value => filterArchiveJobFields(value)}
             >
                 <option value="">Ambito (tutti)</option>
-                <option value="Graphic design">Graphic design</option>
+                <option value="3D art">3D art</option>
+                <option value="Advertising">Advertising</option>
                 <option value="Brand design">Brand design</option>
+                <option value="Digital product design">
+                    Digital product design
+                </option>
                 <option value="Editorial design">Editorial design</option>
+                <option value="Graphic design">Graphic design</option>
                 <option value="Illustration">Illustration</option>
                 <option value="Information design">Information design</option>
                 <option value="Motion design">Motion design</option>
                 <option value="Type design">Type design</option>
-                <option value="Advertising">Advertising</option>
-                <option value="3D artist">3D artist</option>
                 <option value="UI/UX design">UI/UX design</option>
-                <option value="Digital product design">
-                    Digital product design
-                </option>
                 <option value="Web design">Web design</option>
             </select>
             <div className="archive-arrow"></div>
