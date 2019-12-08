@@ -20,6 +20,8 @@ backend:
 media_folder: static/assets
 public_folder: assets
 
+media_folder_relative: true
+
 collections:
     - name: designers
       label: Designers
