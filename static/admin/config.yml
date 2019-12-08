@@ -1,18 +1,3 @@
-# backend:
-#   name: test-repo
-# media_folder: static/assets
-# public_folder: assets
-# collections:
-#   - name: blog
-#     label: Blog
-#     folder: blog
-#     create: true
-#     fields:
-#       - { name: path, label: Path }
-#       - { name: date, label: Date, widget: datetime }
-#       - { name: title, label: Title }
-#       - { name: body, label: Body, widget: markdown }
-
 backend:
     name: git-gateway
     branch: master
@@ -24,7 +9,7 @@ media_folder_relative: true
 
 collections:
     - name: designers
-      label: Designers
+      label: Designer
       folder: contents/designers
       create: true
       fields:
@@ -65,4 +50,39 @@ collections:
           - label: 'Immagine'
             name: 'img'
             widget: 'image'
+          - { label: 'Corpo', name: 'body', widget: 'markdown' }
+
+    - name: projects
+      label: Progetti
+      folder: contents/projects
+      create: true
+      fields:
+          - { label: 'Nome', name: 'name', widget: 'string' }
+          - { label: 'Committente', name: 'client', widget: 'string' }
+          - {
+                label: 'Anno di consegna del progetto',
+                name: 'year',
+                widget: 'number',
+                valueType: 'int',
+            }
+          - label: 'Designer'
+            name: 'designer'
+            widget: 'relation'
+            collection: 'designers'
+            searchFields: ['name']
+            valueField: 'name'
+            multiple: true
+          - label: 'Anteprima'
+            name: preview
+            widget: 'image'
+            allow_multiple: false
+          - label: 'Immagini'
+            name: 'images'
+            widget: 'list'
+            field: { label: Image, name: image, widget: image }
+          - label: 'Data di aggiunta'
+            name: 'date'
+            widget: 'date'
+            default: ''
+            format: 'YYYY-MM-DD'
           - { label: 'Corpo', name: 'body', widget: 'markdown' }
