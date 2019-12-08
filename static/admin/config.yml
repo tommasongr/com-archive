@@ -1,0 +1,66 @@
+# backend:
+#   name: test-repo
+# media_folder: static/assets
+# public_folder: assets
+# collections:
+#   - name: blog
+#     label: Blog
+#     folder: blog
+#     create: true
+#     fields:
+#       - { name: path, label: Path }
+#       - { name: date, label: Date, widget: datetime }
+#       - { name: title, label: Title }
+#       - { name: body, label: Body, widget: markdown }
+
+backend:
+    name: git-gateway
+    branch: master
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+    - name: designers
+      label: Designers
+      folder: contents/designers
+      create: true
+      fields:
+          - { label: 'Nome', name: 'name', widget: 'string' }
+          - label: 'Lavoro'
+            name: 'job'
+            widget: 'object'
+            fields:
+                - { label: 'Tipologia', name: 'type', widget: 'string' }
+                - {
+                      label: 'Azienda',
+                      name: 'company',
+                      widget: 'string',
+                      default: '-',
+                  }
+          - label: 'Ambito'
+            name: 'jobFields'
+            widget: 'select'
+            multiple: true
+            options: ['Brand design', 'Editorial design']
+          - label: 'Basato a'
+            name: 'based'
+            widget: 'object'
+            fields:
+                - { label: 'Nazione', name: 'country', widget: 'string' }
+                - { label: 'Città', name: 'city', widget: 'string' }
+          - {
+                label: 'Premi',
+                name: 'awards',
+                widget: 'boolean',
+                default: false,
+            }
+          - label: 'Data di aggiunta'
+            name: 'date'
+            widget: 'date'
+            default: ''
+            format: 'YYYY-MM-DD'
+          - label: 'Immagine'
+            name: 'img'
+            widget: 'image'
+          - { label: 'Corpo', name: 'body', widget: 'markdown' }

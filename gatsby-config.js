@@ -10,6 +10,57 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                name: `assets`,
+                path: `${__dirname}/static/assets`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `contents`,
+                path: `${__dirname}/contents`,
+            },
+        },
+        // {
+        //     resolve: `gatsby-source-filesystem`,
+        //     options: {
+        //         name: `designers`,
+        //         path: `${__dirname}/contents/designers`,
+        //     },
+        // },
+        // {
+        //     resolve: `gatsby-source-filesystem`,
+        //     options: {
+        //         name: `projects`,
+        //         path: `${__dirname}/contents/projects`,
+        //     },
+        // },
+        // {
+        //     resolve: `gatsby-source-filesystem`,
+        //     options: {
+        //         name: `extras`,
+        //         path: `${__dirname}/contents/extras`,
+        //     },
+        // },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
+        {
+            resolve: 'gatsby-transformer-remark',
+            options: {
+                plugins: [
+                    `gatsby-remark-relative-images`,
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 1200,
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
                 name: `images`,
                 path: `${__dirname}/src/images`,
             },
@@ -19,42 +70,6 @@ module.exports = {
             options: {
                 name: `icons`,
                 path: `${__dirname}/src/icons`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `designers`,
-                path: `${__dirname}/src/contents/designers`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `projects`,
-                path: `${__dirname}/src/contents/projects`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `extras`,
-                path: `${__dirname}/src/contents/extras`,
-            },
-        },
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
-        {
-            resolve: 'gatsby-transformer-remark',
-            options: {
-                gatsbyRemarkPlugins: [
-                    {
-                        resolve: `gatsby-remark-images`,
-                        options: {
-                            maxWidth: 1200,
-                        },
-                    },
-                ],
             },
         },
         {
@@ -78,6 +93,7 @@ module.exports = {
                 icon: `src/images/archiviocom-icon.png`, // This path is relative to the root of the site.
             },
         },
+        `gatsby-plugin-netlify-cms`,
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,

@@ -3,12 +3,12 @@ name: Nuovo Devoto Oli
 client: Mondadori Education
 year: 2017
 designer: [Beatrice D'Agostino]
-preview: ../../images/devoto-oli-01.jpg
+preview: ../../static/assets/devoto-oli-01.jpg
 images:
     [
-        ../../images/devoto-oli-01.jpg,
-        ../../images/devoto-oli-02.jpg,
-        ../../images/devoto-oli-03.jpg,
+        ../../static/assets/devoto-oli-01.jpg,
+        ../../static/assets/devoto-oli-02.jpg,
+        ../../static/assets/devoto-oli-03.jpg,
     ]
 date: 2019-12-02
 ---

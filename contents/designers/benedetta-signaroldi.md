@@ -5,7 +5,7 @@ jobFields: ['Brand design']
 based: { 'country': 'Italia', 'city': 'Milano' }
 awards: false
 date: 2019-11-29
-img: '../../images/beatrice.jpeg'
+img: ../../static/assets/beatrice.jpeg
 ---
 
 Sono una grafica e type designer, principalmente mi occupo quindi di
