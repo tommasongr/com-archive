@@ -10,7 +10,7 @@ based:
   country: USA
 awards: true
 date: 2019-11-25T00:00:00.000Z
-img: ../../static/assets/beatrice.jpeg
+img: ../../static/assets/gummy-industries.jpg
 ---
 
 Sono una grafica e type designer, principalmente mi occupo quindi di
