@@ -1,11 +1,16 @@
 ---
 name: Beatrice D'Agostino
-job: { 'type': 'Agenzia o studio', 'company': 'LeftLoft' }
-jobFields: ['Brand design']
-based: { 'country': 'Italia', 'city': 'Milano' }
+job:
+  company: LeftLoft
+  type: Agenzia o studio
+jobFields:
+  - Brand design
+based:
+  city: Milano
+  country: Italia
 awards: false
-date: 2019-11-20
-img: ../../static/assets/beatrice.jpeg
+date: 2019-11-20T00:00:00.000Z
+img: /assets/beatrice.jpeg
 ---
 
 Sono una grafica e type designer, principalmente mi occupo quindi di
