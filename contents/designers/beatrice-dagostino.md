@@ -1,11 +1,11 @@
 ---
-name: Daniele Politini
-job: { 'type': 'Freelancer', 'company': '-' }
+name: Beatrice D'Agostino
+job: { 'type': 'Agenzia o studio', 'company': 'LeftLoft' }
 jobFields: ['Brand design']
-based: { 'country': 'USA', 'city': 'New York' }
-awards: true
-date: 2019-11-25
-img: '../../images/beatrice.jpeg'
+based: { 'country': 'Italia', 'city': 'Milano' }
+awards: false
+date: 2019-11-20
+img: ../../static/assets/beatrice.jpeg
 ---
 
 Sono una grafica e type designer, principalmente mi occupo quindi di

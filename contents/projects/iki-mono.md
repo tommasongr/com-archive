@@ -3,8 +3,9 @@ name: Iki Mono
 client: Progetto personale
 year: 2019
 designer: [Beatrice D'Agostino]
-preview: ../../images/iki-mono-01.png
-images: [../../images/iki-mono-01.png, ../../images/iki-mono-02.png]
+preview: ../../static/assets/iki-mono-01.png
+images:
+    [../../static/assets/iki-mono-01.png, ../../static/assets/iki-mono-02.png]
 date: 2019-12-05
 ---
 

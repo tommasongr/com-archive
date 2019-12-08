@@ -5,7 +5,7 @@ jobFields: ['Brand design', 'Editorial design']
 based: { 'country': 'Italia', 'city': 'Milano' }
 awards: true
 date: 2019-11-28
-img: '../../images/stefano-joker-lionetti.jpg'
+img: ../../static/assets/stefano-joker-lionetti.jpg
 ---
 
 Sono un graphic designer che lavora a Milano. Mi occupo principalmente di tipografia personalizzata a seconda della richiesta, identità visive forti e consulenza creativa per piccoli e grandi clienti. Dal 2012 sono partner di Zetalab.
