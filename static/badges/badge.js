@@ -1,55 +1,56 @@
-function readTextFile(file, callback) {
-    var rawFile = new XMLHttpRequest()
-    rawFile.overrideMimeType('application/json')
-    rawFile.open('GET', file, true)
-    rawFile.onreadystatechange = function() {
-        if (rawFile.readyState === 4 && rawFile.status == '200') {
-            callback(rawFile.responseText)
+if (typeof window !== `undefined`) {
+    function readTextFile(file, callback) {
+        var rawFile = new XMLHttpRequest()
+        rawFile.overrideMimeType('application/json')
+        rawFile.open('GET', file, true)
+        rawFile.onreadystatechange = function() {
+            if (rawFile.readyState === 4 && rawFile.status == '200') {
+                callback(rawFile.responseText)
+            }
         }
+        rawFile.send(null)
     }
-    rawFile.send(null)
-}
 
-class ComCertificate extends HTMLElement {
-    constructor() {
-        super()
-        this.attachShadow({ mode: 'open' })
+    class ComCertificate extends HTMLElement {
+        constructor() {
+            super()
+            this.attachShadow({ mode: 'open' })
 
-        let badge
+            let badge
 
-        if (this.getAttribute('bg') === 'false') {
-            switch (this.getAttribute('color')) {
-                case 'red':
-                    badge = 'badge-nobg-red.svg'
-                    break
-                case 'black':
-                    badge = 'badge-nobg-black.svg'
-                    break
-                case 'white':
-                    badge = 'badge-nobg-white.svg'
-                    break
+            if (this.getAttribute('bg') === 'false') {
+                switch (this.getAttribute('color')) {
+                    case 'red':
+                        badge = 'badge-nobg-red.svg'
+                        break
+                    case 'black':
+                        badge = 'badge-nobg-black.svg'
+                        break
+                    case 'white':
+                        badge = 'badge-nobg-white.svg'
+                        break
 
-                default:
-                    break
+                    default:
+                        break
+                }
+            } else if (this.getAttribute('bg') === 'true') {
+                switch (this.getAttribute('color')) {
+                    case 'red':
+                        badge = 'badge-bg-red.svg'
+                        break
+                    case 'black':
+                        badge = 'badge-bg-black.svg'
+                        break
+                    case 'white':
+                        badge = 'badge-bg-white.svg'
+                        break
+
+                    default:
+                        break
+                }
             }
-        } else if (this.getAttribute('bg') === 'true') {
-            switch (this.getAttribute('color')) {
-                case 'red':
-                    badge = 'badge-bg-red.svg'
-                    break
-                case 'black':
-                    badge = 'badge-bg-black.svg'
-                    break
-                case 'white':
-                    badge = 'badge-bg-white.svg'
-                    break
 
-                default:
-                    break
-            }
-        }
-
-        this.shadowRoot.innerHTML = `
+            this.shadowRoot.innerHTML = `
             <style>
                 div {
                     position: absolute;
@@ -67,24 +68,28 @@ class ComCertificate extends HTMLElement {
                 </div>
             </a>
         `
-    }
+        }
 
-    connectedCallback() {
-        readTextFile(
-            'https://archiviocom.netlify.com/badges/badge-whitelist.json',
-            function(text) {
-                let whitelist = JSON.parse(text)
-                console.log(whitelist)
-                console.log(window.location.hostname)
+        connectedCallback() {
+            readTextFile(
+                'https://archiviocom.netlify.com/badges/badge-whitelist.json',
+                function(text) {
+                    let whitelist = JSON.parse(text)
+                    console.log(whitelist)
+                    console.log(window.location.hostname)
 
-                if (!whitelist.whitelist.includes(window.location.hostname)) {
-                    window.alert('NON SEI AUTORIZZATO A USARE QUESTO BADGE')
-                    document.querySelector('com-certificate').style.display =
-                        'none'
+                    if (
+                        !whitelist.whitelist.includes(window.location.hostname)
+                    ) {
+                        window.alert('NON SEI AUTORIZZATO A USARE QUESTO BADGE')
+                        document.querySelector(
+                            'com-certificate'
+                        ).style.display = 'none'
+                    }
                 }
-            }
-        )
+            )
+        }
     }
-}
 
-window.customElements.define('com-certificate', ComCertificate)
+    window.customElements.define('com-certificate', ComCertificate)
+}
