@@ -4,14 +4,14 @@ if (typeof window !== `undefined`) {
         rawFile.overrideMimeType('application/json')
         rawFile.open('GET', file, true)
         rawFile.onreadystatechange = function() {
-            if (rawFile.readyState === 4 && rawFile.status == '200') {
+            if (rawFile.readyState === 4 && rawFile.status === '200') {
                 callback(rawFile.responseText)
             }
         }
         rawFile.send(null)
     }
 
-    class ComCertificate extends HTMLElement {
+    class ComBadge extends HTMLElement {
         constructor() {
             super()
             this.attachShadow({ mode: 'open' })
@@ -52,18 +52,24 @@ if (typeof window !== `undefined`) {
 
             this.shadowRoot.innerHTML = `
             <style>
-                div {
-                    position: absolute;
+                com-certificate {
+                    position: relative;
+                }
+
+                #com-badge-container {
                     min-height: 80px;
                     min-width: 80px;
-                    height: 80px;
-                    width: 80px;
-                    right: 20px;
-                    top: 20px;
+                    position: relative;
+                    height: 100%;
+                }
+
+                #com-badge-container img {
+                    position: relative;
+                    height: 100%;
                 }
             </style>
             <a href="https://archiviocom.netlify.com" target="blank">
-                <div>
+                <div id="com-badge-container">
                     <img src="https://archiviocom.netlify.com/badges/${badge}" />
                 </div>
             </a>
@@ -91,5 +97,5 @@ if (typeof window !== `undefined`) {
         }
     }
 
-    window.customElements.define('com-certificate', ComCertificate)
+    window.customElements.define('com-badge', ComBadge)
 }
