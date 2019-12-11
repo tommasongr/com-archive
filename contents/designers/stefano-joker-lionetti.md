@@ -1,17 +1,27 @@
 ---
 name: Stefano Joker Lionetti
 job:
-  company: Zetalab
-  type: Agenzia o studio
+    company: Zetalab
+    type: Agenzia o studio
 jobFields:
-  - Brand design
-  - Editorial design
+    - Brand design
+    - Editorial design
 based:
-  city: Milano
-  country: Italia
+    city: Milano
+    country: Italia
 awards: true
+social:
+    linkedin: ''
+    instagram: ''
+    twitter: ''
+    behance: ''
+    dribble: ''
+    github: ''
+    youtube: ''
+    vimeo: ''
+    medium: ''
 date: 2019-11-28T00:00:00.000Z
-img: ../../static/assets/stefano-joker-lionetti.jpg
+img: ../../static/assets/stefano-joker-lionetti.png
 ---
 
 Sono un graphic designer che lavora a Milano. Mi occupo principalmente di tipografia personalizzata a seconda della richiesta, identità visive forti e consulenza creativa per piccoli e grandi clienti. Dal 2012 sono partner di Zetalab.

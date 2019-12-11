@@ -6,28 +6,171 @@
             href="https://archiviocom.netlify.com/fonts/fonts.css"
         />
         <style>
+            :root {
+                --bg-color: #f9f9fa;
+                --text-color: #444444;
+                --accent-color: #ee0202;
+            }
+
             html {
-                font-family: 'Suisse Works', sans-serif;
+                font-family: 'Suisse Works', serif;
+                font-size: 18px;
+                color: var(--text-color);
+                background-color: var(--bg-color);
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
             }
 
             body {
-                background-color: #f9f9fa;
+                margin: 0;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
             }
+
+            a {
+                color: inherit;
+            }
+
+            a:hover {
+                color: var(--accent-color);
+            }
+
+            a:focus {
+                outline: dashed 1px var(--accent-color);
+            }
+
+            a:active {
+                outline: none;
+            }
+
             #wrapper {
-                padding: 50px;
+                margin: 0 auto;
+                max-width: 800px;
+                padding: 2.7777777777777777rem 1.1111111111111112rem;
             }
 
             #wrapper header {
                 display: flex;
-                height: 100px;
-                justify-content: center;
+                justify-content: start;
+                margin-top: 1.1111111111111112rem;
+                margin-bottom: 2.7777777777777777rem;
             }
 
-            #wrapper header img {
+            #header-logo {
+                height: 1.9444444444444444rem;
             }
 
-            #wrapper h1 {
+            #footer {
+                background-color: var(--accent-color);
+                color: var(--bg-color);
+                padding: 1.6666666666666667rem;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                margin-top: 1.9444444444444444rem;
+            }
+
+            #footer-cc {
+                grid-column: 1/4;
+            }
+
+            #footer-cc-icons {
+                display: flex;
+            }
+
+            #footer-cc-icons svg {
+                height: 1.9444444444444444rem;
+                margin-right: 1.3888888888888888rem;
+            }
+
+            #footer-cc-icons svg:last-of-type {
+                margin: 0;
+            }
+
+            #footer-cc-text {
+                font-family: 'Suisse Intl', sans-serif;
+                font-size: 0.6666666666666666rem;
+                line-height: 1.1111111111111112rem;
+                margin: 0;
+                margin-top: 1.1111111111111112rem;
+            }
+
+            #footer-cc-text a:hover {
+                color: var(--text-color);
+            }
+
+            #footer-monogram {
+                grid-column: 4/7;
+                justify-self: end;
+            }
+
+            #content {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+            }
+
+            #content h1 {
+                grid-column: 1/5;
+                margin: 0;
+                font-weight: 500;
+                font-size: 2.111111111111111rem;
+                line-height: 2.7777777777777777rem;
+                margin-bottom: 2.2222222222222223rem;
+            }
+
+            #content .divider {
+                grid-column: 1/7;
+                height: 1px;
+                width: 100%;
+                border-bottom: dashed 1px var(--accent-color);
+                margin: 1.6666666666666667rem 0;
+            }
+
+            #content .content-tag {
+                grid-column: 5/7;
+                font-family: 'Suisse Intl', sans-serif;
+                font-size: 0.7777777777777778rem;
                 font-weight: 600;
+                color: var(--accent-color);
+                margin-bottom: 15px;
+                justify-self: end;
+            }
+
+            #content .designer {
+                grid-column: 1/7;
+            }
+
+            #content .designer h2 {
+                margin: 0;
+                font-weight: 400;
+                font-size: 1.3333333333333333rem;
+                line-height: 2rem;
+                margin-bottom: 0.8333333333333334rem;
+            }
+
+            #content .designer p {
+                margin: 0;
+                font-size: 1rem;
+                line-height: 1.6666666666666667rem;
+                margin-bottom: 0.8333333333333334rem;
+                width: 60%;
+            }
+
+            #content .designer a {
+                font-family: 'Suisse Intl', sans-serif;
+                color: var(--accent-color);
+                font-style: italic;
+            }
+
+            #content .conversation {
+                grid-column: 1/7;
+            }
+
+            #content .conversation p {
+                margin: 0;
+                font-size: 1rem;
+                line-height: 1.6666666666666667rem;
+                margin-bottom: 0.8333333333333334rem;
+                width: 75%;
             }
         </style>
     </head>
@@ -35,11 +178,201 @@
         <div id="wrapper">
             <header>
                 <img
-                    src="https://archiviocom.netlify.com/static/badge-nobg-red.svg"
+                    id="header-logo"
+                    src="https://archiviocom.netlify.com/logo/archiviocom-logo.svg"
                 />
             </header>
-            <h1>Hello World</h1>
-            <p>lorem ipsum dolor sit amet</p>
+
+            <main id="content">
+                <h1>
+                    Nuovi designer
+                </h1>
+                <div class="designer">
+                    <h2>
+                        Beatrice D'Agostino
+                    </h2>
+                    <p>
+                        Sono una grafica e type designer, principalmente mi
+                        occupo quindi di progettazione di caratteri.
+                    </p>
+                    <a href="">Scopri di più →</a>
+                </div>
+                <div class="divider"></div>
+                <div class="designer">
+                    <h2>
+                        Giuliano Guarini
+                    </h2>
+                    <p>
+                        Mi chiamo Giuliano e sono un brand e graphic designer
+                        Pugliese.
+                    </p>
+                    <a href="">Scopri di più →</a>
+                </div>
+                <div class="divider"></div>
+                <h1>
+                    Il type design in Italia
+                </h1>
+                <span class="content-tag">
+                    Conversazione
+                </span>
+                <div class="conversation">
+                    <p>
+                        <strong
+                            >Ciao Beatrice, chi sei e di cosa ti occupi?</strong
+                        >
+                    </p>
+
+                    <p>
+                        Sono una grafica e type designer, principalmente mi
+                        occupo quindi di progettare i caratteri. Lavoro per lo
+                        studio LeftLoft e in particolare curo l’aspetto
+                        tipografico dei progetti. Quando ad esempio in un
+                        progetto di branding si deve realizzare un alfabeto ad
+                        hoc o un logotipo chiamano me; aiuto anche in generale
+                        nella scelta dei font per i vari progetti. Mi occupo
+                        anche dell’insegnamento della materia e a breve uscirà
+                        un carattere disegnato da me, è il primo progetto
+                        personale così importante e sto collaborando con type
+                        together che è la fonderia che pubblica i caratteri
+                        realizzati a LeftLoft.
+                    </p>
+
+                    <p>
+                        <strong>Come ti sei avvicinata al type design?</strong>
+                    </p>
+
+                    <p>
+                        Durante l'esperienza universitaria non mi sono mai
+                        interessata molto a questa materia, ho frequentato
+                        durante la triennale la facoltà di moda e mi sono
+                        occupata più della parte grafica. Quando poi ho
+                        intrapreso il percorso in Design della Comunicazione la
+                        tipografia mi ha subito affascinata ma la ritenevo molto
+                        difficile, infatti l’amore per il type design è nato in
+                        un secondo momento durante il tirocinio a Berlino in uno
+                        studio tedesco. Mi è piaciuta da subito l’idea di
+                        lavorare su qualcosa in cui i dettagli sono molto
+                        importanti ma al tempo stesso quasi impercettibili,
+                        infatti quando osservi un alfabeto o un paragrafo
+                        realizzato con un determinato carattere, non vedi i
+                        dettagli delle singole lettere ma ciò che sono in grado
+                        di restituirti nel loro insieme, questa è la magia del
+                        type design.
+                    </p>
+                </div>
+            </main>
+
+            <footer id="footer">
+                <div id="footer-cc">
+                    <div id="footer-cc-icons">
+                        <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fab"
+                            data-icon="creative-commons"
+                            className="svg-inline--fa fa-creative-commons fa-w-16"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 496 512"
+                        >
+                            <path
+                                fill="var(--bg-color)"
+                                d="M245.83 214.87l-33.22 17.28c-9.43-19.58-25.24-19.93-27.46-19.93-22.13 0-33.22 14.61-33.22 43.84 0 23.57 9.21 43.84 33.22 43.84 14.47 0 24.65-7.09 30.57-21.26l30.55 15.5c-6.17 11.51-25.69 38.98-65.1 38.98-22.6 0-73.96-10.32-73.96-77.05 0-58.69 43-77.06 72.63-77.06 30.72-.01 52.7 11.95 65.99 35.86zm143.05 0l-32.78 17.28c-9.5-19.77-25.72-19.93-27.9-19.93-22.14 0-33.22 14.61-33.22 43.84 0 23.55 9.23 43.84 33.22 43.84 14.45 0 24.65-7.09 30.54-21.26l31 15.5c-2.1 3.75-21.39 38.98-65.09 38.98-22.69 0-73.96-9.87-73.96-77.05 0-58.67 42.97-77.06 72.63-77.06 30.71-.01 52.58 11.95 65.56 35.86zM247.56 8.05C104.74 8.05 0 123.11 0 256.05c0 138.49 113.6 248 247.56 248 129.93 0 248.44-100.87 248.44-248 0-137.87-106.62-248-248.44-248zm.87 450.81c-112.54 0-203.7-93.04-203.7-202.81 0-105.42 85.43-203.27 203.72-203.27 112.53 0 202.82 89.46 202.82 203.26-.01 121.69-99.68 202.82-202.84 202.82z"
+                            ></path>
+                        </svg>
+                        <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fab"
+                            data-icon="creative-commons-by"
+                            className="svg-inline--fa fa-creative-commons-by fa-w-16"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 496 512"
+                        >
+                            <path
+                                fill="var(--bg-color)"
+                                d="M314.9 194.4v101.4h-28.3v120.5h-77.1V295.9h-28.3V194.4c0-4.4 1.6-8.2 4.6-11.3 3.1-3.1 6.9-4.7 11.3-4.7H299c4.1 0 7.8 1.6 11.1 4.7 3.1 3.2 4.8 6.9 4.8 11.3zm-101.5-63.7c0-23.3 11.5-35 34.5-35s34.5 11.7 34.5 35c0 23-11.5 34.5-34.5 34.5s-34.5-11.5-34.5-34.5zM247.6 8C389.4 8 496 118.1 496 256c0 147.1-118.5 248-248.4 248C113.6 504 0 394.5 0 256 0 123.1 104.7 8 247.6 8zm.8 44.7C130.2 52.7 44.7 150.6 44.7 256c0 109.8 91.2 202.8 203.7 202.8 103.2 0 202.8-81.1 202.8-202.8.1-113.8-90.2-203.3-202.8-203.3z"
+                            ></path>
+                        </svg>
+                        <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fab"
+                            data-icon="creative-commons-nc-eu"
+                            className="svg-inline--fa fa-creative-commons-nc-eu fa-w-16"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 496 512"
+                        >
+                            <path
+                                fill="var(--bg-color)"
+                                d="M247.7 8C103.6 8 0 124.8 0 256c0 136.3 111.7 248 247.7 248C377.9 504 496 403.1 496 256 496 117 388.4 8 247.7 8zm.6 450.7c-112 0-203.6-92.5-203.6-202.7 0-23.2 3.7-45.2 10.9-66l65.7 29.1h-4.7v29.5h23.3c0 6.2-.4 3.2-.4 19.5h-22.8v29.5h27c11.4 67 67.2 101.3 124.6 101.3 26.6 0 50.6-7.9 64.8-15.8l-10-46.1c-8.7 4.6-28.2 10.8-47.3 10.8-28.2 0-58.1-10.9-67.3-50.2h90.3l128.3 56.8c-1.5 2.1-56.2 104.3-178.8 104.3zm-16.7-190.6l-.5-.4.9.4h-.4zm77.2-19.5h3.7v-29.5h-70.3l-28.6-12.6c2.5-5.5 5.4-10.5 8.8-14.3 12.9-15.8 31.1-22.4 51.1-22.4 18.3 0 35.3 5.4 46.1 10l11.6-47.3c-15-6.6-37-12.4-62.3-12.4-39 0-72.2 15.8-95.9 42.3-5.3 6.1-9.8 12.9-13.9 20.1l-81.6-36.1c64.6-96.8 157.7-93.6 170.7-93.6 113 0 203 90.2 203 203.4 0 18.7-2.1 36.3-6.3 52.9l-136.1-60.5z"
+                            ></path>
+                        </svg>
+                        <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fab"
+                            data-icon="creative-commons-nd"
+                            className="svg-inline--fa fa-creative-commons-nd fa-w-16"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 496 512"
+                        >
+                            <path
+                                fill="var(--bg-color)"
+                                d="M247.6 8C389.4 8 496 118.1 496 256c0 147.1-118.5 248-248.4 248C113.6 504 0 394.5 0 256 0 123.1 104.7 8 247.6 8zm.8 44.7C130.2 52.7 44.7 150.6 44.7 256c0 109.8 91.2 202.8 203.7 202.8 103.2 0 202.8-81.1 202.8-202.8.1-113.8-90.2-203.3-202.8-203.3zm94 144.3v42.5H162.1V197h180.3zm0 79.8v42.5H162.1v-42.5h180.3z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <p id="footer-cc-text">
+                        Eccetto dove altrimenti segnalato, il contenuto di
+                        questa mail è sotto licenza
+                        <a
+                            href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
+                            target="blank"
+                            >Creative Commons Attribuzione - Non commerciale -
+                            Non opere derivate 4.0 International license</a
+                        >.<br />
+                        <a href="https://fontawesome.com/" target="blank"
+                            >Icone di Font Awesome</a
+                        >.
+                    </p>
+                </div>
+                <svg
+                    id="footer-monogram"
+                    width="58px"
+                    height="46px"
+                    viewBox="0 0 58 46"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+                    <title>c.</title>
+                    <desc>Created with Sketch.</desc>
+                    <g
+                        id="Symbols"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                    >
+                        <g
+                            id="Footer"
+                            transform="translate(-1273.000000, -6.000000)"
+                            fill="var(--bg-color)"
+                            fill-rule="nonzero"
+                        >
+                            <path
+                                d="M1285.64,51.04 C1296.68,51.04 1303.4,42.8 1307.24,32.88 L1305.72,32.24 C1301.88,40.88 1296.12,42.56 1293.16,42.56 C1289.08,42.56 1287,39.12 1287,33.92 C1287,25.04 1291.32,9.04 1298.28,9.04 C1302.92,9.04 1300.28,16.08 1298.76,20.56 L1310.2,20.56 C1310.84,12.64 1308.52,6.24 1299.16,6.24 C1285.8,6.24 1273.32,20.08 1273.32,36.72 C1273.32,44.88 1277.08,51.04 1285.64,51.04 Z M1323.16,51.04 C1327.64,51.04 1330.76,47.76 1330.76,43.6 C1330.76,39.44 1327.64,36.08 1323.16,36.08 C1319,36.08 1315.8,39.44 1315.8,43.6 C1315.8,47.76 1319,51.04 1323.16,51.04 Z"
+                                id="c."
+                            ></path>
+                        </g>
+                    </g>
+                </svg>
+            </footer>
         </div>
         <!-- End Wrapper -->
     </body>

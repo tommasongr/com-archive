@@ -90,7 +90,10 @@ const Hero = () => {
         query HeroImage {
             file(relativePath: { eq: "beatrice-2.png" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000) {
+                    fluid(
+                        maxWidth: 1000
+                        duotone: { highlight: "#ee0202", shadow: "#ee0202" }
+                    ) {
                         ...GatsbyImageSharpFluid
                     }
                 }

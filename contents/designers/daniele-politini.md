@@ -1,14 +1,24 @@
 ---
 name: Daniele Politini
 job:
-  company: '-'
-  type: Freelancer
+    company: '-'
+    type: Freelancer
 jobFields:
-  - Brand design
+    - Brand design
 based:
-  city: New York
-  country: USA
+    city: New York
+    country: USA
 awards: true
+social:
+    linkedin: ''
+    instagram: ''
+    twitter: ''
+    behance: ''
+    dribble: ''
+    github: ''
+    youtube: ''
+    vimeo: ''
+    medium: ''
 date: 2019-11-25T00:00:00.000Z
 img: ../../static/assets/gummy-industries.jpg
 ---

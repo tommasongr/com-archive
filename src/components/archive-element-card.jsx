@@ -44,7 +44,7 @@ const ArchiveElementCard = ({ designer, toggleCard }) => (
             fluid={designer.frontmatter.img.childImageSharp.fluid}
             imgStyle={{ objectFit: 'contain', objectPosition: '0 0' }}
             style={{
-                gridColumn: '10/13',
+                gridColumn: '9/13',
                 gridRow: '1/3',
             }}
         />

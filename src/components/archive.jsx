@@ -32,11 +32,7 @@ const Archive = () => {
                             date(formatString: "YYYY")
                             img {
                                 childImageSharp {
-                                    fluid(
-                                        maxWidth: 800
-                                        quality: 100
-                                        grayscale: true
-                                    ) {
+                                    fluid(maxWidth: 800, quality: 100) {
                                         ...GatsbyImageSharpFluid
                                         presentationWidth
                                     }

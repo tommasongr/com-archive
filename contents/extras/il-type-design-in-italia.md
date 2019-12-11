@@ -17,7 +17,7 @@ Mi occupo anche dell’insegnamento della materia e a breve uscirà un carattere
 Durante l'esperienza universitaria non mi sono mai interessata molto a questa materia, ho frequentato durante la triennale la facoltà di moda e mi sono occupata più della parte grafica. Quando poi ho intrapreso il percorso in Design della Comunicazione la tipografia mi ha subito affascinata ma la ritenevo molto difficile, infatti l’amore per il type design è nato in un secondo momento durante il tirocinio a Berlino in uno studio tedesco.  
 Mi è piaciuta da subito l’idea di lavorare su qualcosa in cui i dettagli sono molto importanti ma al tempo stesso quasi impercettibili, infatti quando osservi un alfabeto o un paragrafo realizzato con un determinato carattere, non vedi i dettagli delle singole lettere ma ciò che sono in grado di restituirti nel loro insieme, questa è la magia del type design.
 
-![Hopper The Rabbit](../../static/assets/il-type-design-in-italia-01.png)
+![Il type design in Italia - Iki Mono Font Showreel](../../static/assets/il-type-design-in-italia-01.png)
 
 ### Come hai vissuto il passaggio da moda a comunicazione?
 

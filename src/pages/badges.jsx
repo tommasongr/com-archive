@@ -3,9 +3,9 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import styled from 'styled-components'
-import '../../static/badges/badge'
+import '../../static/badges/badge.min'
 
-import 'prismjs/themes/prism-okaidia.css'
+import 'prismjs/themes/prism-tomorrow.css'
 import Prism from 'prismjs'
 
 const BadgesPageStyle = styled.div`
@@ -13,7 +13,7 @@ const BadgesPageStyle = styled.div`
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
-        background-color: #400101;
+        background-color: #d4d4d4;
 
         com-badge {
             height: 200px;
@@ -33,7 +33,6 @@ const BadgesPageStyle = styled.div`
     pre {
         margin-top: 50px;
         border-radius: 0;
-        background: #400101;
     }
 `
 
@@ -44,7 +43,7 @@ class BadgesPage extends React.Component {
 
     render() {
         let badgeCode = `<com-badge color="red" bg="false">
-<script async src="https://archiviocom.netlify.com/badges/badge.js" charset="utf-8"></script>`
+<script async src="https://archiviocom.netlify.com/badges/badge.min.js" charset="utf-8"></script>`
 
         return (
             <Layout>

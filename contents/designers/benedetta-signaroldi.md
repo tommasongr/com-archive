@@ -1,17 +1,28 @@
 ---
 name: Benedetta Signaroldi
 job:
-  company: The Visual Agency
-  type: Agenzia o studio
+    company: The Visual Agency
+    type: Agenzia o studio
 jobFields:
-  - Brand design
+    - Brand design
 based:
-  city: Milano
-  country: Italia
+    city: Milano
+    country: Italia
 awards: false
+social:
+    linkedin: ''
+    instagram: ''
+    twitter: ''
+    behance: ''
+    dribble: ''
+    github: ''
+    youtube: ''
+    vimeo: ''
+    medium: ''
 date: 2019-11-29T00:00:00.000Z
-img: ../../static/assets/beatrice.jpeg
+img: ../../static/assets/benedetta-signaroldi.png
 ---
+
 Sono una grafica e type designer, principalmente mi occupo quindi di
 progettazione di caratteri. Lavoro per lo studio LeftLoft e in
 particolare curo l’aspetto tipografico dei progetti, quando ad

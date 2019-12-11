@@ -1,14 +1,3 @@
 {
-    "whitelist": [
-        "archiviocom.netlify.com",
-        "localhost",
-        "hello",
-        "hello",
-        "hello",
-        "hello",
-        "hello",
-        "hello",
-        "hello",
-        "hello"
-    ]
+    "whitelist": ["archiviocom.netlify.com", "localhost"]
 }
