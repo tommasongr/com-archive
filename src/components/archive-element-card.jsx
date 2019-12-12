@@ -1,4 +1,5 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import NonStretchedImage from './non-stretched-image'
@@ -34,24 +35,57 @@ const ArchiveElementCardStyle = styled.div`
     }
 `
 
-const ArchiveElementCard = ({ designer, toggleCard }) => (
-    <ArchiveElementCardStyle>
-        <div
-            className="archive-element-card-content"
-            dangerouslySetInnerHTML={{ __html: designer.html }}
-        />
-        <NonStretchedImage
-            fluid={designer.frontmatter.img.childImageSharp.fluid}
-            imgStyle={{ objectFit: 'contain', objectPosition: '0 0' }}
-            style={{
-                gridColumn: '9/13',
-                gridRow: '1/3',
-            }}
-        />
-        <ArchiveElementCardProjects designer={designer.frontmatter.name} />
-        <ArchiveElementCardExtras designer={designer.frontmatter.name} />
-        <CloseCard column="2/13" toggleCard={toggleCard} />
-    </ArchiveElementCardStyle>
-)
+const ArchiveElementCard = ({ designer, toggleCard }) => {
+    const data = useStaticQuery(graphql`
+        query ExtrasControll {
+            allMarkdownRemark(
+                filter: { fileAbsolutePath: { regex: "/extras/" } }
+            ) {
+                edges {
+                    node {
+                        id
+                        frontmatter {
+                            name
+                            designer
+                        }
+                    }
+                }
+            }
+        }
+    `)
+
+    return (
+        <ArchiveElementCardStyle>
+            <div
+                className="archive-element-card-content"
+                dangerouslySetInnerHTML={{ __html: designer.html }}
+            />
+            <NonStretchedImage
+                fluid={designer.frontmatter.img.childImageSharp.fluid}
+                imgStyle={{ objectFit: 'contain' }}
+                style={{
+                    gridColumn: '8/13',
+                    gridRow: '1/3',
+                    justifySelf: 'end',
+                    width: '100%',
+                }}
+            />
+            <ArchiveElementCardProjects designer={designer.frontmatter.name} />
+
+            {data.allMarkdownRemark.edges.map(
+                ({ node }) =>
+                    node.frontmatter.designer.includes(
+                        designer.frontmatter.name
+                    ) && (
+                        <ArchiveElementCardExtras
+                            key={node.id}
+                            designer={designer.frontmatter.name}
+                        />
+                    )
+            )}
+            <CloseCard column="2/13" toggleCard={toggleCard} />
+        </ArchiveElementCardStyle>
+    )
+}
 
 export default ArchiveElementCard

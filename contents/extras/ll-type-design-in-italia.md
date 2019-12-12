@@ -1,5 +1,5 @@
 ---
-name: Il type design in Italia
+name: Il Type design in Italia
 content_type: Conversazione
 designer:
     - Beatrice D'Agostino

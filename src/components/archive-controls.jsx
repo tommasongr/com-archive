@@ -166,6 +166,7 @@ const ArchiveControls = ({
     filterArchiveJobFields,
     filterArchiveAbroad,
     filterArchiveAwards,
+    randomArchiveDesigner,
 }) => (
     <ArchiveControlsStyle>
         {/* Search box */}
@@ -179,7 +180,9 @@ const ArchiveControls = ({
                 onChange={query => searchArchive(query)}
             />
         </div>
-        <button id="archive-random">Random ??</button>
+        <button id="archive-random" onClick={randomArchiveDesigner}>
+            Random ??
+        </button>
         {/* Select for job status */}
         <div className="archive-wrapper" id="archive-job">
             <select defaultValue="" onChange={value => filterArchiveJob(value)}>

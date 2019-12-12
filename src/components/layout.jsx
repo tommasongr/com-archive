@@ -5,6 +5,9 @@ import Footer from './footer'
 import './normalize.css'
 import './layout.css'
 
+import smoothscroll from 'smoothscroll-polyfill'
+smoothscroll.polyfill()
+
 const Layout = ({ children }) => (
     <>
         <Header />

@@ -61,18 +61,28 @@ const HeroStyle = styled.div`
         }
     }
 
-    #hero-arrows {
+    #hero-arrows-container {
         position: absolute;
         align-self: end;
         justify-self: center;
         margin-bottom: 3.3333333333333335rem;
-        display: flex;
-        width: 0;
-        height: 0;
-        border-left: 5.5px solid transparent;
-        border-right: 5.5px solid transparent;
-        border-top: 11px solid var(--text-color);
-        animation: pulse 1s ease-in-out alternate infinite;
+        padding: 1.3888888888888888rem;
+        cursor: pointer;
+
+        #hero-arrows {
+            width: 0;
+            height: 0;
+            border-left: 5.5px solid transparent;
+            border-right: 5.5px solid transparent;
+            border-top: 11px solid var(--text-color);
+            animation: pulse 1s ease-in-out alternate infinite;
+        }
+
+        :hover {
+            #hero-arrows {
+                border-top-color: var(--accent-color);
+            }
+        }
     }
 
     @keyframes pulse {
@@ -84,6 +94,12 @@ const HeroStyle = styled.div`
         }
     }
 `
+
+function scrollToArchive() {
+    document.querySelector('#archivio').scrollIntoView({
+        behavior: 'smooth',
+    })
+}
 
 const Hero = () => {
     const data = useStaticQuery(graphql`
@@ -133,7 +149,9 @@ const Hero = () => {
                     </span>
                 </button>
             </div>
-            <div id="hero-arrows"></div>
+            <div id="hero-arrows-container" onClick={scrollToArchive}>
+                <div id="hero-arrows"></div>
+            </div>
             <Img
                 fluid={data.file.childImageSharp.fluid}
                 style={{

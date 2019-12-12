@@ -5,7 +5,9 @@ import styled from 'styled-components'
 import ArchiveControls from '../components/archive-controls'
 import ArchiveElement from '../components/archive-element'
 
-const ArchiveStyle = styled.div``
+const ArchiveStyle = styled.div`
+    padding-bottom: 50vh;
+`
 
 const Archive = () => {
     const data = useStaticQuery(graphql`
@@ -32,7 +34,7 @@ const Archive = () => {
                             date(formatString: "YYYY")
                             img {
                                 childImageSharp {
-                                    fluid(maxWidth: 800, quality: 100) {
+                                    fluid(maxWidth: 500, quality: 100) {
                                         ...GatsbyImageSharpFluid
                                         presentationWidth
                                     }
@@ -91,6 +93,17 @@ class ArchiveState extends React.Component {
         }))
     }
 
+    randomArchiveDesigner() {
+        this.setState({
+            archiveSearch: this.props.data.allMarkdownRemark.edges[
+                Math.floor(
+                    Math.random() *
+                        this.props.data.allMarkdownRemark.edges.length
+                )
+            ].node.frontmatter.name,
+        })
+    }
+
     render() {
         const { data } = this.props
         return (
@@ -104,6 +117,9 @@ class ArchiveState extends React.Component {
                     )}
                     filterArchiveAbroad={this.filterArchiveAbroad.bind(this)}
                     filterArchiveAwards={this.filterArchiveAwards.bind(this)}
+                    randomArchiveDesigner={this.randomArchiveDesigner.bind(
+                        this
+                    )}
                 />
                 <ArchiveLabels />
                 {data.allMarkdownRemark.edges
