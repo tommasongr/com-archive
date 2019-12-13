@@ -115,7 +115,7 @@ collections:
                 - label: 'Podcast'
                   name: 'podcast'
                   widget: 'string'
-                  required: false
+                  required: falseg
 
           - label: 'Data di aggiunta'
             name: 'date'
