@@ -14,13 +14,14 @@ social:
     instagram: ''
     twitter: 'https://twitter.com/ccldlllng'
     behance: 'https://www.behance.net/CeciliaDellaLonga'
-    dribble: ''
+    dribbble: ''
     github: ''
     youtube: ''
     vimeo: ''
     medium: ''
+    podcast: ''
 date: 2019-11-04T00:00:00.000Z
-img: ../../static/assets/beatrice.png
+img: ../../static/assets/cecilia-della-longa.png
 ---
 
 Ho 23 anni. Mi sono trasferita a Milano finito il liceo per seguire il corso di design della comunicazione al Politecnico di Milano. Ho vissuto in Portogallo per un anno durante il periodo di scambio Erasmus, dove ho imparato la lingua e ho amato il design portoghese.

@@ -15,11 +15,12 @@ social:
     instagram: 'https://www.instagram.com/poldan/'
     twitter: ''
     behance: 'https://www.behance.net/danielepolitini'
-    dribble: ''
+    dribbble: ''
     github: ''
     youtube: ''
     vimeo: ''
     medium: ''
+    podcast: ''
 date: 2019-11-05T00:00:00.000Z
 img: ../../static/assets/beatrice.png
 ---

@@ -6,7 +6,7 @@ import ArchiveElementCardExtrasElement from './archive-element-card-extras-eleme
 
 const ArchiveElementCardExtrasStyle = styled.div`
     grid-column: 2/13;
-    grid-row: 4/5;
+    grid-row: 5/6;
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-column-gap: 1.2222222222222223rem;

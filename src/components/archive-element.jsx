@@ -94,8 +94,6 @@ class ArchiveElement extends React.Component {
             document.getElementById(this.props.designer.id).scrollIntoView({
                 behavior: 'smooth',
             })
-            console.log(previousState.open)
-            console.log(this.state.open)
         }
     }
 

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const CloseCardStyle = styled.div`
-    grid-row: 5/6;
+    grid-row: 6/7;
     margin: 1.5555555555555556rem 0;
     margin-bottom: calc(1.5555555555555556rem * 2);
 

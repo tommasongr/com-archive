@@ -32,6 +32,18 @@ const Archive = () => {
                                 city
                             }
                             awards
+                            social {
+                                linkedin
+                                instagram
+                                twitter
+                                behance
+                                dribbble
+                                github
+                                youtube
+                                vimeo
+                                medium
+                                podcast
+                            }
                             date(formatString: "YYYY")
                             img {
                                 childImageSharp {

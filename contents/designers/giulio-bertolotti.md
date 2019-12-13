@@ -15,11 +15,12 @@ social:
     instagram: ''
     twitter: ''
     behance: 'https://www.behance.net/giuliobertolotti'
-    dribble: 'https://www.dribbble.com/Giulp'
+    dribbble: 'https://www.dribbble.com/Giulp'
     github: ''
     youtube: ''
     vimeo: 'https://www.vimeo.com/giuliobertolotti'
     medium: ''
+    podcast: ''
 date: 2019-11-07T00:00:00.000Z
 img: ../../static/assets/beatrice.png
 ---

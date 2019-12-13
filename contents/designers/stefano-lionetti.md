@@ -15,11 +15,12 @@ social:
     instagram: ''
     twitter: ''
     behance: ''
-    dribble: ''
+    dribbble: ''
     github: ''
     youtube: ''
     vimeo: ''
     medium: ''
+    podcast: ''
 date: 2019-11-09T00:00:00.000Z
 img: ../../static/assets/stefano-lionetti.png
 ---

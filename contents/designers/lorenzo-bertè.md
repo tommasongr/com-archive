@@ -13,14 +13,15 @@ based:
 awards: false
 social:
     linkedin: 'https://www.linkedin.com/in/lorenzo-bert%C3%A9-16254431/'
-    instagram: ''
-    twitter: ''
-    behance: ''
-    dribble: 'https://dribbble.com/lorenzoberte'
-    github: ''
-    youtube: ''
-    vimeo: ''
-    medium: ''
+    instagram: ' '
+    twitter: ' '
+    behance: ' '
+    dribbble: 'https://dribbble.com/lorenzoberte'
+    github: ' '
+    youtube: ' '
+    vimeo: ' '
+    medium: ' '
+    podcast: ' '
 date: 2019-11-08T00:00:00.000Z
 img: ../../static/assets/beatrice.png
 ---

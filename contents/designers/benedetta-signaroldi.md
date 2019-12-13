@@ -14,11 +14,12 @@ social:
     instagram: ''
     twitter: ''
     behance: 'https://www.behance.net/sbennii'
-    dribble: ''
+    dribbble: ''
     github: ''
     youtube: ''
     vimeo: ''
     medium: ''
+    podcast: ''
 date: 2019-11-03T00:00:00.000Z
 img: ../../static/assets/benedetta-signaroldi.png
 ---

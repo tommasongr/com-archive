@@ -16,11 +16,12 @@ social:
     instagram: 'https://www.instagram.com/alicebeniero/?hl=it'
     twitter: ''
     behance: 'https://www.behance.net/alicebeniero'
-    dribble: ''
+    dribbble: ''
     github: ''
     youtube: ''
     vimeo: ''
     medium: ''
+    podcast: ''
 date: 2019-11-01T00:00:00.000Z
 img: ../../static/assets/beatrice.png
 ---

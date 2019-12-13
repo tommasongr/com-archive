@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import NonStretchedImage from './non-stretched-image'
+import Social from './social-icon'
 import CloseCard from './close-card'
 
 import ArchiveElementCardProjects from './archive-element-card-projects'
@@ -71,11 +72,13 @@ const ArchiveElementCard = ({ designer, toggleCard, cardOpen }) => {
                 imgStyle={{ objectFit: 'contain' }}
                 style={{
                     gridColumn: '8/13',
-                    gridRow: '1/3',
+                    gridRow: '1/4',
                     justifySelf: 'end',
                     width: '100%',
+                    alignSelf: 'start',
                 }}
             />
+            <Social designerSocial={designer.frontmatter.social} />
             <ArchiveElementCardProjects designer={designer.frontmatter.name} />
 
             {data.allMarkdownRemark.edges.map(
