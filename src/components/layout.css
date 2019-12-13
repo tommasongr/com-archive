@@ -103,7 +103,7 @@ button::-moz-focus-inner {
 @keyframes fade-up {
     from {
         opacity: 0;
-        transform: translateY(-40px);
+        /* transform: translateY(-40px); */
     }
     to {
         opacity: 1;
@@ -112,9 +112,9 @@ button::-moz-focus-inner {
 
 .fade-up-animation-hidden {
     opacity: 0;
-    transform: translateY(40px);
+    /* transform: translateY(40px); */
 }
 
 .fade-up-animation-show {
-    animation: fade-up 0.4s forwards;
+    animation: fade-up 1s forwards;
 }

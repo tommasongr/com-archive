@@ -13,17 +13,17 @@ based:
 awards: false
 social:
     linkedin: 'https://www.linkedin.com/in/lorenzo-bert%C3%A9-16254431/'
-    instagram: ' '
-    twitter: ' '
-    behance: ' '
+    instagram: ''
+    twitter: ''
+    behance: ''
     dribbble: 'https://dribbble.com/lorenzoberte'
-    github: ' '
-    youtube: ' '
-    vimeo: ' '
-    medium: ' '
-    podcast: ' '
+    github: ''
+    youtube: ''
+    vimeo: ''
+    medium: ''
+    podcast: ''
 date: 2019-11-08T00:00:00.000Z
-img: ../../static/assets/beatrice.png
+img: ../../static/assets/lorenzo-berte.png
 ---
 
 Mi chiamo Lorenzo Bertè e sono un designer professionista con 8 anni di esperienza sul campo e una laurea di 5 anni in Communication Design. Sono un UI/UX Designer con sede a Parma (Italia). Progetto esperienze di facile impatto, ma memorabili, attraverso molteplici dispositivi e diversi contesti d'uso.

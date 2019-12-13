@@ -11,14 +11,20 @@ import IconYoutube from './social-icons/icon-youtube'
 import IconVimeo from './social-icons/icon-vimeo'
 import IconPodcast from './social-icons/icon-podcast'
 import IconMedium from './social-icons/icon-medium'
-import IconRss from './social-icons/icon-rss'
 
 const SocialIconStyle = styled.div`
     grid-column: 2/7;
     grid-row: 2/3;
     display: flex;
-    gap: 0.8333333333333334rem;
     margin-top: 1.9444444444444444rem;
+
+    a {
+        margin-right: 0.8333333333333334rem;
+
+        :last-of-type {
+            margin-right: 0;
+        }
+    }
 
     svg {
         width: 1.6666666666666667rem;
@@ -28,17 +34,36 @@ const SocialIconStyle = styled.div`
 
 const SocialIcon = ({ designerSocial }) => (
     <SocialIconStyle>
-        {designerSocial.linkedin && <IconLinkedin />}
-        {designerSocial.instagram && <IconInstagram />}
-        {designerSocial.twitter && <IconTwitter />}
-        {designerSocial.behance && <IconBehance />}
-        {designerSocial.dribbble && <IconDribbble />}
-        {designerSocial.github && <IconGithub />}
-        {designerSocial.youtube && <IconYoutube />}
-        {designerSocial.vimeo && <IconVimeo />}
-        {designerSocial.medium && <IconMedium />}
-        {designerSocial.podcast && <IconPodcast />}
-        {/* {designerSocial.rss && <IconRss />} */}
+        {designerSocial.linkedin && (
+            <IconLinkedin socialLink={designerSocial.linkedin} />
+        )}
+        {designerSocial.instagram && (
+            <IconInstagram socialLink={designerSocial.instagram} />
+        )}
+        {designerSocial.twitter && (
+            <IconTwitter socialLink={designerSocial.twitter} />
+        )}
+        {designerSocial.behance && (
+            <IconBehance socialLink={designerSocial.behance} />
+        )}
+        {designerSocial.dribbble && (
+            <IconDribbble socialLink={designerSocial.dribbble} />
+        )}
+        {designerSocial.github && (
+            <IconGithub socialLink={designerSocial.github} />
+        )}
+        {designerSocial.youtube && (
+            <IconYoutube socialLink={designerSocial.youtube} />
+        )}
+        {designerSocial.vimeo && (
+            <IconVimeo socialLink={designerSocial.vimeo} />
+        )}
+        {designerSocial.medium && (
+            <IconMedium socialLink={designerSocial.medium} />
+        )}
+        {designerSocial.podcast && (
+            <IconPodcast socialLink={designerSocial.podcast} />
+        )}
     </SocialIconStyle>
 )
 

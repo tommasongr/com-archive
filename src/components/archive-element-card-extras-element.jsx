@@ -101,16 +101,44 @@ class ArchiveElementCardExtrasElement extends React.Component {
                     id={extras.id}
                 >
                     <span className="archive-element-card-extras-element-button-content">
-                        <span className="archive-element-card-proextrasjects-element-year">
+                        <span
+                            className="archive-element-card-proextrasjects-element-year"
+                            style={
+                                this.state.elementCardExtrasElementCardOpend
+                                    ? { color: 'var(--accent-color)' }
+                                    : { color: '' }
+                            }
+                        >
                             {extras.frontmatter.date}
                         </span>
-                        <span className="archive-element-card-extras-element-name">
+                        <span
+                            className="archive-element-card-extras-element-name"
+                            style={
+                                this.state.elementCardExtrasElementCardOpend
+                                    ? { color: 'var(--accent-color)' }
+                                    : { color: '' }
+                            }
+                        >
                             {extras.frontmatter.name}
                         </span>
-                        <span className="archive-element-card-extras-element-content-type">
+                        <span
+                            className="archive-element-card-extras-element-content-type"
+                            style={
+                                this.state.elementCardExtrasElementCardOpend
+                                    ? { color: 'var(--accent-color)' }
+                                    : { color: '' }
+                            }
+                        >
                             {extras.frontmatter.content_type}
                         </span>
-                        <span className="archive-element-card-extras-element-timing">
+                        <span
+                            className="archive-element-card-extras-element-timing"
+                            style={
+                                this.state.elementCardExtrasElementCardOpend
+                                    ? { color: 'var(--accent-color)' }
+                                    : { color: '' }
+                            }
+                        >
                             {extras.timeToRead} min
                         </span>
                     </span>
