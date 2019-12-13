@@ -32,8 +32,6 @@ Illustro libri per bambini e ragazzi, oltre a molte copertine e diversi progetti
 I miei lavori sono stati esposti al Triennale Design Museum, al m.a.x. museo di Chiasso e in esposizioni collettive in Italia e all’estero.
 
 Art director a **ISBN Edizioni** (2008 - 2014)  
-Graphic designer a **La Sterpaia** (2007 - 2009)
-
-MA in **Design della Comunicazione** (Politecnico di Milano, 2000 - 2006)
-
+Graphic designer a **La Sterpaia** (2007 - 2009)<br><br>
+MA in **Design della Comunicazione** (Politecnico di Milano, 2000 - 2006)<br><br>
 [alicebeniero.com](https://cargocollective.com/alicebeniero)
