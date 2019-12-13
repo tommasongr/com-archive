@@ -23,7 +23,7 @@ social:
     medium: ''
     podcast: ''
 date: 2019-11-01T00:00:00.000Z
-img: ../../static/assets/beatrice.png
+img: ../../static/assets/designer-beatrice-dagostino.png
 ---
 
 Sono Alice e mi occupo di illustrazione editoriale e progettazione grafica. Ho studiato Design della comunicazione al Politecnico di Milano.

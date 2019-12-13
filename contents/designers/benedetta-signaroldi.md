@@ -21,7 +21,7 @@ social:
     medium: ''
     podcast: ''
 date: 2019-11-03T00:00:00.000Z
-img: ../../static/assets/benedetta-signaroldi.png
+img: ../../static/assets/designer-benedetta-signaroldi.png
 ---
 
 Sono nata a Piacenza nel 1987, dopo il liceo ho frequentato il corso di laurea di Design della Comunicazione al Politecnico di Milano, triennale e magistrale. Nel 2012 ho trascorso un anno a Parigi al Médialab di Sciences Po. Grazie al Density Design Lab del Politecnico ho conosciuto la visualizzazione dei dati che dopo la laurea è diventata il mio lavoro. Ora sono information designer in The Visual Agency a Milano.

@@ -1,28 +1,28 @@
 ---
 name: Stefano Lionetti
 job:
-  company: Zetalab
-  type: Agenzia o studio
+    company: Zetalab
+    type: Agenzia o studio
 jobFields:
-  - Graphic design
-  - Type design
+    - Graphic design
+    - Type design
 based:
-  city: Milano
-  country: Italia
+    city: Milano
+    country: Italia
 awards: false
 social:
-  behance: ''
-  dribbble: ''
-  github: ''
-  instagram: ''
-  linkedin: 'https://www.linkedin.com/in/yeswekern/'
-  medium: ''
-  podcast: ''
-  twitter: ''
-  vimeo: ''
-  youtube: ''
+    behance: ''
+    dribbble: ''
+    github: ''
+    instagram: ''
+    linkedin: 'https://www.linkedin.com/in/yeswekern/'
+    medium: ''
+    podcast: ''
+    twitter: ''
+    vimeo: ''
+    youtube: ''
 date: 2019-11-09T00:00:00.000Z
-img: ../../static/assets/stefano-lionetti.png
+img: ../../static/assets/designer-stefano-lionetti.png
 ---
 
 Sono un graphic designer che lavora a Milano. Mi occupo principalmente di tipografia personalizzata a seconda della richiesta, identità visive forti e consulenza creativa per piccoli e grandi clienti. Dal 2012 sono partner di Zetalab.

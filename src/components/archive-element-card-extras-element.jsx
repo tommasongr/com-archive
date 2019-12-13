@@ -75,13 +75,13 @@ class ArchiveElementCardExtrasElement extends React.Component {
             this
         )
         this.state = {
-            elementCardExtrasElementCardOpend: false,
+            elementCardExtrasElementCardOpened: false,
         }
     }
 
     toggleElementCardExtrasElementCard() {
         this.setState(prevState => ({
-            elementCardExtrasElementCardOpend: !prevState.elementCardExtrasElementCardOpend,
+            elementCardExtrasElementCardOpened: !prevState.elementCardExtrasElementCardOpened,
         }))
     }
 
@@ -104,7 +104,7 @@ class ArchiveElementCardExtrasElement extends React.Component {
                         <span
                             className="archive-element-card-proextrasjects-element-year"
                             style={
-                                this.state.elementCardExtrasElementCardOpend
+                                this.state.elementCardExtrasElementCardOpened
                                     ? { color: 'var(--accent-color)' }
                                     : { color: '' }
                             }
@@ -114,7 +114,7 @@ class ArchiveElementCardExtrasElement extends React.Component {
                         <span
                             className="archive-element-card-extras-element-name"
                             style={
-                                this.state.elementCardExtrasElementCardOpend
+                                this.state.elementCardExtrasElementCardOpened
                                     ? { color: 'var(--accent-color)' }
                                     : { color: '' }
                             }
@@ -124,7 +124,7 @@ class ArchiveElementCardExtrasElement extends React.Component {
                         <span
                             className="archive-element-card-extras-element-content-type"
                             style={
-                                this.state.elementCardExtrasElementCardOpend
+                                this.state.elementCardExtrasElementCardOpened
                                     ? { color: 'var(--accent-color)' }
                                     : { color: '' }
                             }
@@ -134,7 +134,7 @@ class ArchiveElementCardExtrasElement extends React.Component {
                         <span
                             className="archive-element-card-extras-element-timing"
                             style={
-                                this.state.elementCardExtrasElementCardOpend
+                                this.state.elementCardExtrasElementCardOpened
                                     ? { color: 'var(--accent-color)' }
                                     : { color: '' }
                             }
@@ -143,12 +143,12 @@ class ArchiveElementCardExtrasElement extends React.Component {
                         </span>
                     </span>
                 </button>
-                {this.state.elementCardExtrasElementCardOpend && (
+                {this.state.elementCardExtrasElementCardOpened && (
                     <ArchiveElementCardExtrasElementCard
                         extras={extras}
                         toggleCard={this.toggleElementCardExtrasElementCard}
                         extrasCardOpen={
-                            this.state.elementCardExtrasElementCardOpend
+                            this.state.elementCardExtrasElementCardOpened
                         }
                     />
                 )}

@@ -4,10 +4,10 @@ client: Progetto personale
 year: 2015
 designer:
     - Giuliano Guarini
-preview: ../../static/assets/iki-mono-01.png
+preview: ../../static/assets/project-iki-mono-01.png
 images:
-    - ../../static/assets/iki-mono-01.png
-    - ../../static/assets/iki-mono-02.png
+    - ../../static/assets/project-iki-mono-01.png
+    - ../../static/assets/project-iki-mono-02.png
 date: 2019-12-04T00:00:00.000Z
 ---
 

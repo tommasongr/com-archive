@@ -22,7 +22,7 @@ social:
     medium: ''
     podcast: ''
 date: 2019-11-06T00:00:00.000Z
-img: ../../static/assets/giuliano-guarini.png
+img: ../../static/assets/designer-giuliano-guarini.png
 ---
 
 Mi chiamo Giuliano e sono un brand e graphic designer Pugliese. Vivo a Milano da abbastanza tempo da ricordarmela prima dei lavori dell’M4 e sono laureato in Design della Comunicazione (BSc) e Product Service System Design (MSc) al Politecnico di Milano.

@@ -22,7 +22,7 @@ social:
     medium: ''
     podcast: ''
 date: 2019-11-07T00:00:00.000Z
-img: ../../static/assets/giulio-bertolotti.png
+img: ../../static/assets/designer-giulio-bertolotti.png
 ---
 
 Mi chiamo Giulio e sono un motion graphic designer presso lo studio The Visual Agency. In passato ho lavorato nel mondo della progettazione grafica per lo studio MED-USE. Non solo il campo del mondo design mi interessa particolarmente ma sono anche un grande appassionato di grafica editoriale e illustrazione, che si riscontra in molti dei miei progetti.

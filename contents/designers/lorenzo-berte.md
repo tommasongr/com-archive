@@ -23,7 +23,7 @@ social:
     medium: ''
     podcast: ''
 date: 2019-11-08T00:00:00.000Z
-img: ../../static/assets/lorenzo-berte.png
+img: ../../static/assets/designer-lorenzo-berte.png
 ---
 
 Mi chiamo Lorenzo Bertè e sono un designer professionista con 8 anni di esperienza sul campo e una laurea di 5 anni in Communication Design. Sono un UI/UX Designer con sede a Parma (Italia). Progetto esperienze di facile impatto, ma memorabili, attraverso molteplici dispositivi e diversi contesti d'uso.

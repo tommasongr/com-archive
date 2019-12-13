@@ -1,6 +1,5 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-// import Img from 'gatsby-image'
 import NonStretchedImage from './non-stretched-image'
 import styled from 'styled-components'
 
@@ -104,7 +103,7 @@ function scrollToArchive() {
 const Hero = () => {
     const data = useStaticQuery(graphql`
         query HeroImage {
-            file(relativePath: { eq: "beatrice-2.png" }) {
+            file(relativePath: { eq: "bitmap-hero.png" }) {
                 childImageSharp {
                     fluid(
                         maxWidth: 1000

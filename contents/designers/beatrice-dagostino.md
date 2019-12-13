@@ -22,7 +22,7 @@ social:
     medium: ''
     podcast: ''
 date: 2019-11-02T00:00:00.000Z
-img: ../../static/assets/beatrice-dagostino.png
+img: ../../static/assets/designer-beatrice-dagostino.png
 ---
 
 Sono una grafica e type designer, principalmente mi occupo quindi di progettazione di caratteri. Lavoro per lo studio LeftLoft e in particolare curo l’aspetto tipografico dei progetti, quando ad esempio in un progetto di branding si deve realizzare un alfabeto ad hoc o un logotipo chiamano me; aiuto anche in generale nella scelta dei font per i vari progetti.

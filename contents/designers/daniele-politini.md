@@ -22,7 +22,7 @@ social:
     medium: ''
     podcast: ''
 date: 2019-11-05T00:00:00.000Z
-img: ../../static/assets/daniele-politini.png
+img: ../../static/assets/designer-daniele-politini.png
 ---
 
 Sono un graphic designer/art director poliedrico e versatile con sede a New York.

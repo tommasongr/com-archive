@@ -4,11 +4,11 @@ client: Mondadori Education
 year: 2017
 designer:
     - Beatrice D'Agostino
-preview: ../../static/assets/devoto-oli-01.jpg
+preview: ../../static/assets/project-devoto-oli-01.jpg
 images:
-    - ../../static/assets/devoto-oli-01.jpg
-    - ../../static/assets/devoto-oli-02.jpg
-    - ../../static/assets/devoto-oli-03.jpg
+    - ../../static/assets/project-devoto-oli-01.jpg
+    - ../../static/assets/project-devoto-oli-02.jpg
+    - ../../static/assets/project-devoto-oli-03.jpg
 date: 2019-12-02T00:00:00.000Z
 ---
 

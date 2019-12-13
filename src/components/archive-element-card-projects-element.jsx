@@ -79,13 +79,13 @@ class ArchiveElementCardProjectsElement extends React.Component {
             this
         )
         this.state = {
-            elementCardProjectsElementCardOpend: false,
+            elementCardProjectsElementCardOpened: false,
         }
     }
 
     toggleElementCardProjectsElementCard() {
         this.setState(prevState => ({
-            elementCardProjectsElementCardOpend: !prevState.elementCardProjectsElementCardOpend,
+            elementCardProjectsElementCardOpened: !prevState.elementCardProjectsElementCardOpened,
         }))
     }
 
@@ -108,7 +108,7 @@ class ArchiveElementCardProjectsElement extends React.Component {
                         <span
                             className="archive-element-card-projects-element-year"
                             style={
-                                this.state.elementCardProjectsElementCardOpend
+                                this.state.elementCardProjectsElementCardOpened
                                     ? { color: 'var(--accent-color)' }
                                     : { color: '' }
                             }
@@ -118,7 +118,7 @@ class ArchiveElementCardProjectsElement extends React.Component {
                         <span
                             className="archive-element-card-projects-element-name"
                             style={
-                                this.state.elementCardProjectsElementCardOpend
+                                this.state.elementCardProjectsElementCardOpened
                                     ? { color: 'var(--accent-color)' }
                                     : { color: '' }
                             }
@@ -128,7 +128,7 @@ class ArchiveElementCardProjectsElement extends React.Component {
                         <span
                             className="archive-element-card-projects-element-client"
                             style={
-                                this.state.elementCardProjectsElementCardOpend
+                                this.state.elementCardProjectsElementCardOpened
                                     ? { color: 'var(--accent-color)' }
                                     : { color: '' }
                             }
@@ -150,12 +150,12 @@ class ArchiveElementCardProjectsElement extends React.Component {
                         />
                     </span>
                 </button>
-                {this.state.elementCardProjectsElementCardOpend && (
+                {this.state.elementCardProjectsElementCardOpened && (
                     <ArchiveElementCardProjectsElementCard
                         project={project}
                         toggleCard={this.toggleElementCardProjectsElementCard}
                         projectsCardOpen={
-                            this.state.elementCardProjectsElementCardOpend
+                            this.state.elementCardProjectsElementCardOpened
                         }
                     />
                 )}
