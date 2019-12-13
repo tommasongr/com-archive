@@ -29,6 +29,6 @@ Mi chiamo Giulio e sono un motion graphic designer presso lo studio The Visual A
 
 Motion graphic designer a **The Visual Agency** (Milano, 2016 - oggi)  
 Motion graphic UI/UX design e illustration a **MED-USE Srl** (Milano, 2014 - 2016)  
-Artista motion graphic a **Lab immagine Polimi** (Milano, 2013 - 2014)<br><br>
+Motion graphic designer a **Lab immagine Polimi** (Milano, 2013 - 2014)<br><br>
 MA in **Design della Comunicazione** (Politecnico di Milano, 2011 - oggi)  
 BA in **Design della Comunicazione** (Politecnico di Milano, 2008 - 2011)
