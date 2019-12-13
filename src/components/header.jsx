@@ -63,13 +63,13 @@ const Header = () => (
             </Link>
             <ul className="header-items">
                 <li className="header-item">
-                    <Link to="/#archivio">Archivio</Link>
+                    <Link to="/">Archivio</Link>
                 </li>
                 <li className="header-item">
-                    <Link to="/page-2">Chi siamo</Link>
+                    <Link to="/conversazioni">Conversazioni</Link>
                 </li>
                 <li className="header-item">
-                    <Link to="/">Contatti</Link>
+                    <Link to="/chi-siamo">Chi siamo</Link>
                 </li>
             </ul>
         </section>

@@ -63,6 +63,12 @@ const CloseCardStyle = styled.div`
     }
 `
 
+// function scrollTo(id) {
+//     document.getElementById(id).scrollIntoView({
+//         behavior: 'smooth',
+//     })
+// }
+
 const CloseCard = ({ toggleCard, column }) => (
     <CloseCardStyle style={{ gridColumn: column }}>
         <button onClick={toggleCard}>

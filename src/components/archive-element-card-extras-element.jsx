@@ -85,6 +85,12 @@ class ArchiveElementCardExtrasElement extends React.Component {
         }))
     }
 
+    componentDidUpdate() {
+        document.getElementById(this.props.extras.id).scrollIntoView({
+            behavior: 'smooth',
+        })
+    }
+
     render() {
         const { extras } = this.props
         return (
@@ -92,6 +98,7 @@ class ArchiveElementCardExtrasElement extends React.Component {
                 <button
                     className="archive-element-card-projects-element-button"
                     onClick={this.toggleElementCardExtrasElementCard}
+                    id={extras.id}
                 >
                     <span className="archive-element-card-extras-element-button-content">
                         <span className="archive-element-card-proextrasjects-element-year">
@@ -112,6 +119,9 @@ class ArchiveElementCardExtrasElement extends React.Component {
                     <ArchiveElementCardExtrasElementCard
                         extras={extras}
                         toggleCard={this.toggleElementCardExtrasElementCard}
+                        extrasCardOpen={
+                            this.state.elementCardExtrasElementCardOpend
+                        }
                     />
                 )}
             </ArchiveElementCardExtrasElementStyle>

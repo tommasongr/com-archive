@@ -49,8 +49,18 @@ const ArchiveElementCardExtrasElementCardStyle = styled.div`
     }
 `
 
-const ArchiveElementCardExtrasElementCard = ({ extras, toggleCard }) => (
-    <ArchiveElementCardExtrasElementCardStyle>
+const ArchiveElementCardExtrasElementCard = ({
+    extras,
+    toggleCard,
+    extrasCardOpen,
+}) => (
+    <ArchiveElementCardExtrasElementCardStyle
+        className={
+            extrasCardOpen === false
+                ? 'fade-up-animation-hidden'
+                : 'fade-up-animation-show'
+        }
+    >
         <div
             className="archive-element-card-extras-element-card-content"
             dangerouslySetInnerHTML={{ __html: extras.html }}

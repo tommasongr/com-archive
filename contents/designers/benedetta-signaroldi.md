@@ -4,36 +4,28 @@ job:
     company: The Visual Agency
     type: Agenzia o studio
 jobFields:
-    - Brand design
+    - Information design
 based:
     city: Milano
     country: Italia
-awards: false
+awards: true
 social:
-    linkedin: ''
+    linkedin: 'https://www.linkedin.com/in/benedetta-signaroldi-45b98942/'
     instagram: ''
     twitter: ''
-    behance: ''
+    behance: 'https://www.behance.net/sbennii'
     dribble: ''
     github: ''
     youtube: ''
     vimeo: ''
     medium: ''
-date: 2019-11-29T00:00:00.000Z
+date: 2019-11-03T00:00:00.000Z
 img: ../../static/assets/benedetta-signaroldi.png
 ---
 
-Sono una grafica e type designer, principalmente mi occupo quindi di
-progettazione di caratteri. Lavoro per lo studio LeftLoft e in
-particolare curo l’aspetto tipografico dei progetti, quando ad
-esempio in un progetto di branding si deve realizzare un alfabeto ad
-hoc o un logotipo chiamano me; aiuto anche in generale nella scelta
-dei font per i vari progetti.
+Sono nata a Piacenza nel 1987, dopo il liceo ho frequentato il corso di laurea di Design della Comunicazione al Politecnico di Milano, triennale e magistrale. Nel 2012 ho trascorso un anno a Parigi al Médialab di Sciences Po. Grazie al Density Design Lab del Politecnico ho conosciuto la visualizzazione dei dati che dopo la laurea è diventata il mio lavoro. Ora sono information designer in The Visual Agency a Milano.
 
-Type designer a **LeftLoft** (Milano, 2016 - oggi)\
-Graphic designer a **Frank Studio** (Milano, 2015)\
-Graphic designer a **Bureau Christoph Dunst** (Berlino, 2013-2015)<br/><br/>
-MA in **New Media** (Aalto University, 2013)\
-MA in **Design della Comunicazione** (Politecnico di Milano, 2011-2015)\
-BA in **Design della Moda** (Politecnico di Milano, 2008-2011)<br/><br/>
-[beatricedagostino.com](http://beatricedagostino.com/)
+Information designer a **The Visual Agency** (2014 - oggi)  
+Information designer a **Mèdialab**, Sciences Po. (2011 - 2012) ß<br/><br/>  
+MA in **Design della Comunicazione** (Politecnico di Milano, 2009 - 2013)  
+BA in **Design della Comunicazione** (Politecnico di Milano, 2006 - 2009)<br/><br/>
