@@ -31,6 +31,6 @@ Co Founder di **Peter & WendyDate** (2013 – oggi)
 Partner a **Zetalab S.r.l** (2012 - oggi)  
 Senior Graphic Designer a **Zetalab S.r.l** (2006 - 2012)  
 Type Designer a **Studio Husmann-Benincasa** (2005 - 2006)<br/><br/>
-MA in **Design della Comunicazione** (Politecnico di Milano, 2004 - 2007)
+MA in **Design della Comunicazione** (Politecnico di Milano, 2004 - 2007)  
 BA in **Design della Comunicazione** (Politecnico di Milano, 2001 - 2004)<br/><br/>
 [stefanolionetti.com](http://www.yeswekern.it/temporary/)
