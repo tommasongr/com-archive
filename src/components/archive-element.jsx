@@ -68,6 +68,12 @@ const ArchiveElementStyle = styled.div`
     }
 `
 
+// function scrollTo(id) {
+//     document.getElementById(id).scrollIntoView({
+//         behavior: 'smooth',
+//     })
+// }
+
 class ArchiveElement extends React.Component {
     constructor(props) {
         super(props)
@@ -83,6 +89,16 @@ class ArchiveElement extends React.Component {
         }))
     }
 
+    componentDidUpdate(previousProps, previousState) {
+        if (previousState.open !== this.state.open) {
+            document.getElementById(this.props.designer.id).scrollIntoView({
+                behavior: 'smooth',
+            })
+            console.log(previousState.open)
+            console.log(this.state.open)
+        }
+    }
+
     render() {
         const { designer } = this.props
         return (
@@ -90,6 +106,7 @@ class ArchiveElement extends React.Component {
                 <button
                     className="archive-element-button"
                     onClick={this.toggleElementCard}
+                    id={designer.id}
                 >
                     <span>
                         <span
@@ -146,9 +163,5 @@ class ArchiveElement extends React.Component {
         )
     }
 }
-
-// const ArchiveElement = ({ designer }) => (
-
-// )
 
 export default ArchiveElement

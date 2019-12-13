@@ -89,6 +89,12 @@ class ArchiveElementCardProjectsElement extends React.Component {
         }))
     }
 
+    componentDidUpdate() {
+        document.getElementById(this.props.project.id).scrollIntoView({
+            behavior: 'smooth',
+        })
+    }
+
     render() {
         const { project } = this.props
         return (
@@ -96,6 +102,7 @@ class ArchiveElementCardProjectsElement extends React.Component {
                 <button
                     className="archive-element-card-projects-element-button"
                     onClick={this.toggleElementCardProjectsElementCard}
+                    id={project.id}
                 >
                     <span className="archive-element-card-projects-element-button-content">
                         <span
@@ -147,6 +154,9 @@ class ArchiveElementCardProjectsElement extends React.Component {
                     <ArchiveElementCardProjectsElementCard
                         project={project}
                         toggleCard={this.toggleElementCardProjectsElementCard}
+                        projectsCardOpen={
+                            this.state.elementCardProjectsElementCardOpend
+                        }
                     />
                 )}
             </ArchiveElementCardProjectsElementStyle>

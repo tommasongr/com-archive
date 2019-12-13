@@ -40,8 +40,18 @@ const ArchiveElementCardProjectsElementCardStyle = styled.div`
     }
 `
 
-const ArchiveElementCardProjectsElementCard = ({ project, toggleCard }) => (
-    <ArchiveElementCardProjectsElementCardStyle>
+const ArchiveElementCardProjectsElementCard = ({
+    project,
+    toggleCard,
+    projectsCardOpen,
+}) => (
+    <ArchiveElementCardProjectsElementCardStyle
+        className={
+            projectsCardOpen === false
+                ? 'fade-up-animation-hidden'
+                : 'fade-up-animation-show'
+        }
+    >
         <div
             className="archive-element-card-projects-element-card-content"
             dangerouslySetInnerHTML={{ __html: project.html }}

@@ -6,7 +6,8 @@ import ArchiveControls from '../components/archive-controls'
 import ArchiveElement from '../components/archive-element'
 
 const ArchiveStyle = styled.div`
-    padding-bottom: 50vh;
+    padding-bottom: 70vh;
+    padding-top: 1.6666666666666667rem;
 `
 
 const Archive = () => {
@@ -161,11 +162,7 @@ class ArchiveState extends React.Component {
                             : node
                     )
                     .map(({ node }) => (
-                        <ArchiveElement
-                            designer={node}
-                            key={node.id}
-                            id={node.frontmatter.name.toLowerCase()}
-                        />
+                        <ArchiveElement designer={node} key={node.id} />
                     ))}
             </ArchiveStyle>
         )

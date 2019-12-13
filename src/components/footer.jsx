@@ -36,7 +36,7 @@ const FooterStyle = styled.footer`
         }
 
         #footer-logo {
-            grid-column: 11/13;
+            grid-column: 12/13;
             justify-self: right;
             color: inherit;
             color: var(--accent-color);
@@ -47,9 +47,14 @@ const FooterStyle = styled.footer`
             font-size: 4.444444444444445rem;
             line-height: 2.7777777777777777rem;
             text-align: end;
+            width: 100%;
         }
     }
 `
+
+function scrollToTop() {
+    window.scroll({ top: 0, left: 0, behavior: 'smooth' })
+}
 
 const Footer = () => (
     <FooterStyle>
@@ -135,9 +140,9 @@ const Footer = () => (
                     .
                 </p>
             </div>
-            <Link to="/" id="footer-logo">
+            <button id="footer-logo" onClick={scrollToTop}>
                 c.
-            </Link>
+            </button>
         </section>
     </FooterStyle>
 )

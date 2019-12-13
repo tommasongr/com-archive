@@ -35,7 +35,7 @@ const ArchiveElementCardStyle = styled.div`
     }
 `
 
-const ArchiveElementCard = ({ designer, toggleCard }) => {
+const ArchiveElementCard = ({ designer, toggleCard, cardOpen }) => {
     const data = useStaticQuery(graphql`
         query ExtrasControll {
             allMarkdownRemark(
@@ -55,7 +55,13 @@ const ArchiveElementCard = ({ designer, toggleCard }) => {
     `)
 
     return (
-        <ArchiveElementCardStyle>
+        <ArchiveElementCardStyle
+            className={
+                cardOpen === false
+                    ? 'fade-up-animation-hidden'
+                    : 'fade-up-animation-show'
+            }
+        >
             <div
                 className="archive-element-card-content"
                 dangerouslySetInnerHTML={{ __html: designer.html }}

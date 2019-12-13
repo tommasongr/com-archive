@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
+import NonStretchedImage from './non-stretched-image'
 import styled from 'styled-components'
 
 // import SocialIcon from './social-icon'
@@ -13,23 +14,17 @@ import BehanceIcon from '../icons/behance.svg'
 const HeroStyle = styled.div`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, min-content) 1fr;
     grid-column-gap: 1.2222222222222223rem;
     height: calc(100vh - 7.222222222222222rem);
-    grid-auto-rows: min-content;
     position: relative;
-    margin-bottom: 2.7777777777777777rem;
+    margin-bottom: 1.1111111111111112rem;
 
-    h1 {
-        grid-column: 1/9;
-    }
-
-    h2 {
-        grid-column: 1/5;
+    #hero-text-container {
+        grid-column: 1/8;
+        grid-row: 1/2;
     }
 
     #hero-social {
-        grid-column: 1/4;
         display: flex;
 
         img {
@@ -40,6 +35,7 @@ const HeroStyle = styled.div`
 
     #hero-special {
         grid-column: 1/4;
+        grid-row: 2/3;
         align-self: end;
         margin-bottom: 3.3333333333333335rem;
 
@@ -54,6 +50,7 @@ const HeroStyle = styled.div`
             line-height: 1.7777777777777777rem;
             color: var(--accent-color);
             text-decoration: underline;
+            font-weight: 500;
         }
 
         #hero-special-title {
@@ -65,9 +62,11 @@ const HeroStyle = styled.div`
         position: absolute;
         align-self: end;
         justify-self: center;
-        margin-bottom: 3.3333333333333335rem;
+        margin-bottom: 2.333rem;
         padding: 1.3888888888888888rem;
         cursor: pointer;
+        height: 21px;
+        width: 11px;
 
         #hero-arrows {
             width: 0;
@@ -76,6 +75,7 @@ const HeroStyle = styled.div`
             border-right: 5.5px solid transparent;
             border-top: 11px solid var(--text-color);
             animation: pulse 1s ease-in-out alternate infinite;
+            position: absolute;
         }
 
         :hover {
@@ -87,10 +87,10 @@ const HeroStyle = styled.div`
 
     @keyframes pulse {
         0% {
-            padding-bottom: 10px;
+            bottom: calc(1.3888888888888888rem + 11px);
         }
         100% {
-            padding-bottom: 0;
+            bottom: 1.3888888888888888rem;
         }
     }
 `
@@ -119,22 +119,24 @@ const Hero = () => {
 
     return (
         <HeroStyle>
-            <h1>
-                Un archivio di laureati in Design della
-                <br /> Comunicazione al Politecnico di Milano, <br />
-                che fanno la differenza.
-            </h1>
-            <h2>
-                Designer, progetti, conversazioni <br /> e altri contenuti
-                speciali raccolti <br />
-                in un unico luogo.
-            </h2>
-            <div id="hero-social">
-                {/* <SocialIcon /> */}
-                <img src={TwitterIcon} alt="" />
-                <img src={InstagramIcon} alt="" />
-                <img src={GithubIcon} alt="" />
-                <img src={BehanceIcon} alt="" />
+            <div id="hero-text-container">
+                <h1>
+                    Un archivio di laureati in Design della
+                    <br /> Comunicazione al Politecnico di Milano, <br />
+                    che fanno la differenza.
+                </h1>
+                <h2>
+                    Designer, progetti, conversazioni <br /> e altri contenuti
+                    speciali raccolti <br />
+                    in un unico luogo.
+                </h2>
+                <div id="hero-social">
+                    {/* <SocialIcon /> */}
+                    <img src={TwitterIcon} alt="" />
+                    <img src={InstagramIcon} alt="" />
+                    <img src={GithubIcon} alt="" />
+                    <img src={BehanceIcon} alt="" />
+                </div>
             </div>
             <div id="hero-special">
                 <span>
@@ -152,14 +154,15 @@ const Hero = () => {
             <div id="hero-arrows-container" onClick={scrollToArchive}>
                 <div id="hero-arrows"></div>
             </div>
-            <Img
+            <NonStretchedImage
                 fluid={data.file.childImageSharp.fluid}
+                imgStyle={{ objectFit: 'contain' }}
                 style={{
-                    position: 'absolute',
-                    bottom: 0,
-                    right: 0,
-                    height: 'auto',
-                    minWidth: '45%',
+                    gridColumn: '8/13',
+                    gridRow: '1/3',
+                    justifySelf: 'end',
+                    width: '100%',
+                    alignSelf: 'end',
                 }}
             />
         </HeroStyle>

@@ -12,7 +12,6 @@ const IndexPage = () => (
     <Layout>
         <SEO title="Home" />
         <Hero />
-        <com-certificate></com-certificate>
         <Archive />
     </Layout>
 )
