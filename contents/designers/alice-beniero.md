@@ -1,27 +1,27 @@
 ---
 name: Alice Beniero
 job:
-    company: '-'
-    type: Freelancer
+  company: '-'
+  type: Freelancer
 jobFields:
-    - Graphic design
-    - Editorial design
-    - Illustration
+  - Graphic design
+  - Editorial design
+  - Illustration
 based:
-    city: Venezia
-    country: Italia
+  city: Venezia
+  country: Italia
 awards: true
 social:
-    linkedin: 'https://www.linkedin.com/in/alice-beniero-a1718a5a/'
-    instagram: 'https://www.instagram.com/alicebeniero/?hl=it'
-    twitter: ''
-    behance: 'https://www.behance.net/alicebeniero'
-    dribbble: ''
-    github: ''
-    youtube: ''
-    vimeo: ''
-    medium: ''
-    podcast: ''
+  behance: 'https://www.behance.net/alicebeniero'
+  dribbble: ''
+  github: ''
+  instagram: 'https://www.instagram.com/alicebeniero/?hl=it'
+  linkedin: 'https://www.linkedin.com/in/alice-beniero-a1718a5a/'
+  medium: ''
+  podcast: ''
+  twitter: ''
+  vimeo: ''
+  youtube: ''
 date: 2019-11-01T00:00:00.000Z
 img: ../../static/assets/designer-beatrice-dagostino.png
 ---
@@ -32,6 +32,8 @@ Illustro libri per bambini e ragazzi, oltre a molte copertine e diversi progetti
 I miei lavori sono stati esposti al Triennale Design Museum, al m.a.x. museo di Chiasso e in esposizioni collettive in Italia e all’estero.
 
 Art director a **ISBN Edizioni** (2008 - 2014)  
-Graphic designer a **La Sterpaia** (2007 - 2009)<br/><br/>
-MA in **Design della Comunicazione** (Politecnico di Milano, 2000 - 2006)<br/><br/>
+Graphic designer a **La Sterpaia** (2007 - 2009)
+
+MA in **Design della Comunicazione** (Politecnico di Milano, 2000 - 2006)
+
 [alicebeniero.com](https://cargocollective.com/alicebeniero)
