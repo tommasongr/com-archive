@@ -6,7 +6,9 @@ import './normalize.css'
 import './layout.css'
 
 import smoothscroll from 'smoothscroll-polyfill'
-smoothscroll.polyfill()
+if (typeof window !== `undefined`) {
+    smoothscroll.polyfill()
+}
 
 const Layout = ({ children }) => (
     <>
