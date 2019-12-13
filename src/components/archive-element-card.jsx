@@ -27,7 +27,7 @@ const ArchiveElementCardStyle = styled.div`
         }
 
         p:not(:first-child) {
-            grid-column: 2/6;
+            grid-column: 2/7;
             color: var(--accent-color);
             font-family: 'Suisse Intl', sans-serif;
             font-size: 0.7777777777777778rem;
