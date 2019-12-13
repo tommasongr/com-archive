@@ -29,8 +29,10 @@ Sono una grafica e type designer, principalmente mi occupo quindi di progettazio
 
 Type designer a **LeftLoft** (Milano, 2016 - oggi)  
 Graphic designer a **Frank Studio** (Milano, 2015)  
-Graphic designer a **Bureau Christoph Dunst** (Berlino, 2013 - 2015)<br/><br/>
+Graphic designer a **Bureau Christoph Dunst** (Berlino, 2013 - 2015)
+
 MA in **New Media** (Aalto University, 2013)  
 MA in **Design della Comunicazione** (Politecnico di Milano, 2011 - 2015)  
-BA in **Design della Moda** (Politecnico di Milano, 2008 - 2011)<br/><br/>
+BA in **Design della Moda** (Politecnico di Milano, 2008 - 2011)
+
 [beatricedagostino.com](http://beatricedagostino.com/)
