@@ -1,26 +1,26 @@
 ---
 name: Beatrice D'Agostino
 job:
-  company: LeftLoft
-  type: Agenzia o studio
+    company: LeftLoft
+    type: Agenzia o studio
 jobFields:
-  - Type design
-  - Editorial design
+    - Type design
+    - Editorial design
 based:
-  city: Milano
-  country: Italia
+    city: Milano
+    country: Italia
 awards: true
 social:
-  behance: ''
-  dribbble: ''
-  github: ''
-  instagram: ''
-  linkedin: 'https://www.linkedin.com/in/beatrice-d-agostino-358121100/'
-  medium: ''
-  podcast: ''
-  twitter: ''
-  vimeo: ''
-  youtube: ''
+    behance: ''
+    dribbble: ''
+    github: ''
+    instagram: ''
+    linkedin: 'https://www.linkedin.com/in/beatrice-d-agostino-358121100/'
+    medium: ''
+    podcast: ''
+    twitter: ''
+    vimeo: ''
+    youtube: ''
 date: 2019-11-02T00:00:00.000Z
 img: ../../static/assets/designer-beatrice-dagostino.png
 ---

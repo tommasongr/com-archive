@@ -9,6 +9,9 @@ images:
     - ../../static/assets/project-devoto-oli-01.jpg
     - ../../static/assets/project-devoto-oli-02.jpg
     - ../../static/assets/project-devoto-oli-03.jpg
+images_copyright:
+    controll: true
+    owner: Beatrice D'Agostino
 date: 2019-12-02T00:00:00.000Z
 ---
 

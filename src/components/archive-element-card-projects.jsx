@@ -53,6 +53,10 @@ const ArchiveElementCardProjects = ({ designer }) => {
                                     }
                                 }
                             }
+                            images_copyright {
+                                controll
+                                owner
+                            }
                         }
                         html
                     }

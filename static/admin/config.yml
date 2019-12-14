@@ -167,6 +167,19 @@ collections:
             widget: 'list'
             field: { label: Image, name: image, widget: image }
 
+          - label: 'Copyright immagini'
+            name: 'images_copyright'
+            widget: 'object'
+            fields:
+                - label: 'Controll'
+                  name: 'controll'
+                  widget: 'boolean'
+                  default: false
+                - label: 'Proprietario'
+                  name: 'owner'
+                  widget: 'string'
+                  required: false
+
           - label: 'Data di aggiunta'
             name: 'date'
             widget: 'date'

@@ -38,6 +38,16 @@ const ArchiveElementCardProjectsElementCardStyle = styled.div`
         display: grid;
         grid-row-gap: 1.2222222222222223rem;
     }
+
+    .archive-element-card-projects-element-card-copyright-notice {
+        font-family: 'Suisse Intl', sans-serif;
+        font-size: 0.6666666666666666rem;
+        line-height: 1.1111111111111112rem;
+        font-style: italic;
+        margin-top: 1.1111111111111112rem;
+        grid-column: 2/12;
+        opacity: 0.8;
+    }
 `
 
 const ArchiveElementCardProjectsElementCard = ({
@@ -66,6 +76,12 @@ const ArchiveElementCardProjectsElementCard = ({
                 />
             ))}
         </div>
+        {project.frontmatter.images_copyright.controll === true && (
+            <span className="archive-element-card-projects-element-card-copyright-notice">
+                Per le immagini sopra riportate Copyright ©
+                {' ' + project.frontmatter.designer}
+            </span>
+        )}
         <CloseCard column="2/12" toggleCard={toggleCard} />
     </ArchiveElementCardProjectsElementCardStyle>
 )
