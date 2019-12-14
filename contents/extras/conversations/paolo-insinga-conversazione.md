@@ -3,6 +3,7 @@ name: Paolo Insinga Conversazione
 content_type: Conversazione
 designer:
     - Paolo Insinga
+conv_bitmap: ../../../static/assets/bitmap-hero.png
 date: 2019-11-28T00:00:00.000Z
 ---
 
@@ -30,18 +31,14 @@ Dal punto di vista espressivo, ad esempio, si possono indivisuare i trend attual
 
 Non ho deciso io come singolo ma è stato un lavoro in team che ha coinvolto anche altri uffici e il nostro direttore creativo globale. Per quanto riguarda il rischio non c’è una misura generale, bisogna saper leggere il contesto in cui si sta operando e fornire al cliente gli strumenti per poter dare fiducia al progetto, anche con analisi di natura economica per individuare i potenziali rischi.
 
-
-
-
-
 ### Com’è venuta l’idea per il nuovo volto della Juventus?
 
 È nata inizialmente su un taccuino facendo degli schizzi e leggendo alcune interviste. Negli archivi abbiamo trovato una citazione di Gianni Agnelli in cui diceva che ogni volta che vedeva la lettera “J” sui giornali si emozionava, subito allora abbiamo pensato che questa lettera contenesse un valore simbolico e l’abbiamo rielaborata tenendo presenti alcuni tratti caratterizzanti del mondo calcistico. Volevamo un segno che fosse capace sia di rappresentare un simbolo per i tifosi sia che fosse idoneo a comparire in altri ambienti.
 
 ### Quanto i tuoi gusti o le tue passioni influenzano la progettazione? 
 
-Noi siamo in generale il prodotto di ciò che consumiamo, quindi lo stesso esercizio di design svolto da team diversi porta sempre a esiti diversi. Questo succede perchè ognuno ha il proprio  background culturale e ciò influenza come si reagisce alle diverse situazioni.
+Noi siamo in generale il prodotto di ciò che consumiamo, quindi lo stesso esercizio di design svolto da team diversi porta sempre a esiti diversi. Questo succede perchè ognuno ha il proprio background culturale e ciò influenza come si reagisce alle diverse situazioni.
 
 ### Ci sono delle esperienze che consideri particolarmente formative per il tuo settore / consigli che vorresti lasciarci?
 
-Io credo molto nella lettura, nel disegnare le proprie idee e nell’ascoltare attivamente le tematiche che si discutono quando si incontra un cliente o un potenziale utente di ciò che si sta progettando. Il disegno è il punto di partenza dell’immaginazione di nuovi mondi, la lettura ti permette di argomentare ciò che stai realizzando per trasferire la tua idea al cliente in modo efficace. Il cliente inoltre conosce sempre meglio di te il settore nel quale opera, quindi questo scambio con il cliente e con chi ha una formazione diversa dalla tua è la ricetta per fare delle belle cose. 
+Io credo molto nella lettura, nel disegnare le proprie idee e nell’ascoltare attivamente le tematiche che si discutono quando si incontra un cliente o un potenziale utente di ciò che si sta progettando. Il disegno è il punto di partenza dell’immaginazione di nuovi mondi, la lettura ti permette di argomentare ciò che stai realizzando per trasferire la tua idea al cliente in modo efficace. Il cliente inoltre conosce sempre meglio di te il settore nel quale opera, quindi questo scambio con il cliente e con chi ha una formazione diversa dalla tua è la ricetta per fare delle belle cose.

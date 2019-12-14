@@ -1,29 +1,29 @@
 ---
 name: Alice Beniero
 job:
-  company: '-'
-  type: Freelancer
+    company: '-'
+    type: Freelancer
 jobFields:
-  - Graphic design
-  - Editorial design
-  - Illustration
+    - Graphic design
+    - Editorial design
+    - Illustration
 based:
-  city: Venezia
-  country: Italia
+    city: Venezia
+    country: Italia
 awards: true
 social:
-  behance: 'https://www.behance.net/alicebeniero'
-  dribbble: ''
-  github: ''
-  instagram: 'https://www.instagram.com/alicebeniero/?hl=it'
-  linkedin: 'https://www.linkedin.com/in/alice-beniero-a1718a5a/'
-  medium: ''
-  podcast: ''
-  twitter: ''
-  vimeo: ''
-  youtube: ''
+    behance: 'https://www.behance.net/alicebeniero'
+    dribbble: ''
+    github: ''
+    instagram: 'https://www.instagram.com/alicebeniero/?hl=it'
+    linkedin: 'https://www.linkedin.com/in/alice-beniero-a1718a5a/'
+    medium: ''
+    podcast: ''
+    twitter: ''
+    vimeo: ''
+    youtube: ''
 date: 2019-11-01T00:00:00.000Z
-img: ../../static/assets/designer-beatrice-dagostino.png
+img: ../../static/assets/designer-alice-beniero.png
 ---
 
 Sono Alice e mi occupo di illustrazione editoriale e progettazione grafica. Ho studiato Design della comunicazione al Politecnico di Milano.

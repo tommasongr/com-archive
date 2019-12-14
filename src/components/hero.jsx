@@ -103,13 +103,32 @@ function scrollToArchive() {
 const Hero = () => {
     const data = useStaticQuery(graphql`
         query HeroImage {
-            file(relativePath: { eq: "bitmap-hero.png" }) {
-                childImageSharp {
-                    fluid(
-                        maxWidth: 1000
-                        duotone: { highlight: "#ee0202", shadow: "#ee0202" }
-                    ) {
-                        ...GatsbyImageSharpFluid
+            allMarkdownRemark(
+                filter: {
+                    fileAbsolutePath: { regex: "/extras/" }
+                    frontmatter: { content_type: { eq: "Conversazione" } }
+                }
+                limit: 1
+                sort: { order: DESC, fields: frontmatter___date }
+            ) {
+                edges {
+                    node {
+                        frontmatter {
+                            name
+                            conv_bitmap {
+                                childImageSharp {
+                                    fluid(
+                                        maxWidth: 800
+                                        duotone: {
+                                            highlight: "#ee0202"
+                                            shadow: "#ee0202"
+                                        }
+                                    ) {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -154,7 +173,10 @@ const Hero = () => {
                 <div id="hero-arrows"></div>
             </div>
             <NonStretchedImage
-                fluid={data.file.childImageSharp.fluid}
+                fluid={
+                    data.allMarkdownRemark.edges[0].node.frontmatter.conv_bitmap
+                        .childImageSharp.fluid
+                }
                 imgStyle={{ objectFit: 'contain' }}
                 style={{
                     gridColumn: '8/13',
