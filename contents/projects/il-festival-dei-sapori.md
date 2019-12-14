@@ -8,6 +8,9 @@ preview: ../../static/assets/project-iki-mono-01.png
 images:
     - ../../static/assets/project-iki-mono-01.png
     - ../../static/assets/project-iki-mono-02.png
+images_copyright:
+    controll: false
+    owner:
 date: 2019-12-06T00:00:00.000Z
 ---
 
