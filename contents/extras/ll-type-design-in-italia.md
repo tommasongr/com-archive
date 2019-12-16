@@ -3,7 +3,7 @@ name: Il Type design in Italia
 content_type: Conversazione
 designer:
     - Beatrice D'Agostino
-conv_bitmap: ../../static/assets/bitmap-dagostino.png
+conv_bitmap: ../../static/assets/bitmap-beatrice-dagostino.png
 date: 2019-11-30T00:00:00.000Z
 ---
 
