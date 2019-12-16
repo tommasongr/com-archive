@@ -124,7 +124,7 @@ const Conversations = () => {
                             conv_bitmap {
                                 childImageSharp {
                                     fluid(
-                                        maxWidth: 300
+                                        maxWidth: 500
                                         duotone: {
                                             highlight: "#ee0202"
                                             shadow: "#ee0202"

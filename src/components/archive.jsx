@@ -5,10 +5,7 @@ import styled from 'styled-components'
 import ArchiveControls from '../components/archive-controls'
 import ArchiveElement from '../components/archive-element'
 
-const ArchiveStyle = styled.div`
-    padding-bottom: 70vh;
-    padding-top: 1.6666666666666667rem;
-`
+const ArchiveStyle = styled.div``
 
 const Archive = () => {
     const data = useStaticQuery(graphql`
