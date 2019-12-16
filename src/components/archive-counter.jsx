@@ -19,7 +19,6 @@ const ArchiveCounterStyle = styled.div`
 
         :first-of-type {
             font-weight: 600;
-            margin-bottom: 30px;
         }
 
         :last-of-type {

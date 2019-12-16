@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const FooterStyle = styled.footer`
@@ -34,6 +35,30 @@ const FooterStyle = styled.footer`
             margin-top: 1.1111111111111112rem;
         }
 
+        #footer-link {
+            grid-column: 5/8;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: min-content;
+            align-self: last baseline;
+
+            span {
+                font-family: 'Suisse Intl', sans-serif;
+                font-size: 0.6666666666666666rem;
+                line-height: 1.1111111111111112rem;
+                color: var(--accent-color);
+                font-weight: 600;
+                grid-column: 1/4;
+            }
+
+            a {
+                font-family: 'Suisse Intl', sans-serif;
+                font-size: 0.6666666666666666rem;
+                line-height: 1.1111111111111112rem;
+                // grid-column: 1/2;
+            }
+        }
+
         #footer-logo {
             grid-column: 12/13;
             justify-self: right;
@@ -47,6 +72,7 @@ const FooterStyle = styled.footer`
             line-height: 2.7777777777777777rem;
             text-align: end;
             width: 100%;
+            align-self: end;
         }
     }
 `
@@ -116,6 +142,13 @@ const Footer = () => (
                         Creative Commons Attribuzione - Non commerciale 4.0
                         International license
                     </a>
+                    . Il codice che lo compone è sotto licenza{' '}
+                    <a
+                        href="https://github.com/tommasongr/com-archive/blob/master/LICENSE"
+                        target="blank"
+                    >
+                        MIT LICENSE
+                    </a>
                     . Icone di{' '}
                     <a href="https://fontawesome.com/" target="blank">
                         Font Awesome
@@ -123,9 +156,42 @@ const Footer = () => (
                     .
                 </p>
             </div>
-            <button id="footer-logo" onClick={scrollToTop}>
+            <div id="footer-link">
+                <span>Link utili</span>
+                <Link to="" style={{ gridColumn: '1/2', gridRow: '2/3' }}>
+                    Archivio
+                </Link>
+                <Link
+                    to="conversazioni/"
+                    style={{ gridColumn: '1/2', gridRow: '3/4' }}
+                >
+                    Conversazioni
+                </Link>
+                <Link
+                    to="badges/"
+                    style={{ gridColumn: '2/3', gridRow: '2/3' }}
+                >
+                    Chi siamo
+                </Link>
+                <Link
+                    to="badges/"
+                    style={{ gridColumn: '2/3', gridRow: '3/4' }}
+                >
+                    Badges
+                </Link>
+                <a
+                    href="https://github.com/tommasongr/com-archive"
+                    style={{ gridColumn: '3/4', gridRow: '2/3' }}
+                >
+                    Source code
+                </a>
+                <a href="admin/" style={{ gridColumn: '3/4', gridRow: '3/4' }}>
+                    Admin
+                </a>
+            </div>
+            <Link id="footer-logo" to="">
                 c.
-            </button>
+            </Link>
         </section>
     </FooterStyle>
 )
