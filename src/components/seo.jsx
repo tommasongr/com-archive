@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, image }) {
     const { site } = useStaticQuery(
         graphql`
             query {
@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
                         title
                         description
                         author
+                        image
                     }
                 }
             }
@@ -26,6 +27,8 @@ function SEO({ description, lang, meta, title }) {
     )
 
     const metaDescription = description || site.siteMetadata.description
+
+    const metaImage = image
 
     return (
         <Helmet
@@ -40,6 +43,14 @@ function SEO({ description, lang, meta, title }) {
                     content: metaDescription,
                 },
                 {
+                    property: `og:image`,
+                    content: metaImage,
+                },
+                {
+                    property: `og:site_name`,
+                    content: 'Archivio Com.',
+                },
+                {
                     property: `og:title`,
                     content: title,
                 },
@@ -50,6 +61,10 @@ function SEO({ description, lang, meta, title }) {
                 {
                     property: `og:type`,
                     content: `website`,
+                },
+                {
+                    name: `twitter:image:src`,
+                    content: metaImage,
                 },
                 {
                     name: `twitter:card`,
@@ -76,6 +91,7 @@ SEO.defaultProps = {
     lang: `it`,
     meta: [],
     description: ``,
+    image: `https://archiviocom.netlify.com/com/archiviocom-icon.png`,
 }
 
 SEO.propTypes = {
@@ -83,6 +99,7 @@ SEO.propTypes = {
     lang: PropTypes.string,
     meta: PropTypes.arrayOf(PropTypes.object),
     title: PropTypes.string.isRequired,
+    metaImage: PropTypes.string,
 }
 
 export default SEO

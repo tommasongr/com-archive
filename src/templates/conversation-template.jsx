@@ -4,6 +4,7 @@ import NonStretchedImage from '../components/non-stretched-image'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import IconLinkedin from '../components/social-icons/icon-linkedin'
 import IconTwitter from '../components/social-icons/icon-twitter'
 import IconFacebook from '../components/social-icons/icon-facebook'
@@ -21,22 +22,22 @@ const ConversationTemplateStyle = styled.div`
             grid-auto-rows: min-content min-content 1fr;
 
             h2 {
-                font-weight: 600;
+                grid-column: 1/3;
+                font-weight: 500;
                 font-size: 2.111111111111111rem;
                 line-height: 2.7777777777777777rem;
-                // margin-bottom: 1.6666666666666667rem;
-                font-size: 70px;
-                line-height: 82px;
-                grid-column: 1/3;
+                margin: 0;
+                margin-bottom: 0px;
+                margin-bottom: 1.6666666666666667rem;
             }
 
             h3 {
-                margin-top: 0;
-                font-size: 2.111111111111111rem;
-                line-height: 2.2222222222222223rem;
-                font-weight: 500;
-                font-style: italic;
-                margin-bottom: 1.6666666666666667rem;
+                font-weight: 400;
+                font-size: 1.3333333333333333rem;
+                line-height: 2rem;
+                margin: 0;
+                margin-bottom: 0px;
+                margin-bottom: 2.2222222222222223rem;
             }
 
             .conversations-element-share {
@@ -97,6 +98,20 @@ const ConversationTemplate = ({ data }) => {
     const post = data.markdownRemark
     return (
         <Layout>
+            <SEO
+                title={post.frontmatter.name}
+                description={
+                    'Intervista inedita a ' +
+                    post.frontmatter.designer +
+                    ' - ' +
+                    post.frontmatter.name +
+                    '. Le interviste di Com. per approfondire il design della comunicazione.'
+                }
+                image={
+                    'https://archiviocom.netlify.com' +
+                    post.frontmatter.conv_bitmap.childImageSharp.original.src
+                }
+            />
             <ConversationTemplateStyle>
                 <div className="conversations-element">
                     <div className="conversations-element-text">
@@ -142,8 +157,11 @@ export const query = graphql`
                 designer
                 conv_bitmap {
                     childImageSharp {
+                        original {
+                            src
+                        }
                         fluid(
-                            maxWidth: 500
+                            maxWidth: 300
                             duotone: { highlight: "#ee0202", shadow: "#ee0202" }
                         ) {
                             ...GatsbyImageSharpFluid

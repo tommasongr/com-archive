@@ -51,7 +51,10 @@ const ConversazioniPageStyle = styled.div`
 
 const ConversazioniPage = () => (
     <Layout>
-        <SEO title="Conversazioni" />
+        <SEO
+            title="Conversazioni"
+            description="Le domande giuste alle persone giuste, ovvero, le conversazioni di com. Interviste inedite a cura della redazione <br /> per approndire gli svariati rami del design della comunicazione."
+        />
         <ConversazioniPageStyle>
             <h1>
                 Le domande giuste alle persone giuste, <br />

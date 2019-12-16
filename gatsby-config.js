@@ -3,6 +3,7 @@ module.exports = {
         title: `Archivio Com.`,
         description: `Un archivio di laureati in Design della Comunicazione al Politecnico di Milano, che fanno la differenza.`,
         author: `@tommasongr`,
+        image: 'src/images/archiviocom-icon.png',
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
@@ -63,13 +64,6 @@ module.exports = {
             options: {
                 name: `images`,
                 path: `${__dirname}/src/images`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `icons`,
-                path: `${__dirname}/src/icons`,
             },
         },
         {
