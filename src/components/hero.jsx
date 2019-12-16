@@ -164,7 +164,7 @@ const Hero = () => {
                     <IconInstagram socialLink="https://www.instagram.com/com.archivioo/" />
                     <IconTelegram socialLink="https://t.me/comarchivio" />
                     <IconGithub socialLink="https://github.com/tommasongr/com-archive" />
-                    <IconRss socialLink="" />
+                    <IconRss socialLink="https://archiviocom.netlify.com/rss.xml" />
                 </div>
             </div>
             <div id="hero-special">

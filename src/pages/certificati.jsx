@@ -10,7 +10,7 @@ import Prism from 'prismjs'
 
 import image1 from '../images/badges01.png'
 
-const BadgesPageStyle = styled.div`
+const CertificatiPageStyle = styled.div`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 1.2222222222222223rem;
@@ -40,7 +40,7 @@ const BadgesPageStyle = styled.div`
         }
     }
 
-    #badges-page-container {
+    #certificati-page-container {
         grid-column: 1/13;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -74,7 +74,7 @@ const BadgesPageStyle = styled.div`
         }
     }
 
-    .certificati-divider {
+    .certificati-page-divider {
         grid-column: 1/13;
         border-bottom: solid 1px var(--accent-color);
         width: 100%;
@@ -93,7 +93,7 @@ const BadgesPageStyle = styled.div`
     }
 `
 
-class BadgesPage extends React.Component {
+class CertificatiPage extends React.Component {
     componentDidMount() {
         Prism.highlightAll()
     }
@@ -105,14 +105,14 @@ class BadgesPage extends React.Component {
         return (
             <Layout>
                 <SEO title="Certificati" />
-                <BadgesPageStyle>
+                <CertificatiPageStyle>
                     <h1>Certificati</h1>
                     <h2>
                         Una serie di badge con stili
                         <br /> differenti per mostrare a tutti <br />
                         la propria appartenza all'archivio.
                     </h2>
-                    <div id="badges-page-container">
+                    <div id="certificati-page-container">
                         <com-badge color="red" bg="false" />
                         <com-badge color="black" bg="false" />
                         <com-badge color="white" bg="false" />
@@ -157,16 +157,16 @@ class BadgesPage extends React.Component {
                     <pre>
                         <code className="language-html">{badgeCode}</code>
                     </pre>
-                    <div className="certificati-divider"></div>
+                    <div className="certificati-page-divider"></div>
                     <h3>Esempi di applicazione</h3>
                     <div className="certificati-page-images">
                         <img src={image1} alt="" />
                         <img src={image1} alt="" />
                     </div>
-                </BadgesPageStyle>
+                </CertificatiPageStyle>
             </Layout>
         )
     }
 }
 
-export default BadgesPage
+export default CertificatiPage

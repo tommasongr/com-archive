@@ -10,8 +10,8 @@ images:
     - ../../static/assets/project-caffe-design-02.jpg
     - ../../static/assets/project-caffe-design-03.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Giuliano Guarini
 date: 2019-12-04T00:00:00.000Z
 ---
 

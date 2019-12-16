@@ -11,8 +11,8 @@ images:
     - ../../static/assets/project-il-complementi-oggetti-03.jpg
     - ../../static/assets/project-il-complementi-oggetti-04.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Davide Mottes
 date: 2019-12-05T00:00:00.000Z
 ---
 

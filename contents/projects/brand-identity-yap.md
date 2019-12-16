@@ -10,8 +10,8 @@ images:
     - ../../static/assets/project-brand-identity-yap-02.jpg
     - ../../static/assets/project-brand-identity-yap-03.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Cecilia Della Longa
 date: 2019-12-04T00:00:00.000Z
 ---
 

@@ -10,8 +10,8 @@ images:
     - ../../static/assets/project-american-airlines-02.jpg
     - ../../static/assets/project-american-airlines-03.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Daniele Politini
 date: 2019-12-05T00:00:00.000Z
 ---
 

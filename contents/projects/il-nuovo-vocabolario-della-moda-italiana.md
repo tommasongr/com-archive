@@ -12,8 +12,8 @@ images:
     - ../../static/assets/project-il-nuovo-vocabolario-della-moda-italiana-04.jpg
     - ../../static/assets/project-il-nuovo-vocabolario-della-moda-italiana-05.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Stefano Lionetti
 date: 2019-12-05T00:00:00.000Z
 ---
 

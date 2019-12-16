@@ -12,8 +12,8 @@ images:
     - ../../static/assets/project-atlante-dell-appennino-04.jpg
     - ../../static/assets/project-atlante-dell-appennino-05.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Benedetta Signaroldi
 date: 2019-12-05T00:00:00.000Z
 ---
 

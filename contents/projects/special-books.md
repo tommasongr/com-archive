@@ -12,8 +12,8 @@ images:
     - ../../static/assets/project-special-books-04.jpg
     - ../../static/assets/project-special-books-05.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Alice Beniero
 date: 2019-12-04T00:00:00.000Z
 ---
 

@@ -3,6 +3,7 @@ module.exports = {
         title: `Archivio Com.`,
         description: `Un archivio di laureati in Design della Comunicazione al Politecnico di Milano, che fanno la differenza.`,
         author: `@tommasongr`,
+        siteUrl: 'https://archiviocom.netlify.com',
         image: 'src/images/archiviocom-icon-bg.jpg',
     },
     plugins: [
@@ -70,6 +71,80 @@ module.exports = {
             resolve: `gatsby-plugin-netlify-cms`,
             options: {
                 modulePath: `${__dirname}/src/cms/cms.js`,
+            },
+        },
+        {
+            resolve: `gatsby-plugin-feed`,
+            options: {
+                query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+                feeds: [
+                    {
+                        serialize: ({ query: { site, allMarkdownRemark } }) => {
+                            return allMarkdownRemark.edges.map(edge => {
+                                return Object.assign(
+                                    {},
+                                    edge.node.frontmatter,
+                                    {
+                                        title: edge.node.name,
+                                        description: edge.node.excerpt,
+                                        date: edge.node.frontmatter.date,
+                                        url:
+                                            site.siteMetadata.siteUrl +
+                                            edge.node.fields.slug,
+                                        guid:
+                                            site.siteMetadata.siteUrl +
+                                            edge.node.fields.slug,
+                                        custom_elements: [
+                                            {
+                                                'content:encoded':
+                                                    edge.node.html,
+                                            },
+                                        ],
+                                    }
+                                )
+                            })
+                        },
+                        query: `
+              {
+                allMarkdownRemark(
+                filter: {
+                    fileAbsolutePath: { regex: "/extras/" }
+                    frontmatter: { content_type: { eq: "Conversazione" } }
+                }
+                sort: { fields: frontmatter___date, order: DESC }
+            ) {
+                edges {
+                    node {
+                        id
+                        fields {
+                            slug
+                        }
+                        frontmatter {
+                            name
+                            date
+                        }
+                        html
+                        excerpt
+                    }
+                }
+            }
+              }
+            `,
+                        output: '/rss.xml',
+                        title: 'Archivio Com. RSS Feed',
+                    },
+                ],
             },
         },
         // this (optional) plugin enables Progressive Web App + Offline functionality

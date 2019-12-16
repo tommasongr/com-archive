@@ -12,8 +12,8 @@ images:
     - ../../static/assets/project-digital-design-days-04.jpg
     - ../../static/assets/project-digital-design-days-05.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Cecilia Della Longa
 date: 2019-12-05T00:00:00.000Z
 ---
 

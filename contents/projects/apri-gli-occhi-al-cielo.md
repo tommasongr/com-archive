@@ -12,8 +12,8 @@ images:
     - ../../static/assets/project-apri-gli-occhi-al-cielo-04.jpg
     - ../../static/assets/project-apri-gli-occhi-al-cielo-05.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Alice Beniero
 date: 2019-12-05T00:00:00.000Z
 ---
 

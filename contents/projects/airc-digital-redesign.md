@@ -10,8 +10,8 @@ images:
     - ../../static/assets/project-airc-02.jpg
     - ../../static/assets/project-airc-03.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Lorenzo Bertè
 date: 2019-12-05T00:00:00.000Z
 ---
 

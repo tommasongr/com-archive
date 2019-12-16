@@ -10,8 +10,8 @@ images:
     - ../../static/assets/project-la-storia-della-co2-02.jpg
     - ../../static/assets/project-la-storia-della-co2-03.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Giulio Bertolotti
 date: 2019-12-05T00:00:00.000Z
 ---
 

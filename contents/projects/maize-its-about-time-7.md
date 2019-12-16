@@ -12,8 +12,8 @@ images:
     - ../../static/assets/project-maize-mag-its-about-time-04.jpg
     - ../../static/assets/project-maize-mag-its-about-time-05.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Davide Mottes
 date: 2019-12-06T00:00:00.000Z
 ---
 

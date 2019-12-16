@@ -11,8 +11,8 @@ images:
     - ../../static/assets/project-il-festival-dei-sapori-03.jpg
     - ../../static/assets/project-il-festival-dei-sapori-04.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Giuliano Guarini
 date: 2019-12-06T00:00:00.000Z
 ---
 

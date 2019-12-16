@@ -10,8 +10,8 @@ images:
     - ../../static/assets/project-milano-film-festival-02.jpg
     - ../../static/assets/project-milano-film-festival-03.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Stefano Lionetti
 date: 2019-12-04T00:00:00.000Z
 ---
 

@@ -9,8 +9,8 @@ images:
     - ../../static/assets/project-ferrovie-dello-stato-01.jpg
     - ../../static/assets/project-ferrovie-dello-stato-02.jpg
 images_copyright:
-    controll: false
-    owner:
+    controll: true
+    owner: Alessandro Sposato
 date: 2019-12-05T00:00:00.000Z
 ---
 

@@ -79,10 +79,6 @@ const FooterStyle = styled.footer`
     }
 `
 
-function scrollToTop() {
-    window.scroll({ top: 0, left: 0, behavior: 'smooth' })
-}
-
 const Footer = () => (
     <FooterStyle>
         <section id="footer">
