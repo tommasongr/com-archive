@@ -68,12 +68,6 @@ const ArchiveElementStyle = styled.div`
     }
 `
 
-// function scrollTo(id) {
-//     document.getElementById(id).scrollIntoView({
-//         behavior: 'smooth',
-//     })
-// }
-
 class ArchiveElement extends React.Component {
     constructor(props) {
         super(props)

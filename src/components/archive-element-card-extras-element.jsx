@@ -89,6 +89,14 @@ class ArchiveElementCardExtrasElement extends React.Component {
         document.getElementById(this.props.extras.id).scrollIntoView({
             behavior: 'smooth',
         })
+
+        document
+            .querySelectorAll(
+                '.archive-element-card-projects-element-card-content a'
+            )
+            .forEach(function(elem) {
+                elem.setAttribute('target', 'blank')
+            })
     }
 
     render() {
