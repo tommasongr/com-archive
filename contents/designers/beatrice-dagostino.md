@@ -21,6 +21,9 @@ social:
     twitter: ''
     vimeo: ''
     youtube: ''
+contents:
+    projects: true
+    extras: true
 date: 2019-11-02T00:00:00.000Z
 img: ../../static/assets/designer-beatrice-dagostino.png
 ---

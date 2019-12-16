@@ -1,26 +1,29 @@
 ---
 name: Giulio Bertolotti
 job:
-  company: The Visual Agency
-  type: Agenzia o studio
+    company: The Visual Agency
+    type: Agenzia o studio
 jobFields:
-  - Graphic design
-  - Motion design
+    - Graphic design
+    - Motion design
 based:
-  city: Milano
-  country: Italia
+    city: Milano
+    country: Italia
 awards: false
 social:
-  behance: 'https://www.behance.net/giuliobertolotti'
-  dribbble: 'https://www.dribbble.com/Giulp'
-  github: ''
-  instagram: ''
-  linkedin: 'https://www.linkedin.com/in/giulio-bertolotti-9a3500115/'
-  medium: ''
-  podcast: ''
-  twitter: ''
-  vimeo: 'https://www.vimeo.com/giuliobertolotti'
-  youtube: ''
+    behance: 'https://www.behance.net/giuliobertolotti'
+    dribbble: 'https://www.dribbble.com/Giulp'
+    github: ''
+    instagram: ''
+    linkedin: 'https://www.linkedin.com/in/giulio-bertolotti-9a3500115/'
+    medium: ''
+    podcast: ''
+    twitter: ''
+    vimeo: 'https://www.vimeo.com/giuliobertolotti'
+    youtube: ''
+contents:
+    projects: true
+    extras: false
 date: 2019-11-07T00:00:00.000Z
 img: ../../static/assets/designer-giulio-bertolotti.png
 ---

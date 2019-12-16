@@ -1,27 +1,30 @@
 ---
 name: Lorenzo Bertè
 job:
-  company: Caffeina
-  type: Agenzia o studio
+    company: Caffeina
+    type: Agenzia o studio
 jobFields:
-  - UI/UX design
-  - Brand design
-  - Digital product design
+    - UI/UX design
+    - Brand design
+    - Digital product design
 based:
-  city: Parma
-  country: Italia
+    city: Parma
+    country: Italia
 awards: false
 social:
-  behance: ''
-  dribbble: 'https://dribbble.com/lorenzoberte'
-  github: ''
-  instagram: ''
-  linkedin: 'https://www.linkedin.com/in/lorenzo-bert%C3%A9-16254431/'
-  medium: ''
-  podcast: ''
-  twitter: ''
-  vimeo: ''
-  youtube: ''
+    behance: ''
+    dribbble: 'https://dribbble.com/lorenzoberte'
+    github: ''
+    instagram: ''
+    linkedin: 'https://www.linkedin.com/in/lorenzo-bert%C3%A9-16254431/'
+    medium: ''
+    podcast: ''
+    twitter: ''
+    vimeo: ''
+    youtube: ''
+contents:
+    projects: true
+    extras: false
 date: 2019-11-08T00:00:00.000Z
 img: ../../static/assets/designer-lorenzo-berte.png
 ---

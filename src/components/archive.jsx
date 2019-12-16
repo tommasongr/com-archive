@@ -41,6 +41,10 @@ const Archive = () => {
                                 medium
                                 podcast
                             }
+                            contents {
+                                projects
+                                extras
+                            }
                             date(formatString: "YYYY")
                             img {
                                 childImageSharp {

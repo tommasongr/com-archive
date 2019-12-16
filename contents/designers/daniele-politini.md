@@ -1,26 +1,29 @@
 ---
 name: Daniele Politini
 job:
-  company: '-'
-  type: Freelancer
+    company: '-'
+    type: Freelancer
 jobFields:
-  - Brand design
-  - Graphic design
+    - Brand design
+    - Graphic design
 based:
-  city: New York
-  country: U.S.A
+    city: New York
+    country: U.S.A
 awards: true
 social:
-  behance: 'https://www.behance.net/danielepolitini'
-  dribbble: ''
-  github: ''
-  instagram: 'https://www.instagram.com/poldan/'
-  linkedin: 'https://www.linkedin.com/in/danielepolitini/'
-  medium: ''
-  podcast: ''
-  twitter: ''
-  vimeo: ''
-  youtube: ''
+    behance: 'https://www.behance.net/danielepolitini'
+    dribbble: ''
+    github: ''
+    instagram: 'https://www.instagram.com/poldan/'
+    linkedin: 'https://www.linkedin.com/in/danielepolitini/'
+    medium: ''
+    podcast: ''
+    twitter: ''
+    vimeo: ''
+    youtube: ''
+contents:
+    projects: true
+    extras: false
 date: 2019-11-05T00:00:00.000Z
 img: ../../static/assets/designer-daniele-politini.png
 ---

@@ -36,65 +36,41 @@ const ArchiveElementCardStyle = styled.div`
     }
 `
 
-const ArchiveElementCard = ({ designer, toggleCard, cardOpen }) => {
-    const data = useStaticQuery(graphql`
-        query ExtrasControll {
-            allMarkdownRemark(
-                filter: { fileAbsolutePath: { regex: "/extras/" } }
-            ) {
-                edges {
-                    node {
-                        id
-                        frontmatter {
-                            name
-                            designer
-                        }
-                    }
-                }
-            }
+const ArchiveElementCard = ({ designer, toggleCard, cardOpen }) => (
+    <ArchiveElementCardStyle
+        className={
+            cardOpen === false
+                ? 'fade-up-animation-hidden'
+                : 'fade-up-animation-show'
         }
-    `)
+    >
+        <div
+            className="archive-element-card-content"
+            dangerouslySetInnerHTML={{ __html: designer.html }}
+        />
+        <NonStretchedImage
+            fluid={designer.frontmatter.img.childImageSharp.fluid}
+            imgStyle={{ objectFit: 'contain' }}
+            style={{
+                gridColumn: '8/13',
+                gridRow: '1/4',
+                justifySelf: 'end',
+                width: '100%',
+                alignSelf: 'start',
+            }}
+        />
+        <Social designerSocial={designer.frontmatter.social} />
 
-    return (
-        <ArchiveElementCardStyle
-            className={
-                cardOpen === false
-                    ? 'fade-up-animation-hidden'
-                    : 'fade-up-animation-show'
-            }
-        >
-            <div
-                className="archive-element-card-content"
-                dangerouslySetInnerHTML={{ __html: designer.html }}
-            />
-            <NonStretchedImage
-                fluid={designer.frontmatter.img.childImageSharp.fluid}
-                imgStyle={{ objectFit: 'contain' }}
-                style={{
-                    gridColumn: '8/13',
-                    gridRow: '1/4',
-                    justifySelf: 'end',
-                    width: '100%',
-                    alignSelf: 'start',
-                }}
-            />
-            <Social designerSocial={designer.frontmatter.social} />
+        {designer.frontmatter.contents.projects === true && (
             <ArchiveElementCardProjects designer={designer.frontmatter.name} />
+        )}
 
-            {data.allMarkdownRemark.edges.map(
-                ({ node }) =>
-                    node.frontmatter.designer.includes(
-                        designer.frontmatter.name
-                    ) && (
-                        <ArchiveElementCardExtras
-                            key={node.id}
-                            designer={designer.frontmatter.name}
-                        />
-                    )
-            )}
-            <CloseCard column="2/13" toggleCard={toggleCard} />
-        </ArchiveElementCardStyle>
-    )
-}
+        {designer.frontmatter.contents.extras === true && (
+            <ArchiveElementCardExtras designer={designer.frontmatter.name} />
+        )}
+
+        <CloseCard column="2/13" toggleCard={toggleCard} />
+    </ArchiveElementCardStyle>
+)
 
 export default ArchiveElementCard

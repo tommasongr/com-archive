@@ -47,6 +47,7 @@ collections:
                     'Brand design',
                     'Digital product design',
                     'Editorial design',
+                    'Game design'
                     'Graphic design',
                     'Illustration',
                     'Information design',
@@ -116,6 +117,19 @@ collections:
                   name: 'podcast'
                   widget: 'string'
                   required: false
+
+          - label: 'Contenuti'
+            name: 'contents'
+            widget: 'object'
+            fields:
+                - label: 'Progetti'
+                  name: 'projects'
+                  widget: 'boolean'
+                  default: true
+                - label: 'Extra'
+                  name: 'extras'
+                  widget: 'boolean'
+                  default: false
 
           - label: 'Data di aggiunta'
             name: 'date'

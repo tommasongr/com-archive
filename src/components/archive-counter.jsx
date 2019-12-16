@@ -31,7 +31,10 @@ const ArchiveCounterStyle = styled.div`
 const ArchiveCounter = () => {
     const data = useStaticQuery(graphql`
         query ArchiveCounter {
-            allFile(sort: { fields: changeTime, order: DESC }) {
+            allFile(
+                filter: { absolutePath: { regex: "/contents/" } }
+                sort: { fields: changeTime, order: DESC }
+            ) {
                 edges {
                     node {
                         relativeDirectory

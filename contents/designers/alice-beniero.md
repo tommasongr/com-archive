@@ -22,6 +22,9 @@ social:
     twitter: ''
     vimeo: ''
     youtube: ''
+contents:
+    projects: true
+    extras: false
 date: 2019-11-01T00:00:00.000Z
 img: ../../static/assets/designer-alice-beniero.png
 ---

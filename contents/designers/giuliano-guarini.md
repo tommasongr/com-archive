@@ -1,26 +1,29 @@
 ---
 name: Giuliano Guarini
 job:
-  company: '-'
-  type: Freelancer
+    company: '-'
+    type: Freelancer
 jobFields:
-  - Brand design
-  - Graphic design
+    - Brand design
+    - Graphic design
 based:
-  city: Milano
-  country: Italia
+    city: Milano
+    country: Italia
 awards: true
 social:
-  behance: 'https://www.behance.net/2129gmg'
-  dribbble: ''
-  github: ''
-  instagram: ''
-  linkedin: 'https://www.linkedin.com/in/giulianomguarini/'
-  medium: ''
-  podcast: 'https://open.spotify.com/show/2xBIU3k8M9QxEMKXMOfIY2'
-  twitter: ''
-  vimeo: ''
-  youtube: ''
+    behance: 'https://www.behance.net/2129gmg'
+    dribbble: ''
+    github: ''
+    instagram: ''
+    linkedin: 'https://www.linkedin.com/in/giulianomguarini/'
+    medium: ''
+    podcast: 'https://open.spotify.com/show/2xBIU3k8M9QxEMKXMOfIY2'
+    twitter: ''
+    vimeo: ''
+    youtube: ''
+contents:
+    projects: true
+    extras: false
 date: 2019-11-06T00:00:00.000Z
 img: ../../static/assets/designer-giuliano-guarini.png
 ---

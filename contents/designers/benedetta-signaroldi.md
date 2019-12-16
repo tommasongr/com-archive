@@ -1,25 +1,28 @@
 ---
 name: Benedetta Signaroldi
 job:
-  company: The Visual Agency
-  type: Agenzia o studio
+    company: The Visual Agency
+    type: Agenzia o studio
 jobFields:
-  - Information design
+    - Information design
 based:
-  city: Milano
-  country: Italia
+    city: Milano
+    country: Italia
 awards: true
 social:
-  behance: 'https://www.behance.net/sbennii'
-  dribbble: ''
-  github: ''
-  instagram: ''
-  linkedin: 'https://www.linkedin.com/in/benedetta-signaroldi-45b98942/'
-  medium: ''
-  podcast: ''
-  twitter: ''
-  vimeo: ''
-  youtube: ''
+    behance: 'https://www.behance.net/sbennii'
+    dribbble: ''
+    github: ''
+    instagram: ''
+    linkedin: 'https://www.linkedin.com/in/benedetta-signaroldi-45b98942/'
+    medium: ''
+    podcast: ''
+    twitter: ''
+    vimeo: ''
+    youtube: ''
+contents:
+    projects: true
+    extras: false
 date: 2019-11-03T00:00:00.000Z
 img: ../../static/assets/designer-benedetta-signaroldi.png
 ---

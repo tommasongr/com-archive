@@ -180,6 +180,7 @@ const ArchiveControls = ({
                 onChange={query => searchArchive(query)}
             />
         </div>
+        {/* Random button */}
         <button id="archive-random" onClick={randomArchiveDesigner}>
             Random ??
         </button>
@@ -207,6 +208,7 @@ const ArchiveControls = ({
                     Digital product design
                 </option>
                 <option value="Editorial design">Editorial design</option>
+                <option value="Game design">Game design</option>
                 <option value="Graphic design">Graphic design</option>
                 <option value="Illustration">Illustration</option>
                 <option value="Information design">Information design</option>

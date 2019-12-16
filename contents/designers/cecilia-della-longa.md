@@ -1,25 +1,28 @@
 ---
 name: Cecilia Della Longa
 job:
-  company: Jekyll&Hyde
-  type: Agenzia o studio
+    company: Jekyll&Hyde
+    type: Agenzia o studio
 jobFields:
-  - Graphic design
+    - Graphic design
 based:
-  city: Milano
-  country: Italia
+    city: Milano
+    country: Italia
 awards: false
 social:
-  behance: 'https://www.behance.net/CeciliaDellaLonga'
-  dribbble: ''
-  github: ''
-  instagram: ''
-  linkedin: 'https://www.linkedin.com/in/cecilia-della-longa/'
-  medium: ''
-  podcast: ''
-  twitter: 'https://twitter.com/ccldlllng'
-  vimeo: ''
-  youtube: ''
+    behance: 'https://www.behance.net/CeciliaDellaLonga'
+    dribbble: ''
+    github: ''
+    instagram: ''
+    linkedin: 'https://www.linkedin.com/in/cecilia-della-longa/'
+    medium: ''
+    podcast: ''
+    twitter: 'https://twitter.com/ccldlllng'
+    vimeo: ''
+    youtube: ''
+contents:
+    projects: true
+    extras: false
 date: 2019-11-04T00:00:00.000Z
 img: ../../static/assets/designer-cecilia-della-longa.png
 ---
