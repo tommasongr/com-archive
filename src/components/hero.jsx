@@ -161,9 +161,9 @@ const Hero = () => {
                     in un unico luogo.
                 </h2>
                 <div id="hero-social">
-                    <IconInstagram socialLink="" />
-                    <IconTelegram socialLink="" />
-                    <IconGithub socialLink="" />
+                    <IconInstagram socialLink="https://www.instagram.com/com.archivioo/" />
+                    <IconTelegram socialLink="https://t.me/comarchivio" />
+                    <IconGithub socialLink="https://github.com/tommasongr/com-archive" />
                     <IconRss socialLink="" />
                 </div>
             </div>
