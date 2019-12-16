@@ -1,6 +1,6 @@
 ---
 name: Iki Mono
-client: Progetto personale
+client: '-'
 year: 2019
 designer:
     - Beatrice D'Agostino

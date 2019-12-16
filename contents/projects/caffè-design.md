@@ -1,6 +1,6 @@
 ---
 name: Caffè Design
-client: Progetto personale
+client: '-'
 year: 2015
 designer:
     - Giuliano Guarini

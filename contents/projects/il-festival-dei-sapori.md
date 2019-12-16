@@ -1,6 +1,6 @@
 ---
 name: Il festival dei sapori
-client: Comune di Cisternino (BR)
+client: Comune di Cisternino
 year: 2017
 designer:
     - Giuliano Guarini
