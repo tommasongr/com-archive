@@ -8,6 +8,7 @@ import NonStretchedImage from './non-stretched-image'
 import IconInstagram from '../components/social-icons/icon-instagram'
 import IconGithub from '../components/social-icons/icon-github'
 import IconRss from '../components/social-icons/icon-rss'
+import IconTelegram from '../components/social-icons/icon-telegram'
 
 const HeroStyle = styled.div`
     display: grid;
@@ -161,6 +162,7 @@ const Hero = () => {
                 </h2>
                 <div id="hero-social">
                     <IconInstagram socialLink="" />
+                    <IconTelegram socialLink="" />
                     <IconGithub socialLink="" />
                     <IconRss socialLink="" />
                 </div>

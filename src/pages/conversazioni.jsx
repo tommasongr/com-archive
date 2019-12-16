@@ -6,6 +6,7 @@ import SEO from '../components/seo'
 
 import Conversations from '../components/conversations'
 import IconRss from '../components/social-icons/icon-rss'
+import IconTelegram from '../components/social-icons/icon-telegram'
 
 const ConversazioniPageStyle = styled.div`
     display: grid;
@@ -24,6 +25,7 @@ const ConversazioniPageStyle = styled.div`
         grid-column: 8/13;
         grid-row: 1/3;
         justify-self: end;
+        display: flex;
 
         a {
             margin-right: 0.8333333333333334rem;
@@ -62,6 +64,7 @@ const ConversazioniPage = () => (
             </h2>
             <div className="conversazioni-page-feed">
                 <IconRss socialLink="" />
+                <IconTelegram socialLink="" />
             </div>
             <div className="conversazioni-page-divider"></div>
             <Conversations />

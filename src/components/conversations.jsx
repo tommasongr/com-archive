@@ -25,23 +25,41 @@ const ConversationsStyle = styled.div`
             grid-template-columns: 1fr 1fr;
             grid-auto-rows: min-content min-content min-content 1fr;
 
+            // h2 {
+            //     font-weight: 600;
+            //     font-size: 2.111111111111111rem;
+            //     line-height: 2.7777777777777777rem;
+            //     // margin-bottom: 1.6666666666666667rem;
+            //     font-size: 70px;
+            //     line-height: 82px;
+            //     grid-column: 1/3;
+            // }
+
+            // h3 {
+            //     margin-top: 0;
+            //     font-size: 2.111111111111111rem;
+            //     line-height: 2.2222222222222223rem;
+            //     font-weight: 500;
+            //     font-style: italic;
+            //     margin-bottom: 2.7777777777777777rem;
+            // }
+
             h2 {
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 2.111111111111111rem;
                 line-height: 2.7777777777777777rem;
-                // margin-bottom: 1.6666666666666667rem;
-                font-size: 70px;
-                line-height: 82px;
-                grid-column: 1/3;
+                margin: 0;
+                margin-bottom: 0px;
+                margin-bottom: 1.6666666666666667rem;
             }
 
             h3 {
-                margin-top: 0;
-                font-size: 2.111111111111111rem;
-                line-height: 2.2222222222222223rem;
-                font-weight: 500;
-                font-style: italic;
-                margin-bottom: 2.7777777777777777rem;
+                font-weight: 400;
+                font-size: 1.3333333333333333rem;
+                line-height: 2rem;
+                margin: 0;
+                margin-bottom: 0px;
+                margin-bottom: 2.2222222222222223rem;
             }
 
             .conversations-element-share {
@@ -106,7 +124,7 @@ const Conversations = () => {
                             conv_bitmap {
                                 childImageSharp {
                                     fluid(
-                                        maxWidth: 500
+                                        maxWidth: 300
                                         duotone: {
                                             highlight: "#ee0202"
                                             shadow: "#ee0202"
