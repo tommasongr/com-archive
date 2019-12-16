@@ -1,9 +1,9 @@
 ---
-name: Paolo Insinga Conversazione
+name: Post in cerca di un titolo al più presto
 content_type: Conversazione
 designer:
     - Paolo Insinga
-conv_bitmap: ../../../static/assets/bitmap-hero.png
+conv_bitmap: ../../static/assets/bitmap-insinga.png
 date: 2019-11-28T00:00:00.000Z
 ---
 

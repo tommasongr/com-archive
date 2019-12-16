@@ -1,14 +1,13 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import NonStretchedImage from './non-stretched-image'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-// import SocialIcon from './social-icon'
+import NonStretchedImage from './non-stretched-image'
 
-import TwitterIcon from '../icons/twitter.svg'
-import InstagramIcon from '../icons/instagram.svg'
-import GithubIcon from '../icons/github.svg'
-import BehanceIcon from '../icons/behance.svg'
+import IconInstagram from '../components/social-icons/icon-instagram'
+import IconGithub from '../components/social-icons/icon-github'
+import IconRss from '../components/social-icons/icon-rss'
 
 const HeroStyle = styled.div`
     display: grid;
@@ -26,9 +25,17 @@ const HeroStyle = styled.div`
     #hero-social {
         display: flex;
 
-        img {
-            margin-right: 1.1111111111111112rem;
-            stroke-color: var(--accent-color);
+        a {
+            margin-right: 0.8333333333333334rem;
+
+            :last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        svg {
+            width: 1.9444444444444444rem;
+            height: auto;
         }
     }
 
@@ -113,6 +120,9 @@ const Hero = () => {
             ) {
                 edges {
                     node {
+                        fields {
+                            slug
+                        }
                         frontmatter {
                             name
                             conv_bitmap {
@@ -125,6 +135,7 @@ const Hero = () => {
                                         }
                                     ) {
                                         ...GatsbyImageSharpFluid
+                                        presentationWidth
                                     }
                                 }
                             }
@@ -149,25 +160,26 @@ const Hero = () => {
                     in un unico luogo.
                 </h2>
                 <div id="hero-social">
-                    {/* <SocialIcon /> */}
-                    <img src={TwitterIcon} alt="" />
-                    <img src={InstagramIcon} alt="" />
-                    <img src={GithubIcon} alt="" />
-                    <img src={BehanceIcon} alt="" />
+                    <IconInstagram socialLink="" />
+                    <IconGithub socialLink="" />
+                    <IconRss socialLink="" />
                 </div>
             </div>
             <div id="hero-special">
                 <span>
                     In conversazione con <br />
                 </span>
-                <button id="hero-special-button">
+                <Link
+                    to={data.allMarkdownRemark.edges[0].node.fields.slug}
+                    id="hero-special-button"
+                >
                     <span id="hero-special-designer">
                         Beatrice D'Agostino <br />
                     </span>
                     <span id="hero-special-title">
                         Il type design in Italia <br />
                     </span>
-                </button>
+                </Link>
             </div>
             <div id="hero-arrows-container" onClick={scrollToArchive}>
                 <div id="hero-arrows"></div>

@@ -47,6 +47,7 @@ class BadgesPage extends React.Component {
 
         return (
             <Layout>
+                <SEO title="Badges" />
                 <BadgesPageStyle>
                     <h1>Certificati di appartenenza</h1>
                     <h2>
