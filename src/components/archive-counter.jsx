@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 const ArchiveCounterStyle = styled.div`
     height: 70vh;
-    margin-top: 1.6666666666666667rem;
     display: flex;
     align-items: center;
     justify-content: center;

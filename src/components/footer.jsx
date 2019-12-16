@@ -16,10 +16,12 @@ const FooterStyle = styled.footer`
 
         #footer-cc-icons {
             display: flex;
+            height: auto;
 
             svg {
                 width: 1.9444444444444444rem;
                 margin-right: 1.3888888888888888rem;
+                height: min-intrinsic;
 
                 :last-of-type {
                     margin: 0;
@@ -40,7 +42,7 @@ const FooterStyle = styled.footer`
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-auto-rows: min-content;
-            align-self: last baseline;
+            align-self: end;
 
             span {
                 font-family: 'Suisse Intl', sans-serif;
@@ -142,7 +144,7 @@ const Footer = () => (
                         Creative Commons Attribuzione - Non commerciale 4.0
                         International license
                     </a>
-                    . Il codice che lo compone è sotto licenza{' '}
+                    . Il codice del sito è sotto licenza{' '}
                     <a
                         href="https://github.com/tommasongr/com-archive/blob/master/LICENSE"
                         target="blank"
@@ -168,16 +170,16 @@ const Footer = () => (
                     Conversazioni
                 </Link>
                 <Link
-                    to="badges/"
+                    to="chi-siamo/"
                     style={{ gridColumn: '2/3', gridRow: '2/3' }}
                 >
                     Chi siamo
                 </Link>
                 <Link
-                    to="badges/"
+                    to="certificati/"
                     style={{ gridColumn: '2/3', gridRow: '3/4' }}
                 >
-                    Badges
+                    Certificati
                 </Link>
                 <a
                     href="https://github.com/tommasongr/com-archive"

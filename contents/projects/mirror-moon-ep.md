@@ -19,6 +19,6 @@ date: 2019-12-05T00:00:00.000Z
 
 Un gioco di avventura e di fantascienza in prima persona, che presenta un insolito sistema di orientamento, in cui la luna è un riflesso del pianeta in orbita e i giocatori possono manipolare la luna per creare punti di riferimento nel gioco.
 
-realizzato come progetto personale  
+Realizzato come progetto personale  
 Milano, **2013**<br><br>
 [Scopri di più](http://www.mirrormoongame.com/)

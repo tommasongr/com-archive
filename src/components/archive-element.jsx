@@ -89,6 +89,12 @@ class ArchiveElement extends React.Component {
                 behavior: 'smooth',
             })
         }
+
+        document
+            .querySelectorAll('.archive-element-card-content a')
+            .forEach(function(elem) {
+                elem.setAttribute('target', 'blank')
+            })
     }
 
     render() {
