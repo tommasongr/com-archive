@@ -22,27 +22,6 @@ module.exports = {
                 path: `${__dirname}/contents`,
             },
         },
-        // {
-        //     resolve: `gatsby-source-filesystem`,
-        //     options: {
-        //         name: `designers`,
-        //         path: `${__dirname}/contents/designers`,
-        //     },
-        // },
-        // {
-        //     resolve: `gatsby-source-filesystem`,
-        //     options: {
-        //         name: `projects`,
-        //         path: `${__dirname}/contents/projects`,
-        //     },
-        // },
-        // {
-        //     resolve: `gatsby-source-filesystem`,
-        //     options: {
-        //         name: `extras`,
-        //         path: `${__dirname}/contents/extras`,
-        //     },
-        // },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {
