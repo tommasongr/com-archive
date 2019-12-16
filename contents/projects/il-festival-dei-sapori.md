@@ -4,10 +4,12 @@ client: Comune di Cisternino (BR)
 year: 2017
 designer:
     - Giuliano Guarini
-preview: ../../static/assets/project-iki-mono-01.png
+preview: ../../static/assets/project-il-festival-dei-sapori-01.jpg
 images:
-    - ../../static/assets/project-iki-mono-01.png
-    - ../../static/assets/project-iki-mono-02.png
+    - ../../static/assets/project-il-festival-dei-sapori-01.jpg
+    - ../../static/assets/project-il-festival-dei-sapori-02.jpg
+    - ../../static/assets/project-il-festival-dei-sapori-03.jpg
+    - ../../static/assets/project-il-festival-dei-sapori-04.jpg
 images_copyright:
     controll: false
     owner:

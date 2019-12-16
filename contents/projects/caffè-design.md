@@ -4,10 +4,11 @@ client: Progetto personale
 year: 2015
 designer:
     - Giuliano Guarini
-preview: ../../static/assets/project-iki-mono-01.png
+preview: ../../static/assets/project-caffe-design-01.jpg
 images:
-    - ../../static/assets/project-iki-mono-01.png
-    - ../../static/assets/project-iki-mono-02.png
+    - ../../static/assets/project-caffe-design-01.jpg
+    - ../../static/assets/project-caffe-design-02.jpg
+    - ../../static/assets/project-caffe-design-03.jpg
 images_copyright:
     controll: false
     owner:

@@ -4,10 +4,13 @@ client: Triennale di Milano
 year: 2016
 designer:
     - Stefano Lionetti
-preview: ../../static/assets/project-iki-mono-01.png
+preview: ../../static/assets/project-il-nuovo-vocabolario-della-moda-italiana-01.jpg
 images:
-    - ../../static/assets/project-iki-mono-01.png
-    - ../../static/assets/project-iki-mono-02.png
+    - ../../static/assets/project-il-nuovo-vocabolario-della-moda-italiana-01.jpg
+    - ../../static/assets/project-il-nuovo-vocabolario-della-moda-italiana-02.jpg
+    - ../../static/assets/project-il-nuovo-vocabolario-della-moda-italiana-03.jpg
+    - ../../static/assets/project-il-nuovo-vocabolario-della-moda-italiana-04.jpg
+    - ../../static/assets/project-il-nuovo-vocabolario-della-moda-italiana-05.jpg
 images_copyright:
     controll: false
     owner:

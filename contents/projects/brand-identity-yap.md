@@ -4,10 +4,11 @@ client: Nexi
 year: 2018
 designer:
     - Cecilia Della Longa
-preview: ../../static/assets/project-iki-mono-01.png
+preview: ../../static/assets/project-brand-identity-yap-01.jpg
 images:
-    - ../../static/assets/project-iki-mono-01.png
-    - ../../static/assets/project-iki-mono-02.png
+    - ../../static/assets/project-brand-identity-yap-01.jpg
+    - ../../static/assets/project-brand-identity-yap-02.jpg
+    - ../../static/assets/project-brand-identity-yap-03.jpg
 images_copyright:
     controll: false
     owner:

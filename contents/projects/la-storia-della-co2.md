@@ -4,10 +4,11 @@ client: ENIday
 year: 2018
 designer:
     - Giulio Bertolotti
-preview: ../../static/assets/project-iki-mono-01.png
+preview: ../../static/assets/project-la-storia-della-co2-01.jpg
 images:
-    - ../../static/assets/project-iki-mono-01.png
-    - ../../static/assets/project-iki-mono-02.png
+    - ../../static/assets/project-la-storia-della-co2-01.jpg
+    - ../../static/assets/project-la-storia-della-co2-02.jpg
+    - ../../static/assets/project-la-storia-della-co2-03.jpg
 images_copyright:
     controll: false
     owner:

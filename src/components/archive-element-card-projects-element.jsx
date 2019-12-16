@@ -20,7 +20,7 @@ const ArchiveElementCardProjectsElementStyle = styled.div`
     .archive-element-card-projects-element-button {
         grid-column: 1/12;
         width: 100%;
-        height: calc(3.111111111111111rem * 3);
+        // height: calc(3.111111111111111rem * 3);
         cursor: pointer;
         padding: 0.6666666666666666rem 0;
 

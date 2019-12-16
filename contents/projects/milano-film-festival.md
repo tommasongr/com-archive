@@ -4,10 +4,11 @@ client: Esterni
 year: 2015
 designer:
     - Stefano Lionetti
-preview: ../../static/assets/project-iki-mono-01.png
+preview: ../../static/assets/project-milano-film-festival-01.jpg
 images:
-    - ../../static/assets/project-iki-mono-01.png
-    - ../../static/assets/project-iki-mono-02.png
+    - ../../static/assets/project-milano-film-festival-01.jpg
+    - ../../static/assets/project-milano-film-festival-02.jpg
+    - ../../static/assets/project-milano-film-festival-03.jpg
 images_copyright:
     controll: false
     owner:

@@ -4,10 +4,13 @@ client: Mondadori
 year: 2019
 designer:
     - Alice Beniero
-preview: ../../static/assets/project-iki-mono-01.png
+preview: ../../static/assets/project-apri-gli-occhi-al-cielo-01.jpg
 images:
-    - ../../static/assets/project-iki-mono-01.png
-    - ../../static/assets/project-iki-mono-02.png
+    - ../../static/assets/project-apri-gli-occhi-al-cielo-01.jpg
+    - ../../static/assets/project-apri-gli-occhi-al-cielo-02.jpg
+    - ../../static/assets/project-apri-gli-occhi-al-cielo-03.jpg
+    - ../../static/assets/project-apri-gli-occhi-al-cielo-04.jpg
+    - ../../static/assets/project-apri-gli-occhi-al-cielo-05.jpg
 images_copyright:
     controll: false
     owner:

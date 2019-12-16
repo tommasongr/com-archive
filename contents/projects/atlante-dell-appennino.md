@@ -4,10 +4,13 @@ client: Symbola
 year: 2018
 designer:
     - Benedetta Signaroldi
-preview: ../../static/assets/project-iki-mono-01.png
+preview: ../../static/assets/project-atlante-dell-appennino-01.jpg
 images:
-    - ../../static/assets/project-iki-mono-01.png
-    - ../../static/assets/project-iki-mono-02.png
+    - ../../static/assets/project-atlante-dell-appennino-01.jpg
+    - ../../static/assets/project-atlante-dell-appennino-02.jpg
+    - ../../static/assets/project-atlante-dell-appennino-03.jpg
+    - ../../static/assets/project-atlante-dell-appennino-04.jpg
+    - ../../static/assets/project-atlante-dell-appennino-05.jpg
 images_copyright:
     controll: false
     owner:

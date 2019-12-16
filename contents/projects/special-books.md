@@ -4,10 +4,13 @@ client: ISBN Edizioni
 year: 2010
 designer:
     - Alice Beniero
-preview: ../../static/assets/project-iki-mono-01.png
+preview: ../../static/assets/project-special-books-01.jpg
 images:
-    - ../../static/assets/project-iki-mono-01.png
-    - ../../static/assets/project-iki-mono-02.png
+    - ../../static/assets/project-special-books-01.jpg
+    - ../../static/assets/project-special-books-02.jpg
+    - ../../static/assets/project-special-books-03.jpg
+    - ../../static/assets/project-special-books-04.jpg
+    - ../../static/assets/project-special-books-05.jpg
 images_copyright:
     controll: false
     owner:

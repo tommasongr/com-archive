@@ -4,10 +4,10 @@ client: Progetto personale
 year: 2019
 designer:
     - Beatrice D'Agostino
-preview: ../../static/assets/project-iki-mono-01.png
+preview: ../../static/assets/project-iki-mono-01.jpg
 images:
-    - ../../static/assets/project-iki-mono-01.png
-    - ../../static/assets/project-iki-mono-02.png
+    - ../../static/assets/project-iki-mono-01.jpg
+    - ../../static/assets/project-iki-mono-02.jpg
 images_copyright:
     controll: true
     owner: Beatrice D'Agostino

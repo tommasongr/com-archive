@@ -4,10 +4,13 @@ client: Digital Design Days
 year: 2019
 designer:
     - Cecilia Della Longa
-preview: ../../static/assets/project-iki-mono-01.png
+preview: ../../static/assets/project-digital-design-days-01.jpg
 images:
-    - ../../static/assets/project-iki-mono-01.png
-    - ../../static/assets/project-iki-mono-02.png
+    - ../../static/assets/project-digital-design-days-01.jpg
+    - ../../static/assets/project-digital-design-days-02.jpg
+    - ../../static/assets/project-digital-design-days-03.jpg
+    - ../../static/assets/project-digital-design-days-04.jpg
+    - ../../static/assets/project-digital-design-days-05.jpg
 images_copyright:
     controll: false
     owner:

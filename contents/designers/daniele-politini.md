@@ -25,13 +25,14 @@ date: 2019-11-05T00:00:00.000Z
 img: ../../static/assets/designer-daniele-politini.png
 ---
 
-Sono un graphic designer/art director poliedrico e versatile con sede a New York.
-Con un debole per la creazione di linguaggi visivi accattivanti e design su misura, il mio lavoro va dall'identità del brand, al design del packaging, all'ambito commerciale e alla direzione artistica, dai grandi clienti aziendali ai piccoli progetti.
+Daniele Politini è un graphic designer e art director poliedrico e versatile con sede a New York.
+Ha un debole per la creazione di linguaggi visivi accattivanti e design su misura, il suo lavoro
+va dall'identità del brand, al design del packaging, all'ambito commerciale e alla direzione artistica, dai grandi progetti aziendali fino a quelli più piccoli.
 
-Art Director/Brand Consultant **Freelance** (New York, 2016 - oggi)  
+Art Director/Brand Consultant **Freelance** (2016 - oggi)  
 Senior Art Director a **Aruliden** (2015 - 2016)  
 Design Director a **FutureBrand** (2009 - 2015)  
 Senior Designer a **FutureBrand** (2004 - 2011)  
 Web designer a **Drake** (2000 - 2002)<br><br>
-MA in **Industrial Design**, comunicazione design (Politecnico di Milano, 1995 - 2001) <br/><br/>
+MA in **Industrial Design** (Politecnico di Milano, 1995 - 2001)<br/><br/>
 [danielepolitini.com](https://danielepolitini.com/work)

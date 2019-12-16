@@ -25,7 +25,7 @@ date: 2019-11-09T00:00:00.000Z
 img: ../../static/assets/designer-stefano-lionetti.png
 ---
 
-Sono un graphic designer che lavora a Milano. Mi occupo principalmente di tipografia personalizzata a seconda della richiesta, identità visive forti e consulenza creativa per piccoli e grandi clienti. Dal 2012 sono partner di Zetalab.
+Stefano Lionetti è un graphic designer con base a Milano. Si occupa principalmente di tipografia personalizzata a seconda delle richieste, realizza identità visive forti e fornisce una consulenza creativa per piccoli e grandi clienti. Dal 2012 è un partner di Zetalab.
 
 Co Founder di **Peter & WendyDate** (2013 – oggi)  
 Partner a **Zetalab** (Milano, 2012 - oggi)  
