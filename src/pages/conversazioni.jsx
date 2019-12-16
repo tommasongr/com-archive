@@ -66,8 +66,8 @@ const ConversazioniPage = () => (
                 del design della comunicazione.
             </h2>
             <div className="conversazioni-page-feed">
-                <IconRss socialLink="" />
-                <IconTelegram socialLink="" />
+                <IconRss socialLink="https://archiviocom.netlify.com/rss.xml" />
+                <IconTelegram socialLink="https://t.me/comarchivio" />
             </div>
             <div className="conversazioni-page-divider"></div>
             <Conversations />
