@@ -96,7 +96,7 @@ module.exports = {
                                     {},
                                     edge.node.frontmatter,
                                     {
-                                        title: edge.node.name,
+                                        title: edge.node.frontmatter.name,
                                         description: edge.node.excerpt,
                                         date: edge.node.frontmatter.date,
                                         url:
@@ -142,7 +142,7 @@ module.exports = {
               }
             `,
                         output: '/rss.xml',
-                        title: 'Archivio Com. RSS Feed',
+                        title: 'Archivio Com.',
                     },
                 ],
             },
