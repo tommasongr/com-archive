@@ -9,6 +9,7 @@ import 'prismjs/themes/prism-tomorrow.css'
 import Prism from 'prismjs'
 
 import image1 from '../images/badges01.png'
+import image2 from '../images/badges02.png'
 
 const CertificatiPageStyle = styled.div`
     display: grid;
@@ -161,7 +162,7 @@ class CertificatiPage extends React.Component {
                     <h3>Esempi di applicazione</h3>
                     <div className="certificati-page-images">
                         <img src={image1} alt="" />
-                        <img src={image1} alt="" />
+                        <img src={image2} alt="" />
                     </div>
                 </CertificatiPageStyle>
             </Layout>

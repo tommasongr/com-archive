@@ -45,6 +45,7 @@ const ConversationsStyle = styled.div`
             // }
 
             h2 {
+                grid-column: 1/2;
                 font-weight: 500;
                 font-size: 2.111111111111111rem;
                 line-height: 2.7777777777777777rem;
@@ -54,6 +55,7 @@ const ConversationsStyle = styled.div`
             }
 
             h3 {
+                grid-column: 1/4;
                 font-weight: 400;
                 font-size: 1.3333333333333333rem;
                 line-height: 2rem;

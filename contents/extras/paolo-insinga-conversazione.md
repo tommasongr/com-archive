@@ -1,5 +1,5 @@
 ---
-name: Post in cerca di un titolo al più presto
+name: Il business del branding, il branding del business
 content_type: Conversazione
 designer:
     - Paolo Insinga
