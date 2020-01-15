@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@rhysforyou/gatsby-plugin-safari-site-icon": "^1.0.2",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.18.4",
     "gatsby-image": "^2.2.34",

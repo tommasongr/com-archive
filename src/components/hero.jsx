@@ -15,7 +15,7 @@ import IconTelegram from '../components/social-icons/icon-telegram'
 const HeroStyle = styled.div`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
     grid-column-gap: 1.2222222222222223rem;
     height: calc(100vh - 7.222222222222222rem);
     position: relative;
@@ -24,6 +24,14 @@ const HeroStyle = styled.div`
     #hero-text-container {
         position: absolute;
         z-index: 111;
+
+        #hero-title-mobile {
+            display: none;
+        }
+
+        #hero-subtitle-mobile {
+            display: none;
+        }
     }
 
     #hero-social {
@@ -107,6 +115,39 @@ const HeroStyle = styled.div`
             bottom: 1.3888888888888888rem;
         }
     }
+
+    @media screen and (max-width: 620px) {
+        height: calc(100vh - 7.222222222222222rem + 1.1111111111111112rem);
+
+        #hero-text-container {
+            position: relative;
+            grid-column: 1/13;
+
+            h1 {
+                display: none;
+            }
+            #hero-title-mobile {
+                display: block;
+            }
+            h2 {
+                display: none;
+            }
+            #hero-subtitle-mobile {
+                display: block;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+        #hero-special {
+            display: none;
+        }
+
+        #hero-arrows-container {
+            display: none;
+        }
+    }
 `
 
 function scrollToArchive() {
@@ -149,10 +190,17 @@ const Hero = () => {
                     <br /> Comunicazione al Politecnico di Milano, <br />
                     che fanno la differenza.
                 </h1>
+                <h1 id="hero-title-mobile">
+                    Benvenuti nell'archivio dei comunicatori.
+                </h1>
                 <h2>
                     Designer, progetti, conversazioni <br /> e altri contenuti
                     speciali raccolti <br />
                     in un unico luogo.
+                </h2>
+                <h2 id="hero-subtitle-mobile">
+                    Laureati in Design della Comunicazione al Politecnico di
+                    Milano, che fanno la differenza.
                 </h2>
                 <div id="hero-social">
                     <IconInstagram socialLink="https://www.instagram.com/com.archivioo/" />
@@ -232,6 +280,23 @@ const HeroImagesContainerStyle = styled.div`
         opacity: 0;
         animation: heroFade 6s ease-in-out 1 forwards;
     }
+
+    @media screen and (max-width: 1350px) {
+        grid-column: 8/13;
+    }
+
+    @media screen and (max-width: 1024px) {
+        grid-column: 7/13;
+    }
+
+    @media screen and (max-width: 900px) {
+        grid-column: 6/13;
+    }
+
+    @media screen and (max-width: 620px) {
+        grid-column: 1/13;
+        grid-row: 2/3;
+    }
 `
 
 class HeroImagesContainer extends React.Component {
@@ -273,7 +338,7 @@ class HeroImagesContainer extends React.Component {
             <HeroImagesContainerStyle>
                 <img src={HeroImage1} className="hero-image" alt="" srcset="" />
                 <img src={HeroImage2} className="hero-image" alt="" srcset="" />
-                <img src={HeroImage3} className="hero-image" alt="" srcset="" />
+                {/* <img src={HeroImage3} className="hero-image" alt="" srcset="" /> */}
             </HeroImagesContainerStyle>
         )
     }

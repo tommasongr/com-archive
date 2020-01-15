@@ -25,7 +25,7 @@ const ChiSiamoPageStyle = styled.div`
 
     p {
         grid-column: 1/6;
-        margin-top: 30px;
+        margin-top: 1.6666666666666667rem;
 
         :first-of-type {
             margin: 0;
@@ -65,6 +65,49 @@ const ChiSiamoPageStyle = styled.div`
             svg {
                 width: 1.9444444444444444rem;
                 height: auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        h1 {
+            grid-column: 1/8;
+        }
+
+        h2 {
+            grid-column: 1/8;
+        }
+
+        p {
+            grid-column: 1/8;
+        }
+
+        .chi-siamo-page-contacts {
+            grid-column: 8/13;
+        }
+    }
+
+    @media screen and (max-width: 620px) {
+        h1 {
+            grid-column: 1/13;
+        }
+
+        h2 {
+            grid-column: 1/13;
+        }
+
+        p {
+            grid-column: 1/13;
+        }
+
+        .chi-siamo-page-contacts {
+            grid-row: inherit;
+            grid-column: 1/13;
+            margin-top: 2.7777777777777777rem;
+            justify-self: flex-start;
+
+            .chi-siamo-page-contacts-social {
+                justify-content: flex-start;
             }
         }
     }
