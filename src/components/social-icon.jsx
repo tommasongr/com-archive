@@ -30,6 +30,14 @@ const SocialIconStyle = styled.div`
         width: 1.6666666666666667rem;
         height: 1.6666666666666667rem;
     }
+
+    @media screen and (max-width: 900px) {
+        grid-column: 1/7;
+    }
+
+    @media screen and (max-width: 620px) {
+        grid-row: inherit;
+    }
 `
 
 const SocialIcon = ({ designerSocial }) => (

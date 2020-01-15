@@ -31,6 +31,18 @@ html {
     /* scroll-behavior: smooth; */
 }
 
+@media screen and (max-width: 1450px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+}
+
 html ::selection {
     color: var(--bg-color);
     background-color: var(--accent-color);
@@ -66,14 +78,19 @@ p {
 
 a {
     color: inherit;
+    text-decoration-thickness: from-font;
 }
 
 a:hover {
     color: var(--accent-color);
+    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 5px;
 }
 
 a:focus {
     outline: dashed 1px var(--accent-color);
+    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 5px;
 }
 
 a:active {

@@ -24,9 +24,9 @@ const CloseCardStyle = styled.div`
             }
 
             .close-card-sign {
-                border-left: 5.5px solid transparent;
-                border-right: 5.5px solid transparent;
-                border-bottom: 11px solid var(--accent-color);
+                border-left: 0.3055555555555556rem solid transparent;
+                border-right: 0.3055555555555556rem solid transparent;
+                border-bottom: 0.6111111111111112rem solid var(--accent-color);
             }
 
             .close-card-line {
@@ -63,14 +63,8 @@ const CloseCardStyle = styled.div`
     }
 `
 
-// function scrollTo(id) {
-//     document.getElementById(id).scrollIntoView({
-//         behavior: 'smooth',
-//     })
-// }
-
-const CloseCard = ({ toggleCard, column }) => (
-    <CloseCardStyle style={{ gridColumn: column }}>
+const CloseCard = ({ toggleCard, className }) => (
+    <CloseCardStyle className={className}>
         <button onClick={toggleCard}>
             <div className="close-card-container">
                 <span className="close-card-text">Chiudi scheda</span>

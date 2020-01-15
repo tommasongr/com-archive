@@ -5,7 +5,7 @@ const ArchiveControlsStyle = styled.div`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1.2222222222222223rem;
-    height: 3.111111111111111rem;
+    grid-auto-rows: 3.111111111111111rem;
     align-items: center;
     margin-bottom: 2.6666666666666665rem;
     font-weight: 400;
@@ -36,8 +36,12 @@ const ArchiveControlsStyle = styled.div`
         }
     }
 
+    #archive-random-container {
+        grid-column: 4/6;
+        height: 100%;
+    }
+
     #archive-random {
-        grid-column: 4/5;
         font-family: 'Suisse Intl', serif;
         font-style: italic;
         color: var(--accent-color);
@@ -89,9 +93,9 @@ const ArchiveControlsStyle = styled.div`
         .archive-arrow {
             width: 0;
             height: 0;
-            border-left: 5.5px solid transparent;
-            border-right: 5.5px solid transparent;
-            border-top: 11px solid var(--text-color);
+            border-left: 0.3055555555555556rem solid transparent;
+            border-right: 0.3055555555555556rem solid transparent;
+            border-top: 0.6111111111111112rem solid var(--text-color);
         }
 
         :focus-within {
@@ -99,12 +103,12 @@ const ArchiveControlsStyle = styled.div`
         }
     }
 
-    #archive-job-fields {
-        grid-column: 9/11;
-    }
-
     #archive-job {
         grid-column: 7/9;
+    }
+
+    #archive-job-fields {
+        grid-column: 9/11;
     }
 
     .archive-checkbox-label {
@@ -121,8 +125,8 @@ const ArchiveControlsStyle = styled.div`
             -moz-appearance: none;
             appearance: none;
             border: solid 1px var(--text-color);
-            height: 11px;
-            width: 11px;
+            height: 0.6111111111111112rem;
+            width: 0.6111111111111112rem;
             background: none;
 
             :focus {
@@ -157,6 +161,68 @@ const ArchiveControlsStyle = styled.div`
     label:active {
         outline: dashed 1px var(--accent-color);
     }
+
+    @media screen and (max-width: 1350px) {
+        #archive-search-container {
+            grid-column: 1/6;
+        }
+
+        #archive-random-container {
+            grid-column: 6/8;
+        }
+
+        #archive-job {
+            grid-column: 1/5;
+        }
+
+        #archive-job-fields {
+            grid-column: 5/9;
+        }
+
+        #archive-abroad-container {
+            grid-column: 1/3;
+        }
+
+        #archive-awards-container {
+            grid-column: 3/5;
+        }
+    }
+
+    @media screen and (max-width: 620px) {
+        #archive-search-container {
+            grid-column: 1/8;
+        }
+
+        #archive-random-container {
+            grid-column: 8/12;
+        }
+
+        #archive-job {
+            grid-column: 1/6;
+        }
+
+        #archive-job-fields {
+            grid-column: 6/11;
+        }
+
+        #archive-abroad-container {
+            grid-column: 1/4;
+        }
+
+        #archive-awards-container {
+            grid-column: 4/7;
+        }
+    }
+
+    @media screen and (max-width: 470px) {
+        #archive-job {
+            grid-column: 1/7;
+        }
+
+        #archive-job-fields {
+            grid-column: 7/13;
+        }
+    }
 `
 
 const ArchiveControls = ({
@@ -181,9 +247,11 @@ const ArchiveControls = ({
             />
         </div>
         {/* Random button */}
-        <button id="archive-random" onClick={randomArchiveDesigner}>
-            Random ??
-        </button>
+        <div id="archive-random-container">
+            <button id="archive-random" onClick={randomArchiveDesigner}>
+                Random ??
+            </button>
+        </div>
         {/* Select for job status */}
         <div className="archive-wrapper" id="archive-job">
             <select defaultValue="" onChange={value => filterArchiveJob(value)}>

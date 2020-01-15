@@ -43,9 +43,14 @@ const ChiSiamoPageStyle = styled.div`
             color: var(--accent-color);
         }
 
+        a {
+            font-family: Suisse Intl, sans-serif;
+            color: var(--accent-color);
+        }
+
         .chi-siamo-page-contacts-social {
             display: flex;
-            justify-content: end;
+            justify-content: flex-end;
             margin-bottom: 20px;
 
             a {
@@ -93,9 +98,8 @@ const ChiSiamoPage = () => (
                     <IconGithub socialLink="https://github.com/tommasongr/com-archive" />
                     <IconRss socialLink="https://archiviocom.netlify.com/rss.xml" />
                 </div>
-                <span>
-                    <a href="mailto:">com.archivio@gmail.com</a>
-                </span>
+                <a href="mailto:">com.archivio@gmail.com</a>
+                <span></span>
             </div>
         </ChiSiamoPageStyle>
     </Layout>

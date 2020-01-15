@@ -213,6 +213,36 @@ const ArchiveLabelsStyle = styled.div`
     .archive-labels-based {
         grid-column: 11/13;
     }
+
+    @media screen and (max-width: 900px) {
+        .archive-labels-year {
+            display: none;
+        }
+
+        .archive-labels-name {
+            grid-column: 1/7;
+        }
+    }
+
+    @media screen and (max-width: 620px) {
+        .archive-labels-job {
+            grid-column: 7/13;
+        }
+
+        .archive-labels-based {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 470px) {
+        .archive-labels-name {
+            grid-column: 1/13;
+        }
+
+        .archive-labels-job {
+            display: none;
+        }
+    }
 `
 
 const ArchiveLabels = () => (

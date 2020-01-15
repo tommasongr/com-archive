@@ -64,6 +64,37 @@ const ArchiveElementStyle = styled.div`
             .archive-element-based {
                 grid-column: 11/13;
             }
+
+            @media screen and (max-width: 900px) {
+                .archive-element-year {
+                    display: none;
+                }
+
+                .archive-element-name {
+                    grid-column: 1/7;
+                }
+            }
+
+            @media screen and (max-width: 620px) {
+                .archive-element-job {
+                    grid-column: 7/13;
+                }
+
+                .archive-element-based {
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 470px) {
+                .archive-element-name {
+                    grid-column: 1/13;
+                }
+
+                .archive-element-job {
+                    display: none;
+                }
+            }
+
         }
     }
 `

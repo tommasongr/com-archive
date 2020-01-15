@@ -6,6 +6,10 @@ const HeaderStyle = styled.header`
     margin-top: 2.2222222222222223rem;
     padding: 0 2.2222222222222223rem;
 
+    @media screen and (max-width: 620px) {
+        padding: 0 1.1111111111111112rem;
+    }
+
     .header {
         display: flex;
         align-items: baseline;
@@ -50,6 +54,7 @@ const HeaderStyle = styled.header`
 
             :hover {
                 text-decoration: line-through;
+                text-decoration-thickness: 0.1rem;
             }
         }
     }

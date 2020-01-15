@@ -12,8 +12,8 @@ const ArchiveCounterStyle = styled.div`
     span {
         color: var(--accent-color);
         margin-bottom: 15px;
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 0.7777777777777778rem;
+        line-height: 1.2222222222222223rem;
         font-family: Suisse Intl, sans-serif;
 
         :first-of-type {

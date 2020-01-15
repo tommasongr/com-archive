@@ -20,7 +20,7 @@ const ArchiveElementCardProjectsElementStyle = styled.div`
     .archive-element-card-projects-element-button {
         grid-column: 1/12;
         width: 100%;
-        // height: calc(3.111111111111111rem * 3);
+        /* height: calc(3.111111111111111rem * 3); */
         cursor: pointer;
         padding: 0.6666666666666666rem 0;
 
@@ -68,7 +68,39 @@ const ArchiveElementCardProjectsElementStyle = styled.div`
             .archive-element-card-projects-element-client {
                 grid-column: 6/10;
             }
+
+            @media screen and (max-width: 900px) {
+                .archive-element-card-projects-element-year {
+                    display: none;
+                }
+
+                .archive-element-card-projects-element-name {
+                    grid-column: 1/8;
+                }
+
+                .archive-element-card-projects-element-client {
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 470px) {
+                .archive-element-card-projects-element-name {
+                    grid-column: 1/13;
+                }
+            }
         }
+    }
+`
+
+const ArchiveElementCardProjectsElementProjectImage = styled(NonStretchedImage)`
+    grid-column: 10/12;
+
+    @media screen and (max-width: 900px) {
+        grid-column: 8/12;
+    }
+
+    @media screen and (max-width: 470px) {
+        display: none;
     }
 `
 
@@ -143,7 +175,7 @@ class ArchiveElementCardProjectsElement extends React.Component {
                         >
                             {project.frontmatter.client}
                         </span>
-                        <NonStretchedImage
+                        <ArchiveElementCardProjectsElementProjectImage
                             fluid={
                                 project.frontmatter.preview.childImageSharp
                                     .fluid
@@ -151,9 +183,6 @@ class ArchiveElementCardProjectsElement extends React.Component {
                             imgStyle={{
                                 objectFit: 'contain',
                                 objectPosition: '100% 0',
-                            }}
-                            style={{
-                                gridColumn: '10/12',
                             }}
                         />
                     </span>

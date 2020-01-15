@@ -32,6 +32,43 @@ const ArchiveElementCardStyle = styled.div`
             font-size: 0.7777777777777778rem;
             line-height: 1.2222222222222223rem;
         }
+
+        @media screen and (max-width: 900px) {
+            p:first-of-type {
+                grid-column: 1/7;
+            }
+
+            p:not(:first-child) {
+                grid-column: 1/7;
+            }
+        }
+
+        @media screen and (max-width: 620px) {
+            grid-column: 1/13;
+        }
+    }
+`
+
+const ArchiveElementDesignerImage = styled(NonStretchedImage)`
+    grid-column: 8/13;
+    grid-row: 1/4;
+    justify-self: flex-end;
+    width: 100%;
+    align-self: flex-start;
+
+    @media screen and (max-width: 620px) {
+        grid-column: 1/13;
+        grid-row: 1/2;
+        justify-self: center;
+        margin-bottom: 2.2222222222222223rem;
+    }
+`
+
+const ArchiveElementCloseCard = styled(CloseCard)`
+    grid-column: 2/13;
+
+    @media screen and (max-width: 900px) {
+        grid-column: 1/13;
     }
 `
 
@@ -47,16 +84,9 @@ const ArchiveElementCard = ({ designer, toggleCard, cardOpen }) => (
             className="archive-element-card-content"
             dangerouslySetInnerHTML={{ __html: designer.html }}
         />
-        <NonStretchedImage
+        <ArchiveElementDesignerImage
             fluid={designer.frontmatter.img.childImageSharp.fluid}
             imgStyle={{ objectFit: 'contain' }}
-            style={{
-                gridColumn: '8/13',
-                gridRow: '1/4',
-                justifySelf: 'end',
-                width: '100%',
-                alignSelf: 'start',
-            }}
         />
         <Social designerSocial={designer.frontmatter.social} />
 
@@ -68,7 +98,7 @@ const ArchiveElementCard = ({ designer, toggleCard, cardOpen }) => (
             <ArchiveElementCardExtras designer={designer.frontmatter.name} />
         )}
 
-        <CloseCard column="2/13" toggleCard={toggleCard} />
+        <ArchiveElementCloseCard toggleCard={toggleCard} />
     </ArchiveElementCardStyle>
 )
 

@@ -3,7 +3,9 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import NonStretchedImage from './non-stretched-image'
+import HeroImage1 from '../../static/assets/bitmap-beatrice-dagostino.png'
+import HeroImage2 from '../../static/assets/bitmap-paolo-insinga.png'
+import HeroImage3 from '../../static/assets/designer-alessandro-sposato.png'
 
 import IconInstagram from '../components/social-icons/icon-instagram'
 import IconGithub from '../components/social-icons/icon-github'
@@ -13,14 +15,15 @@ import IconTelegram from '../components/social-icons/icon-telegram'
 const HeroStyle = styled.div`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
     grid-column-gap: 1.2222222222222223rem;
     height: calc(100vh - 7.222222222222222rem);
     position: relative;
     margin-bottom: 1.1111111111111112rem;
 
     #hero-text-container {
-        grid-column: 1/8;
-        grid-row: 1/2;
+        position: absolute;
+        z-index: 111;
     }
 
     #hero-social {
@@ -45,18 +48,21 @@ const HeroStyle = styled.div`
         grid-row: 2/3;
         align-self: end;
         margin-bottom: 3.3333333333333335rem;
+        z-index: 111;
 
         span:first-of-type {
             font-size: 0.8888888888888888rem;
             line-height: 1.5555555555555556rem;
         }
 
+        a {
+            color: var(--accent-color);
+        }
+
         #hero-special-designer,
         #hero-special-title {
             font-size: 1.1111111111111112rem;
             line-height: 1.7777777777777777rem;
-            color: var(--accent-color);
-            text-decoration: underline;
             font-weight: 500;
         }
 
@@ -74,13 +80,14 @@ const HeroStyle = styled.div`
         cursor: pointer;
         height: 21px;
         width: 11px;
+        z-index: 111;
 
         #hero-arrows {
             width: 0;
             height: 0;
-            border-left: 5.5px solid transparent;
-            border-right: 5.5px solid transparent;
-            border-top: 11px solid var(--text-color);
+            border-left: 0.3055555555555556rem solid transparent;
+            border-right: 0.3055555555555556rem solid transparent;
+            border-top: 0.6111111111111112rem solid var(--text-color);
             animation: pulse 1s ease-in-out alternate infinite;
             position: absolute;
         }
@@ -110,7 +117,7 @@ function scrollToArchive() {
 
 const Hero = () => {
     const data = useStaticQuery(graphql`
-        query HeroImage {
+        query LastConversation {
             allMarkdownRemark(
                 filter: {
                     fileAbsolutePath: { regex: "/extras/" }
@@ -126,20 +133,7 @@ const Hero = () => {
                         }
                         frontmatter {
                             name
-                            conv_bitmap {
-                                childImageSharp {
-                                    fluid(
-                                        maxWidth: 800
-                                        duotone: {
-                                            highlight: "#ee0202"
-                                            shadow: "#ee0202"
-                                        }
-                                    ) {
-                                        ...GatsbyImageSharpFluid
-                                        presentationWidth
-                                    }
-                                }
-                            }
+                            designer
                         }
                     }
                 }
@@ -176,32 +170,113 @@ const Hero = () => {
                     id="hero-special-button"
                 >
                     <span id="hero-special-designer">
-                        Beatrice D'Agostino <br />
+                        {
+                            data.allMarkdownRemark.edges[0].node.frontmatter
+                                .designer[0]
+                        }
+                        <br />
                     </span>
                     <span id="hero-special-title">
-                        Il type design in Italia <br />
+                        {data.allMarkdownRemark.edges[0].node.frontmatter.name}
+                        <br />
                     </span>
                 </Link>
             </div>
             <div id="hero-arrows-container" onClick={scrollToArchive}>
                 <div id="hero-arrows"></div>
             </div>
-            <NonStretchedImage
-                fluid={
-                    data.allMarkdownRemark.edges[0].node.frontmatter.conv_bitmap
-                        .childImageSharp.fluid
-                }
-                imgStyle={{ objectFit: 'contain' }}
-                style={{
-                    gridColumn: '8/13',
-                    gridRow: '1/3',
-                    justifySelf: 'end',
-                    width: '100%',
-                    alignSelf: 'end',
-                }}
-            />
+            <HeroImagesContainer />
         </HeroStyle>
     )
+}
+
+const HeroImagesContainerStyle = styled.div`
+    position: relative;
+    grid-column: 4/13;
+    grid-row: 1/3;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+    z-index: 000;
+
+    .hero-image {
+        max-height: 100%;
+        max-width: 100%;
+
+        position: absolute;
+        display: none;
+        opacity: 0;
+    }
+
+    @keyframes heroFade {
+        0% {
+            opacity: 0;
+        }
+
+        8% {
+            opacity: 1;
+        }
+
+        92% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .hero-image-animation {
+        display: block;
+        opacity: 0;
+        animation: heroFade 6s ease-in-out 1 forwards;
+    }
+`
+
+class HeroImagesContainer extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
+    componentDidMount() {
+        let images = document.querySelectorAll('.hero-image')
+        let secs = 6
+
+        function backgroundSequence() {
+            window.clearTimeout()
+            var k = 0
+            for (let index = 0; index < images.length; index++) {
+                setTimeout(function() {
+                    images[index].classList.add('hero-image-animation')
+
+                    setTimeout(() => {
+                        images[index].classList.remove('hero-image-animation')
+                    }, secs * 1000)
+
+                    // Repeat the cycle
+                    if (k + 1 === images.length) {
+                        setTimeout(function() {
+                            backgroundSequence()
+                        }, secs * 1000)
+                    } else {
+                        k++
+                    }
+                }, secs * 1000 * index)
+            }
+        }
+        backgroundSequence()
+    }
+
+    render() {
+        return (
+            <HeroImagesContainerStyle>
+                <img src={HeroImage1} className="hero-image" alt="" srcset="" />
+                <img src={HeroImage2} className="hero-image" alt="" srcset="" />
+                <img src={HeroImage3} className="hero-image" alt="" srcset="" />
+            </HeroImagesContainerStyle>
+        )
+    }
 }
 
 export default Hero

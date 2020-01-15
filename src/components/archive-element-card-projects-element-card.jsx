@@ -31,12 +31,24 @@ const ArchiveElementCardProjectsElementCardStyle = styled.div`
             font-size: 0.7777777777777778rem;
             line-height: 1.2222222222222223rem;
         }
+
+        @media screen and (max-width: 1024px) {
+            grid-column: 2/8;
+        }
+
+        @media screen and (max-width: 900px) {
+            grid-column: 1/12;
+        }
     }
 
     .archive-element-card-projects-element-card-images {
         grid-column: 2/12;
         display: grid;
         grid-row-gap: 1.2222222222222223rem;
+
+        @media screen and (max-width: 900px) {
+            grid-column: 1/12;
+        }
     }
 
     .archive-element-card-projects-element-card-copyright-notice {
@@ -47,6 +59,18 @@ const ArchiveElementCardProjectsElementCardStyle = styled.div`
         margin-top: 1.1111111111111112rem;
         grid-column: 2/12;
         opacity: 0.8;
+
+        @media screen and (max-width: 900px) {
+            grid-column: 1/12;
+        }
+    }
+`
+
+const ArchiveElementCardProjectsElementCardCloseCard = styled(CloseCard)`
+    grid-column: 2/12;
+
+    @media screen and (max-width: 900px) {
+        grid-column: 1/12;
     }
 `
 
@@ -82,7 +106,9 @@ const ArchiveElementCardProjectsElementCard = ({
                 {' ' + project.frontmatter.designer}
             </span>
         )}
-        <CloseCard column="2/12" toggleCard={toggleCard} />
+        <ArchiveElementCardProjectsElementCardCloseCard
+            toggleCard={toggleCard}
+        />
     </ArchiveElementCardProjectsElementCardStyle>
 )
 

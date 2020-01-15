@@ -19,6 +19,10 @@ const ArchiveElementCardProjectsStyle = styled.div`
         line-height: 1.7777777777777777rem;
         margin-bottom: 1.1111111111111112rem;
     }
+
+    @media screen and (max-width: 900px) {
+        grid-column: 1/13;
+    }
 `
 
 const ArchiveElementCardProjects = ({ designer }) => {
@@ -111,6 +115,30 @@ const ArchiveElementCardProjectsLabelsStyle = styled.div`
 
     .archive-element-card-projects-labels-preview {
         grid-column: 10/12;
+    }
+
+    @media screen and (max-width: 900px) {
+        .archive-element-card-projects-labels-year {
+            display: none;
+        }
+
+        .archive-element-card-projects-labels-name {
+            grid-column: 1/8;
+        }
+
+        .archive-element-card-projects-labels-client {
+            display: none;
+        }
+
+        .archive-element-card-projects-labels-preview {
+            grid-column: 8/12;
+        }
+    }
+
+    @media screen and (max-width: 470px) {
+        .archive-element-card-projects-labels-preview {
+            display: none;
+        }
     }
 `
 
