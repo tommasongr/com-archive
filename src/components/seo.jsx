@@ -40,7 +40,7 @@ function SEO({ description, lang, meta, title, image }) {
             meta={[
                 {
                     name: 'apple-mobile-web-app-status-bar-style',
-                    content: '#f9f9fa',
+                    content: 'black-translucent',
                 },
                 {
                     name: 'viewport',
