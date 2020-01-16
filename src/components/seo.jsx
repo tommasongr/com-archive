@@ -39,6 +39,10 @@ function SEO({ description, lang, meta, title, image }) {
             titleTemplate={`%s | ${site.siteMetadata.title}`}
             meta={[
                 {
+                    name: 'apple-mobile-web-app-status-bar-style',
+                    content: 'white',
+                },
+                {
                     name: 'viewport',
                     content:
                         'width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1',
