@@ -33,19 +33,21 @@ const ArchiveElementCardExtrasElementCardStyle = styled.div`
             margin-bottom: 0;
         }
 
-        // p:not(:first-child) {
-        //     grid-column: 1/5;
-        //     color: var(--accent-color);
-        //     font-family: 'Suisse Intl', sans-serif;
-        //     font-size: 0.7777777777777778rem;
-        //     line-height: 1.2222222222222223rem;
-        // }
-    }
+        @media screen and (max-width: 1024px) {
+            grid-column: 2/8;
+        }
 
-    .archive-element-card-extras-element-card-images {
-        grid-column: 2/12;
-        display: grid;
-        grid-row-gap: 1.2222222222222223rem;
+        @media screen and (max-width: 900px) {
+            grid-column: 1/12;
+        }
+    }
+`
+
+const ArchiveElementCardProjectsExtrasCardCloseCard = styled(CloseCard)`
+    grid-column: 2/12;
+
+    @media screen and (max-width: 900px) {
+        grid-column: 1/12;
     }
 `
 
@@ -65,17 +67,9 @@ const ArchiveElementCardExtrasElementCard = ({
             className="archive-element-card-extras-element-card-content"
             dangerouslySetInnerHTML={{ __html: extras.html }}
         />
-        {/* {console.log(extras.frontmatter.images)}
-        <div className="archive-element-card-extras-element-card-images">
-            {extras.frontmatter.images.map(image => (
-                <NonStretchedImage
-                    fluid={image.childImageSharp.fluid}
-                    imgStyle={{ objectFit: 'cover', objectPosition: '0 0' }}
-                    style={{ gridColumn: '1/2' }}
-                />
-            ))}
-        </div> */}
-        <CloseCard column="2/12" toggleCard={toggleCard} />
+        <ArchiveElementCardProjectsExtrasCardCloseCard
+            toggleCard={toggleCard}
+        />
     </ArchiveElementCardExtrasElementCardStyle>
 )
 

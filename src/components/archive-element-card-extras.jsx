@@ -19,6 +19,10 @@ const ArchiveElementCardExtrasStyle = styled.div`
         line-height: 1.7777777777777777rem;
         margin-bottom: 1.1111111111111112rem;
     }
+
+    @media screen and (max-width: 900px) {
+        grid-column: 1/13;
+    }
 `
 
 const ArchiveElementCardExtras = ({ designer }) => {
@@ -91,6 +95,30 @@ const ArchiveElementCardExtrasLabelsStyle = styled.div`
 
     .archive-element-card-extras-labels-timing {
         grid-column: 10/12;
+    }
+
+    @media screen and (max-width: 900px) {
+        .archive-element-card-extras-labels-year {
+            display: none;
+        }
+
+        .archive-element-card-extras-labels-name {
+            grid-column: 1/8;
+        }
+
+        .archive-element-card-extras-labels-content-type {
+            grid-column: 8/12;
+        }
+
+        .archive-element-card-extras-labels-timing {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 470px) {
+        .archive-element-card-extras-labels-content-type {
+            display: none;
+        }
     }
 `
 

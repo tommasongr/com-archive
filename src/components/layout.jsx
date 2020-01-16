@@ -17,6 +17,7 @@ const LayoutStyled = styled.div`
 
     @media screen and (max-width: 620px) {
         padding: 1.1111111111111112rem;
+        padding-top: 2.2222222222222223rem;
     }
 `
 

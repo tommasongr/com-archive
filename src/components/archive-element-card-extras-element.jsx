@@ -48,7 +48,7 @@ const ArchiveElementCardExtrasElementStyle = styled.div`
                 white-space: nowrap;
             }
 
-            .archive-element-card-proextrasjects-element-year {
+            .archive-element-card-extras-element-year {
                 grid-column: 1/2;
             }
 
@@ -63,6 +63,30 @@ const ArchiveElementCardExtrasElementStyle = styled.div`
 
             .archive-element-card-extras-element-timing {
                 grid-column: 10/12;
+            }
+
+            @media screen and (max-width: 900px) {
+                .archive-element-card-extras-element-year {
+                    display: none;
+                }
+
+                .archive-element-card-extras-element-name {
+                    grid-column: 1/8;
+                }
+
+                .archive-element-card-extras-element-content-type {
+                    grid-column: 8/12;
+                }
+
+                .archive-element-card-extras-element-timing {
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 470px) {
+                .archive-element-card-extras-element-content-type {
+                    display: none;
+                }
             }
         }
     }
@@ -110,7 +134,7 @@ class ArchiveElementCardExtrasElement extends React.Component {
                 >
                     <span className="archive-element-card-extras-element-button-content">
                         <span
-                            className="archive-element-card-proextrasjects-element-year"
+                            className="archive-element-card-extras-element-year"
                             style={
                                 this.state.elementCardExtrasElementCardOpened
                                     ? { color: 'var(--accent-color)' }

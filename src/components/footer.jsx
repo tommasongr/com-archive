@@ -37,12 +37,17 @@ const FooterStyle = styled.footer`
             margin-top: 1.1111111111111112rem;
         }
 
+        #footer-link-wrapper {
+            grid-column: 5/10;
+            align-self: end;
+        }
+
         #footer-link {
-            grid-column: 5/8;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-auto-rows: min-content;
-            align-self: end;
+            width: max-content;
+            grid-column-gap: 1.3888888888888888rem;
 
             span {
                 font-family: 'Suisse Intl', sans-serif;
@@ -75,6 +80,46 @@ const FooterStyle = styled.footer`
             text-align: end;
             width: 100%;
             align-self: end;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        #footer {
+            #footer-link-wrapper {
+                grid-column: 5/11;
+            }
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        #footer {
+            #footer-cc {
+                grid-column: 1/5;
+            }
+            #footer-link-wrapper {
+                grid-column: 6/11;
+            }
+        }
+    }
+
+    @media screen and (max-width: 620px) {
+        #footer {
+            grid-row-gap: 1.9444444444444444rem;
+
+            #footer-cc {
+                grid-column: 1/11;
+            }
+            #footer-link-wrapper {
+                grid-column: 1/11;
+            }
+        }
+    }
+
+    @media screen and (max-width: 470px) {
+        #footer {
+            #footer-link-link {
+                grid-column-gap: 1.1111111111111112rem;
+            }
         }
     }
 `
@@ -154,38 +199,43 @@ const Footer = () => (
                     .
                 </p>
             </div>
-            <div id="footer-link">
-                <span>Link utili</span>
-                <Link to="" style={{ gridColumn: '1/2', gridRow: '2/3' }}>
-                    Archivio
-                </Link>
-                <Link
-                    to="conversazioni/"
-                    style={{ gridColumn: '1/2', gridRow: '3/4' }}
-                >
-                    Conversazioni
-                </Link>
-                <Link
-                    to="chi-siamo/"
-                    style={{ gridColumn: '2/3', gridRow: '2/3' }}
-                >
-                    Chi siamo
-                </Link>
-                <Link
-                    to="certificati/"
-                    style={{ gridColumn: '2/3', gridRow: '3/4' }}
-                >
-                    Certificati
-                </Link>
-                <a
-                    href="https://github.com/tommasongr/com-archive"
-                    style={{ gridColumn: '3/4', gridRow: '2/3' }}
-                >
-                    Source code
-                </a>
-                <a href="admin/" style={{ gridColumn: '3/4', gridRow: '3/4' }}>
-                    Admin
-                </a>
+            <div id="footer-link-wrapper">
+                <div id="footer-link">
+                    <span>Link utili</span>
+                    <Link to="" style={{ gridColumn: '1/2', gridRow: '2/3' }}>
+                        Archivio
+                    </Link>
+                    <Link
+                        to="conversazioni/"
+                        style={{ gridColumn: '1/2', gridRow: '3/4' }}
+                    >
+                        Conversazioni
+                    </Link>
+                    <Link
+                        to="chi-siamo/"
+                        style={{ gridColumn: '2/3', gridRow: '2/3' }}
+                    >
+                        Chi siamo
+                    </Link>
+                    <Link
+                        to="certificati/"
+                        style={{ gridColumn: '2/3', gridRow: '3/4' }}
+                    >
+                        Certificati
+                    </Link>
+                    <a
+                        href="https://github.com/tommasongr/com-archive"
+                        style={{ gridColumn: '3/4', gridRow: '2/3' }}
+                    >
+                        Source code
+                    </a>
+                    <a
+                        href="admin/"
+                        style={{ gridColumn: '3/4', gridRow: '3/4' }}
+                    >
+                        Admin
+                    </a>
+                </div>
             </div>
             <Link id="footer-logo" to="">
                 c.

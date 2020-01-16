@@ -30,6 +30,7 @@ const ArchiveControlsStyle = styled.div`
         color: var(--text-color);
         max-height: 3.111111111111111rem;
         padding: 0;
+        border-radius: 0;
 
         :focus {
             border-bottom-color: var(--accent-color);
@@ -48,6 +49,7 @@ const ArchiveControlsStyle = styled.div`
         border-bottom: solid 1px var(--accent-color);
         height: 100%;
         max-height: 3.111111111111111rem;
+        /* width: 100%; */
     }
 
     .archive-wrapper {
@@ -56,7 +58,6 @@ const ArchiveControlsStyle = styled.div`
         height: 100%;
         align-items: baseline;
         justify-content: space-between;
-        max-height: 3.111111111111111rem;
 
         select {
             border: none;
@@ -128,6 +129,7 @@ const ArchiveControlsStyle = styled.div`
             height: 0.6111111111111112rem;
             width: 0.6111111111111112rem;
             background: none;
+            border-radius: 0;
 
             :focus {
                 outline: none;
