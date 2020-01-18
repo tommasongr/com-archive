@@ -40,13 +40,6 @@ const ConversazioniPageStyle = styled.div`
             height: auto;
         }
     }
-
-    .conversazioni-page-divider {
-        grid-column: 1/13;
-        width: 100%;
-        margin-top: 4.444444444444445rem;
-        border-bottom: solid 1px var(--accent-color);
-    }
 `
 
 const ConversazioniPage = () => (

@@ -3,9 +3,10 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import HeroImage1 from '../../static/assets/bitmap-beatrice-dagostino.png'
-import HeroImage2 from '../../static/assets/bitmap-paolo-insinga.png'
-import HeroImage3 from '../../static/assets/designer-alessandro-sposato.png'
+import BeatriceDagostino from '../../static/assets/bitmap-beatrice-dagostino.png'
+import FedericaFragapane from '../../static/assets/bitmap-federica-fragapane.png'
+import FrancescoMuzzi from '../../static/assets/bitmap-francesco-muzzi.png'
+import GiulioBertolotti from '../../static/assets/bitmap-giulio-bertolotti.png'
 
 import IconInstagram from '../components/social-icons/icon-instagram'
 import IconGithub from '../components/social-icons/icon-github'
@@ -142,6 +143,10 @@ const HeroStyle = styled.div`
         }
         #hero-special {
             display: none;
+        }
+
+        #hero-social {
+            margin-bottom: 1rem;
         }
 
         #hero-arrows-container {
@@ -306,39 +311,53 @@ class HeroImagesContainer extends React.Component {
 
     componentDidMount() {
         let images = document.querySelectorAll('.hero-image')
-        let secs = 6
+        let imageCount = 0
 
         function backgroundSequence() {
-            window.clearTimeout()
-            var k = 0
-            for (let index = 0; index < images.length; index++) {
-                setTimeout(function() {
-                    images[index].classList.add('hero-image-animation')
+            imageCount++
+            images.forEach(element => {
+                element.classList.remove('hero-image-animation')
+            })
 
-                    setTimeout(() => {
-                        images[index].classList.remove('hero-image-animation')
-                    }, secs * 1000)
-
-                    // Repeat the cycle
-                    if (k + 1 === images.length) {
-                        setTimeout(function() {
-                            backgroundSequence()
-                        }, secs * 1000)
-                    } else {
-                        k++
-                    }
-                }, secs * 1000 * index)
+            if (imageCount == images.length) {
+                imageCount = 0
             }
+
+            images[imageCount].classList.add('hero-image-animation')
+
+            setTimeout(backgroundSequence, 6 * 1000)
         }
+
         backgroundSequence()
     }
 
     render() {
         return (
             <HeroImagesContainerStyle>
-                <img src={HeroImage1} className="hero-image" alt="" srcset="" />
-                <img src={HeroImage2} className="hero-image" alt="" srcset="" />
-                {/* <img src={HeroImage3} className="hero-image" alt="" srcset="" /> */}
+                <img
+                    src={FedericaFragapane}
+                    className="hero-image"
+                    alt=""
+                    srcset=""
+                />
+                <img
+                    src={GiulioBertolotti}
+                    className="hero-image"
+                    alt=""
+                    srcset=""
+                />
+                <img
+                    src={BeatriceDagostino}
+                    className="hero-image"
+                    alt=""
+                    srcset=""
+                />
+                <img
+                    src={FrancescoMuzzi}
+                    className="hero-image"
+                    alt=""
+                    srcset=""
+                />
             </HeroImagesContainerStyle>
         )
     }

@@ -3,7 +3,7 @@ name: Il business del branding, il branding del business
 content_type: Conversazione
 designer:
     - Paolo Insinga
-conv_bitmap: ../../static/assets/bitmap-paolo-insinga.png
+conv_bitmap: ../../static/assets/designer-paolo-insinga.png
 date: 2019-11-28T00:00:00.000Z
 ---
 

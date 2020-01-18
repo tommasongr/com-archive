@@ -1,35 +1,34 @@
 ---
 name: Alessandro Sposato
 job:
-  company: SAP
-  type: Agenzia o studio
+    company: SAP
+    type: Agenzia o studio
 jobFields:
-  - Type design
-  - Graphic design
+    - Type design
+    - Graphic design
 based:
-  city: Berlino
-  country: Germania
+    city: Berlino
+    country: Germania
 awards: true
 social:
-  behance: ''
-  dribbble: ''
-  github: ''
-  instagram: 'https://www.instagram.com/balsonauta/?hl=it'
-  linkedin: 'https://www.linkedin.com/in/sposato/'
-  medium: ''
-  podcast: ''
-  twitter: 'https://twitter.com/balsonauta'
-  vimeo: ''
-  youtube: ''
+    behance: ''
+    dribbble: ''
+    github: ''
+    instagram: 'https://www.instagram.com/balsonauta/?hl=it'
+    linkedin: 'https://www.linkedin.com/in/sposato/'
+    medium: ''
+    podcast: ''
+    twitter: 'https://twitter.com/balsonauta'
+    vimeo: ''
+    youtube: ''
 contents:
-  projects: true
-  extras: false
+    projects: true
+    extras: false
 date: 2019-11-14T00:00:00.000Z
 img: ../../static/assets/designer-alessandro-sposato.png
 ---
 
 Alessandro Sposato ha vissuto, studiato e lavorato a Milano e ora vive e lavora a Berlino. Oggi lavora per una grande azienda, cercando di migliorare la vita dei lavoratori, nel frattempo effettua esperimenti e cerca di trasmettere la sua più grande passione, la stampa tipografica.
-
 
 Senior Strategic Design Consultant a **SAP** (2016 - oggi)  
 Strategic Design Consultant a **SAP** (2013 - 2016)  

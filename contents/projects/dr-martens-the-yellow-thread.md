@@ -4,10 +4,10 @@ client: Dr Martens
 year: 2016
 designer:
     - Nadia Conti
-preview: ../../static/assets/dr-martens-the-yellow-thread-01.jpg
+preview: ../../static/assets/project-dr-martens-the-yellow-thread-01.jpg
 images:
-    - ../../static/assets/dr-martens-the-yellow-thread-01.jpg
-    - ../../static/assets/dr-martens-the-yellow-thread-02.jpg
+    - ../../static/assets/project-dr-martens-the-yellow-thread-01.jpg
+    - ../../static/assets/project-dr-martens-the-yellow-thread-02.jpg
 images_copyright:
     controll: true
     owner: Nadia Conti
