@@ -1,9 +1,9 @@
 ---
-name: Null Null Badabum
+name: La curiosità salverà la creatività
 content_type: Conversazione
 designer:
     - Luca Dusio
-conv_bitmap: '../../static/assets/designer-giulia-de-amicis.png'
+conv_bitmap: '../../static/assets/designer-luca-dusio.png'
 date: 2020-01-18T00:00:00.000Z
 ---
 
@@ -19,7 +19,7 @@ Ritengo che a prescindere da quello che è stato il mio caso specifico, bisogna 
 
 Ricordo che quando sono andato nel 2009 a MTV mi dicevano che l’unica regola era progettare cose belle e sensazionali, ovviamente era una affermazione molto relativa. Nel 2015 per cercare di rinnovarsi hanno stravolto i canoni e hanno creato una nuova immagine visiva chiamata Kill Boring piena di emoticon, il risultato è stato un disastro e io mi trovavo molto in difficoltà a lavorare in questo contesto concettuale, poi nel giro di poco tempo per fortuna questo tipo di trend è stato abbandonato completamente.
 
-![null-null-badabum](../../static/assets/extra-null-null-badabum-01.jpg)
+![null-null-badabum](../../static/assets/extra-la-curiosita-salvera-il-mondo-01.jpg)
 
 ### Che peso e che ruolo deve avere la pianificazione in un progetto?
 
@@ -29,7 +29,7 @@ Nel corso degli anni questo aspetto è cambiato molto, quando ho iniziato a lavo
 
 I nostri superiori dicevano costantemente che dovevamo essere presenti e attivi sui social, ma la vera domanda era come dovevamo mostrarci sui social e cosa trasmettere. Lavoravamo a 360 gradi e di conseguenza progettavamo anche per l’ambito digital, ma c’era già un altro team per questo settore e a volte era difficile coordinare sempre tutte le parti coinvolte. Per questo creavamo un toolkit di base che potesse essere adattato a tutti gli utilizzi, per i social, per la televisione e anche per il cartaceo. Un tempo a livello europeo l’evento più importante per MTV erano gli European Music Awards e per realizzare la sigla veniva stanziato un budjet importante, oggi non ha più senso spendere cifre elevate in artefatti che vengono visionati dal pubblico una sola volta. Nel mondo televisivo è in atto una guerra e resteranno nel settore solo i player più grandi, per questo motivo oggi si tende a spostare i budjet altrove, ad esempio sulle piattaforme.
 
-![null-null-badabum](../../static/assets/extra-null-null-badabum-02.jpg)
+![null-null-badabum](../../static/assets/extra-la-curiosita-salvera-il-mondo-02.jpg)
 
 ### Come mantenere una identità forte?
 

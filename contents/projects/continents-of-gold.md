@@ -10,7 +10,7 @@ images:
     - ../../static/assets/project-continents-of-gold-02.jpg
     - ../../static/assets/project-continents-of-gold-03.jpg
 images_copyright:
-    controll: false
+    controll: true
     owner: Giulia De Amicis
 date: 2020-12-05T00:00:00.000Z
 ---

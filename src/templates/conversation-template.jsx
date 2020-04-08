@@ -161,10 +161,7 @@ export const query = graphql`
                         original {
                             src
                         }
-                        fluid(
-                            maxWidth: 300
-                            duotone: { highlight: "#ee0202", shadow: "#ee0202" }
-                        ) {
+                        fluid(maxWidth: 300) {
                             ...GatsbyImageSharpFluid
                             presentationWidth
                         }

@@ -24,7 +24,7 @@ contents:
     projects: true
     extras: false
 date: 2020-01-16T00:00:00.000Z
-img: ../../static/assets/designer-chiara-ricolfi.png
+img: ../../static/assets/designer-carlo-colombo.png
 ---
 
 Carlo Colombo è curioso per natura, allo stesso tempo ciò che lo motiva è promuovere ed aiutare i marchi che ama. Ogni marchio è un popolo umano con cui parlare, di cui innamorarsi, di cui discutere. Dal 2016 è Art Director Junior di Ogilvy & Mather Italia, con sede a Milano. Ricopre anche la posizione di Digital Art Director presso Fiat.

@@ -24,7 +24,7 @@ contents:
     projects: false
     extras: true
 date: 2020-01-16T00:05:00.000Z
-img: ../../static/assets/designer-giulia-de-amicis.png
+img: ../../static/assets/designer-luca-dusio.png
 ---
 
 Luca Dusio è un direttore creativo con più di 15 anni di esperienza nel campo del design visivo e della comunicazione. Laureato al Politecnico di Milano con una tesi sulla storia dei titoli di testa, dopo una prima esperienza in Italia, lavora a Londra come freelance per alcuni importanti studi creativi come Superfad, We are seventeen e Man vs Machine.

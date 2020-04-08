@@ -11,7 +11,7 @@ images:
     - ../../static/assets/project-the-right-way-together-03.jpg
     - ../../static/assets/project-the-right-way-together-04.jpg
 images_copyright:
-    controll: false
+    controll: true
     owner: Francesco Faggiano
 date: 2020-12-05T00:00:00.000Z
 ---

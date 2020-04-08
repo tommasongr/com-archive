@@ -11,7 +11,7 @@ images:
     - ../../static/assets/project-redesign-pubblicita-italia-03.jpg
     - ../../static/assets/project-redesign-pubblicita-italia-04.jpg
 images_copyright:
-    controll: false
+    controll: true
     owner: Marco Arcangeli
 date: 2020-12-05T00:00:00.000Z
 ---

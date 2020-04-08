@@ -8,7 +8,7 @@ preview: ../../static/assets/project-carnaval-de-las-palmas-01.jpg
 images:
     - ../../static/assets/project-carnaval-de-las-palmas-01.jpg
 images_copyright:
-    controll: false
+    controll: true
     owner: Francesco Faggiano
 date: 2020-12-04T00:00:00.000Z
 ---

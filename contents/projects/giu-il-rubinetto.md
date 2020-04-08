@@ -12,7 +12,7 @@ images:
     - ../../static/assets/project-giu-il-rubinetto-04.jpg
     - ../../static/assets/project-giu-il-rubinetto-05.jpg
 images_copyright:
-    controll: false
+    controll: true
     owner: Carlo Colombo
 date: 2020-12-05T00:00:00.000Z
 ---

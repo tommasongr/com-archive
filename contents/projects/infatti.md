@@ -12,7 +12,7 @@ images:
     - ../../static/assets/project-infatti-04.jpg
     - ../../static/assets/project-infatti-05.jpg
 images_copyright:
-    controll: false
+    controll: true
     owner: Marco Arcangeli
 date: 2020-12-04T00:00:00.000Z
 ---

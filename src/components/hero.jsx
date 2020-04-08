@@ -298,6 +298,10 @@ const HeroImagesContainerStyle = styled.div`
         grid-column: 6/13;
     }
 
+    /* @media screen and (max-width: 900px) and (max-height: 600px) {
+        grid-column: 7/13;
+    } */
+
     @media screen and (max-width: 620px) {
         grid-column: 1/13;
         grid-row: 2/3;
@@ -335,25 +339,25 @@ class HeroImagesContainer extends React.Component {
         return (
             <HeroImagesContainerStyle>
                 <img
-                    src={FedericaFragapane}
-                    className="hero-image"
-                    alt=""
-                    srcset=""
-                />
-                <img
                     src={GiulioBertolotti}
                     className="hero-image"
                     alt=""
                     srcset=""
                 />
                 <img
-                    src={BeatriceDagostino}
+                    src={FedericaFragapane}
                     className="hero-image"
                     alt=""
                     srcset=""
                 />
                 <img
                     src={FrancescoMuzzi}
+                    className="hero-image"
+                    alt=""
+                    srcset=""
+                />
+                <img
+                    src={BeatriceDagostino}
                     className="hero-image"
                     alt=""
                     srcset=""
