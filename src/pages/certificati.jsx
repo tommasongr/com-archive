@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import styled from 'styled-components'
-import '../../static/badges/badge.min'
+import '../../static/badges/badge'
 
 import 'prismjs/themes/prism-tomorrow.css'
 import Prism from 'prismjs'
@@ -100,7 +100,7 @@ class CertificatiPage extends React.Component {
     }
 
     render() {
-        let badgeCode = `<com-badge color="red" bg="false">
+        let badgeCode = `<com-badge color="red" bg="false"></com-badge>
 <script async src="https://archiviocom.netlify.app/badges/badge.js" charset="utf-8"></script>`
 
         return (
