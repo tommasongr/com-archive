@@ -101,7 +101,7 @@ class CertificatiPage extends React.Component {
 
     render() {
         let badgeCode = `<com-badge color="red" bg="false">
-<script async src="https://archiviocom.netlify.com/badges/badge.min.js" charset="utf-8"></script>`
+<script async src="https://archiviocom.netlify.app/badges/badge.js" charset="utf-8"></script>`
 
         return (
             <Layout>

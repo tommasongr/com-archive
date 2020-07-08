@@ -68,9 +68,9 @@ if (typeof window !== `undefined`) {
                     height: 100%;
                 }
             </style>
-            <a href="https://archiviocom.netlify.com" target="blank">
+            <a href="https://archiviocom.netlify.app" target="blank">
                 <div id="com-badge-container">
-                    <img src="https://archiviocom.netlify.com/badges/${badge}" />
+                    <img src="https://archiviocom.netlify.app/badges/${badge}" />
                 </div>
             </a>
         `
@@ -78,12 +78,9 @@ if (typeof window !== `undefined`) {
 
         connectedCallback() {
             readTextFile(
-                'https://archiviocom.netlify.com/badges/badge-whitelist.json',
+                'https://archiviocom.netlify.app/badges/badge-whitelist.json',
                 function(text) {
                     let whitelist = JSON.parse(text)
-                    console.log(whitelist)
-                    console.log(window.location.hostname)
-
                     if (
                         !whitelist.whitelist.includes(window.location.hostname)
                     ) {
